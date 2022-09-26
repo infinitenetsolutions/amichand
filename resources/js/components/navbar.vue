@@ -68,11 +68,10 @@
                                                 aria-haspopup="true" aria-expanded="false">About Us</a>
                                             <div class="dropdown-menu navbar-left">
                                                 <div class="dropdown">
-                                                    <router-link class="dropdown-item" :to="{name:'about'}">Who we are
+                                                    <router-link class="dropdown-item" :to="{name:'about'}">Our Company
                                                     </router-link>
-                                                    <a class="dropdown-item" href="contact-style-2">Our History</a>
-                                                    <a class="dropdown-item" href="contact-style-2">Mission</a>
-                                                    <a class="dropdown-item" href="contact-style-2">Vission</a>
+                                                    <router-link class="dropdown-item" :to="{name:'history'}">Our History</router-link>
+                                                    <a class="dropdown-item" :to="{name:'vission-mission'}">Mission/Vission</a>
 
                                                 </div>
                                             </div>

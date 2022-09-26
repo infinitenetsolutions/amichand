@@ -5,6 +5,8 @@ import Contact from '../pages/contact.vue'
 import Services from '../pages/services.vue';
 import Projects from '../pages/projects.vue';
 import Career from '../pages/career.vue';
+import MissionVission from '../pages/mission-vission.vue';
+import History from '../pages/history.vue';
 const routes = [
     {
         path: "/",
@@ -36,6 +38,18 @@ const routes = [
         name: "career",
         component: Career ,
     },
+    {
+        path: "/vission-mission",
+        name: "vission-mission",
+        component: History ,
+    },
+    {
+        path: "/history",
+        name: "history",
+        component: MissionVission ,
+    },
+
+    
 
 ];
 

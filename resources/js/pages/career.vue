@@ -8,8 +8,8 @@
                 <div class="section-content">
                     <div class="row">
                         <div class="col-12">
-                            <h4>Carrer</h4>
-                            <p>Home <a href="#">Career</a></p>
+                            <h4>contact</h4>
+                            <p>Home <a href="#">contact</a></p>
                         </div>
                     </div>
                 </div>
@@ -17,47 +17,7 @@
         </section>
         <!-- Inner Section End -->
 
-        <section class="contact-details pb-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="service-item style-1 border-1px">
-                            <div class="service-icon">
-                                <i class="pe-7s-map"></i>
-                            </div>
-                            <div class="content">
-                                <h5><a href="#">Contact Info</a></h5>
-                                <p> 325, Dreem streen Borgona<br> united, London.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="service-item style-1 border-1px">
-                            <div class="">
-                                <i class="pe-7s-clock"></i>
-                            </div>
-                            <div class="content">
-                                <h5><a href="#">Business Hours</a></h5>
-                                <p>Monday-Friday: 10am to 8pm <br>Saturday: 11am to 3pm</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="service-item style-1 border-1px">
-                            <div class="">
-                                <i class="pe-7s-mail-open"></i>
-                            </div>
-                            <div class="content">
-                                <h5><a href="#">Email</a></h5>
-                                <p><a href="#">info@bdCoder.com</a> <br> <a href="#">set-info@bdCoder.com</a> </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-details pb-60">
+        <section class="contact-details pb-70">
             <div class="container">
                 <div class="section-content">
                     <div class="row">
@@ -95,15 +55,48 @@
                             </form>
                         </div>
                         <div class="col-12 col-sm-12 col-md-5 col-lg-5">
-                            <div class="map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29420.654923866234!2d89.53310012531244!3d22.81795249624981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff90089bf88dc7%3A0xb26720ff9233a60e!2sShib+Bari+Square!5e0!3m2!1sen!2sbd!4v1544010802348"
-                                    width="100%" height="532" frameborder="0" style="border:0"></iframe>
+                            <h3 class="title">Get in <span>Touch</span></h3>
+                            <div class="service-item style-1 border-1px">
+                                <div class="service-icon">
+                                    <i class="pe-7s-map"></i>
+                                </div>
+                                <div class="content">
+                                    <h5><a href="#">Contact Info</a></h5>
+                                    <p> 325, Dreem streen Borgona<br> united, London.</p>
+                                </div>
+                            </div>
+                            <div class="service-item style-1 border-1px">
+                                <div class="">
+                                    <i class="pe-7s-clock"></i>
+                                </div>
+                                <div class="content">
+                                    <h5><a href="#">Business Hours</a></h5>
+                                    <p>Monday-Friday: 10am to 8pm <br>Saturday: 11am to 3pm</p>
+                                </div>
+                            </div>
+                            <div class="service-item style-1 border-1px">
+                                <div class="">
+                                    <i class="pe-7s-mail-open"></i>
+                                </div>
+                                <div class="content">
+                                    <h5><a href="#">Email</a></h5>
+                                    <p><a href="#">info@bdCoder.com</a> <br> <a href="#">set-info@bdCoder.com</a> </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="p-0">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29420.654923866234!2d89.53310012531244!3d22.81795249624981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff90089bf88dc7%3A0xb26720ff9233a60e!2sShib+Bari+Square!5e0!3m2!1sen!2sbd!4v1544010802348"
+                    width="100%" height="450" frameborder="0" style="border:0" ></iframe>
+            </div>
+        </section>
+
+
     </div>
 </template>
