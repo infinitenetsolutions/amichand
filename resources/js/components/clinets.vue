@@ -1,6 +1,5 @@
 <template>
     <div>
-        
     <!-- Client Section Start -->
     <section class="client-section bg-f7 pb-70 pt-70">
         <div class="container">
