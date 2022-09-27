@@ -42,8 +42,9 @@
                         <nav class="navbar navbar-expand-lg navbar-dark">
                             <div class="container">
                                 <!-- header dropdown buttons end-->
-                                <a class="navbar-brand" href="index-2">
-                                    <img id="logo_img" src="images/logo-1.png" alt=""></a>
+                                <router-link class="navbar-brand" :to="{name:'home'}">
+                                    <img id="logo_img" src="images/logo-1.png" alt="">
+                                </router-link>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbar-collapse-1" aria-controls="navbar-collapse-1"
                                     aria-expanded="false" aria-label="Toggle navigation">
@@ -70,8 +71,10 @@
                                                 <div class="dropdown">
                                                     <router-link class="dropdown-item" :to="{name:'about'}">Our Company
                                                     </router-link>
-                                                    <router-link class="dropdown-item" :to="{name:'history'}">Our History</router-link>
-                                                    <a class="dropdown-item" :to="{name:'vission-mission'}">Mission/Vission</a>
+                                                    <router-link class="dropdown-item" :to="{name:'history'}">Our
+                                                        History</router-link>
+                                                    <a class="dropdown-item"
+                                                        :to="{name:'vission-mission'}">Mission/Vission</a>
 
                                                 </div>
                                             </div>

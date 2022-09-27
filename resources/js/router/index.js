@@ -7,6 +7,7 @@ import Projects from '../pages/projects.vue';
 import Career from '../pages/career.vue';
 import MissionVission from '../pages/mission-vission.vue';
 import History from '../pages/history.vue';
+import ServiceSingle from '../pages/service-single.vue';
 const routes = [
     {
         path: "/",
@@ -49,6 +50,11 @@ const routes = [
         component: MissionVission ,
     },
 
+ {
+        path: "/services/single",
+        name: "service.single",
+        component: ServiceSingle ,
+    },
     
 
 ];

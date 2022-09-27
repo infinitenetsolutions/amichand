@@ -11,7 +11,7 @@
                     <div class="row">
                         <div class="col-12">
                             <h4>Service</h4>
-                            <p>Home <a href="#">Services</a></p>
+                            <p>Home <a :to="{name:'service.single'}">Services</a></p>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                             <div class="thumb">
                                 <img alt="service img" src="images/service/1.jpg">
                                 <div class="service-link-box">
-                                    <a href="#">Read More</a>
+                                    <router-link :to="{name:'service.single'}">Read More</router-link>
                                 </div>
                             </div>
                             <div class="content">
@@ -42,7 +42,7 @@
                             <div class="thumb">
                                 <img alt="service img" src="images/service/2.jpg">
                                 <div class="service-link-box">
-                                    <a href="#">Read More</a>
+                                    <router-link :to="{name:'service.single'}">Read More</router-link>
                                 </div>
                             </div>
                             <div class="content">
@@ -56,7 +56,7 @@
                             <div class="thumb">
                                 <img alt="service img" src="images/service/3.jpg">
                                 <div class="service-link-box">
-                                    <a href="#">Read More</a>
+                                    <router-link :to="{name:'service.single'}">Read More</router-link>
                                 </div>
                             </div>
                             <div class="content">
@@ -70,7 +70,7 @@
                             <div class="thumb">
                                 <img alt="service img" src="images/service/4.jpg">
                                 <div class="service-link-box">
-                                    <a href="#">Read More</a>
+                                    <router-link :to="{name:'service.single'}">Read More</router-link>
                                 </div>
                             </div>
                             <div class="content">
@@ -84,7 +84,7 @@
                             <div class="thumb">
                                 <img alt="service img" src="images/service/5.jpg">
                                 <div class="service-link-box">
-                                    <a href="#">Read More</a>
+                                    <router-link :to="{name:'service.single'}">Read More</router-link>
                                 </div>
                             </div>
                             <div class="content">
@@ -98,7 +98,7 @@
                             <div class="thumb">
                                 <img alt="service img" src="images/service/6.jpg">
                                 <div class="service-link-box">
-                                    <a href="#">Read More</a>
+                                    <router-link :to="{name:'service.single'}">Read More</router-link>
                                 </div>
                             </div>
                             <div class="content">
@@ -118,11 +118,11 @@
                     <div class="col-md-12">
                         <div class="page-link-item">
                             <ul>
-                                <li><a class="flaticon-left-arrow-1" href="#"></a></li>
-                                <li><a class="active" href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a class="flaticon-right-arrow-1" href="#"></a></li>
+                                <li><a class="flaticon-left-arrow-1" :to="{name:'service.single'}"></a></li>
+                                <li><a class="active" :to="{name:'service.single'}">1</a></li>
+                                <li><a :to="{name:'service.single'}">2</a></li>
+                                <li><a :to="{name:'service.single'}">3</a></li>
+                                <li><a class="flaticon-right-arrow-1" :to="{name:'service.single'}"></a></li>
                             </ul>
                         </div>
                     </div>
