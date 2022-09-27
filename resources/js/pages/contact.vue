@@ -23,33 +23,34 @@
                     <div class="col-lg-4">
                         <div class="service-item style-1 border-1px">
                             <div class="service-icon">
-                                <i class="pe-7s-map"></i>
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="content">
                                 <h5><a href="#">Contact Info</a></h5>
-                                <p> 325, Dreem streen Borgona<br> united, London.</p>
+                                <p>INDUSTRIAL ESTATE ADITYAPUR, JAMSHEDPUR</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="service-item style-1 border-1px">
                             <div class="">
-                                <i class="pe-7s-clock"></i>
-                            </div>
+                                <i class="fas fa-phone-office"></i>
+                                                        </div>
                             <div class="content">
-                                <h5><a href="#">Business Hours</a></h5>
-                                <p>Monday-Friday: 10am to 8pm <br>Saturday: 11am to 3pm</p>
+                                <h5><a href="#">Contact No.</a></h5>
+                                <p>+91-8292580535 <br> +91-9905167484</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="service-item style-1 border-1px">
                             <div class="">
-                                <i class="pe-7s-mail-open"></i>
+                                <i class="fad fa-envelope-open-text"></i>
                             </div>
                             <div class="content">
                                 <h5><a href="#">Email</a></h5>
-                                <p><a href="#">info@bdCoder.com</a> <br> <a href="#">set-info@bdCoder.com</a> </p>
+                                <p> <a href="mailto:INFO@AMITEC.IN">INFO@AMITEC.IN</a> </p>
+                                <br>
                             </div>
                         </div>
                     </div>

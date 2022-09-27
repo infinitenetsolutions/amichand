@@ -23837,7 +23837,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "col-12 col-sm-12 col-md-7 col-lg-7"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Contact "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "us")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Apply "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Now")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
   id: "ajax-contact",
   method: "post",
   action: "http://heatmaponline.com/html/intruder/php/contact.php"
@@ -23900,12 +23900,12 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "col-12 col-sm-12 col-md-5 col-lg-5"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Get in "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Touch")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("CURRENT "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "OPENINGS")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "service-item style-1 border-1px"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "service-icon"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "pe-7s-map"
+  "class": "far fa-briefcase"
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "content"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
@@ -23915,7 +23915,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": ""
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "pe-7s-clock"
+  "class": "far fa-briefcase"
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "content"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
@@ -23925,7 +23925,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": ""
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "pe-7s-mail-open"
+  "class": "far fa-briefcase"
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "content"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
@@ -23955,7 +23955,7 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 );
 
 function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Inner Section Start "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Inner Section End "), _hoisted_2, _hoisted_3]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Inner Section Start "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Inner Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" slider start  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" slider end "), _hoisted_2, _hoisted_3]);
 }
 
 /***/ }),
@@ -23976,7 +23976,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"inner-area parallax-bg\" data-background=\"images/bg/px-1.jpg\" data-type=\"parallax\" data-speed=\"3\"><div class=\"container\"><div class=\"section-content\"><div class=\"row\"><div class=\"col-12\"><h4>contact</h4><p>Home <a href=\"#\">contact</a></p></div></div></div></div></section>", 1);
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"contact-details pb-0\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><div class=\"service-item style-1 border-1px\"><div class=\"service-icon\"><i class=\"pe-7s-map\"></i></div><div class=\"content\"><h5><a href=\"#\">Contact Info</a></h5><p> 325, Dreem streen Borgona<br> united, London.</p></div></div></div><div class=\"col-lg-4\"><div class=\"service-item style-1 border-1px\"><div class=\"\"><i class=\"pe-7s-clock\"></i></div><div class=\"content\"><h5><a href=\"#\">Business Hours</a></h5><p>Monday-Friday: 10am to 8pm <br>Saturday: 11am to 3pm</p></div></div></div><div class=\"col-lg-4\"><div class=\"service-item style-1 border-1px\"><div class=\"\"><i class=\"pe-7s-mail-open\"></i></div><div class=\"content\"><h5><a href=\"#\">Email</a></h5><p><a href=\"#\">info@bdCoder.com</a> <br> <a href=\"#\">set-info@bdCoder.com</a></p></div></div></div></div></div></section>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"contact-details pb-0\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><div class=\"service-item style-1 border-1px\"><div class=\"service-icon\"><i class=\"fas fa-map-marker-alt\"></i></div><div class=\"content\"><h5><a href=\"#\">Contact Info</a></h5><p>INDUSTRIAL ESTATE ADITYAPUR, JAMSHEDPUR</p></div></div></div><div class=\"col-lg-4\"><div class=\"service-item style-1 border-1px\"><div class=\"\"><i class=\"fas fa-phone-office\"></i></div><div class=\"content\"><h5><a href=\"#\">Contact No.</a></h5><p>+91-8292580535 <br> +91-9905167484</p></div></div></div><div class=\"col-lg-4\"><div class=\"service-item style-1 border-1px\"><div class=\"\"><i class=\"fad fa-envelope-open-text\"></i></div><div class=\"content\"><h5><a href=\"#\">Email</a></h5><p><a href=\"mailto:INFO@AMITEC.IN\">INFO@AMITEC.IN</a></p><br></div></div></div></div></div></section>", 1);
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", {
   "class": "contact-details pb-60"

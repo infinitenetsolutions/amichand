@@ -4828,7 +4828,7 @@ Contact Details Css Style
 
 .form-row .form-group input.form-control {
     background-color: #fbfbfb;
-    border: 1px solid #eee;
+    border: 1px solid #5c5c5c;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
@@ -4840,7 +4840,7 @@ Contact Details Css Style
 
 .form-row textarea.form-control {
     background-color: #fbfbfb;
-    border: 1px solid #eee;
+    border: 1px solid #5c5c5c;
     font-family: "Oswald",sans-serif;
     font-size: 16px;
     font-weight: 500;

@@ -17,12 +17,16 @@
         </section>
         <!-- Inner Section End -->
 
+        <!-- slider start  -->
+       
+
+        <!-- slider end -->
         <section class="contact-details pb-70">
             <div class="container">
                 <div class="section-content">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-7 col-lg-7">
-                            <h3 class="title">Contact <span>us</span></h3>
+                            <h3 class="title">Apply <span>Now</span></h3>
                             <form id="ajax-contact" method="post"
                                 action="http://heatmaponline.com/html/intruder/php/contact.php">
                                 <div class="form-row">
@@ -55,10 +59,10 @@
                             </form>
                         </div>
                         <div class="col-12 col-sm-12 col-md-5 col-lg-5">
-                            <h3 class="title">Get in <span>Touch</span></h3>
+                            <h3 class="title">CURRENT  <span>OPENINGS</span></h3>
                             <div class="service-item style-1 border-1px">
                                 <div class="service-icon">
-                                    <i class="pe-7s-map"></i>
+                                    <i class="far fa-briefcase"></i>
                                 </div>
                                 <div class="content">
                                     <h5><a href="#">Contact Info</a></h5>
@@ -67,7 +71,7 @@
                             </div>
                             <div class="service-item style-1 border-1px">
                                 <div class="">
-                                    <i class="pe-7s-clock"></i>
+                                    <i class="far fa-briefcase"></i>
                                 </div>
                                 <div class="content">
                                     <h5><a href="#">Business Hours</a></h5>
@@ -76,7 +80,7 @@
                             </div>
                             <div class="service-item style-1 border-1px">
                                 <div class="">
-                                    <i class="pe-7s-mail-open"></i>
+                                    <i class="far fa-briefcase"></i>
                                 </div>
                                 <div class="content">
                                     <h5><a href="#">Email</a></h5>
@@ -93,7 +97,7 @@
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29420.654923866234!2d89.53310012531244!3d22.81795249624981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff90089bf88dc7%3A0xb26720ff9233a60e!2sShib+Bari+Square!5e0!3m2!1sen!2sbd!4v1544010802348"
-                    width="100%" height="450" frameborder="0" style="border:0" ></iframe>
+                    width="100%" height="450" frameborder="0" style="border:0"></iframe>
             </div>
         </section>
 
