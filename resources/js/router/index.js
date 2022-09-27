@@ -8,6 +8,7 @@ import Career from '../pages/career.vue';
 import MissionVission from '../pages/mission-vission.vue';
 import History from '../pages/history.vue';
 import ServiceSingle from '../pages/service-single.vue';
+import ProjectSingle from '../pages/project-single.vue'
 const routes = [
     {
         path: "/",
@@ -37,25 +38,29 @@ const routes = [
     {
         path: "/career",
         name: "career",
-        component: Career ,
+        component: Career,
     },
     {
         path: "/vission-mission",
         name: "vission-mission",
-        component: History ,
+        component: History,
     },
     {
         path: "/history",
         name: "history",
-        component: MissionVission ,
+        component: MissionVission,
     },
 
- {
+    {
         path: "/services/single",
         name: "service.single",
-        component: ServiceSingle ,
+        component: ServiceSingle,
     },
-    
+    {
+        path: "/project/single",
+        name: "project.single",
+        component: ProjectSingle,
+    },
 
 ];
 

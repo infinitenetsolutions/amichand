@@ -1,7 +1,5 @@
 <template>
     <div>
-
-
         <!-- Inner Section Start -->
         <section class="inner-area parallax-bg" data-background="images/bg/px-1.jpg" data-type="parallax"
             data-speed="3">
@@ -26,7 +24,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="project-thumb">
-                                    <img src="images/projects/details-1.jpg" alt="">
+                                    <img  src="images/projects/details-1.jpg" alt="">
                                 </div>
                             </div>
                         </div>

@@ -11,7 +11,7 @@
                     <div class="row">
                         <div class="col-12">
                             <h4>Projects</h4>
-                            <p>Home <a href="#">Projects</a></p>
+                            <p>Home <router-link :to="{name:'project.single'}">Projects</router-link></p>
                         </div>
                     </div>
                 </div>
@@ -31,12 +31,12 @@
                                     <div class="counter-item">
                                         <h1>01</h1>
                                     </div>
-                                    <h3><a href="#">Power Energy</a></h3>
+                                    <h3><router-link :to="{name:'project.single'}">Power Energy</router-link></h3>
                                 </div>
                             </div>
                             <div class="text-bottom">
                                 <h4>consectetur adipisicing elit sitm Mollitia obcaecati quaerat ome impedit</h4>
-                                <a class="project-btn" href="#">View Project</a>
+                                <router-link class="project-btn" :to="{name:'project.single'}">View Project</router-link>
                             </div>
                         </div>
                     </div>
@@ -48,12 +48,12 @@
                                     <div class="counter-item">
                                         <h1>02</h1>
                                     </div>
-                                    <h3><a href="#">Power Energy</a></h3>
+                                    <h3><router-link :to="{name:'project.single'}">Power Energy</router-link></h3>
                                 </div>
                             </div>
                             <div class="text-bottom">
                                 <h4>consectetur adipisicing elit sitm Mollitia obcaecati quaerat ome impedit</h4>
-                                <a class="project-btn" href="#">View Project</a>
+                                <router-link class="project-btn" :to="{name:'project.single'}">View Project</router-link>
                             </div>
                         </div>
                     </div>
@@ -65,12 +65,12 @@
                                     <div class="counter-item">
                                         <h1>03</h1>
                                     </div>
-                                    <h3><a href="#">Power Energy</a></h3>
+                                    <h3><router-link :to="{name:'project.single'}">Power Energy</router-link></h3>
                                 </div>
                             </div>
                             <div class="text-bottom">
                                 <h4>consectetur adipisicing elit sitm Mollitia obcaecati quaerat ome impedit</h4>
-                                <a class="project-btn" href="#">View Project</a>
+                                <router-link class="project-btn" :to="{name:'project.single'}">View Project</router-link>
                             </div>
                         </div>
                     </div>
@@ -82,12 +82,12 @@
                                     <div class="counter-item">
                                         <h1>04</h1>
                                     </div>
-                                    <h3><a href="#">Power Energy</a></h3>
+                                    <h3><router-link :to="{name:'project.single'}">Power Energy</router-link></h3>
                                 </div>
                             </div>
                             <div class="text-bottom">
                                 <h4>consectetur adipisicing elit sitm Mollitia obcaecati quaerat ome impedit</h4>
-                                <a class="project-btn" href="#">View Project</a>
+                                <router-link class="project-btn" :to="{name:'project.single'}">View Project</router-link>
                             </div>
                         </div>
                     </div>
@@ -99,12 +99,12 @@
                                     <div class="counter-item">
                                         <h1>05</h1>
                                     </div>
-                                    <h3><a href="#">Power Energy</a></h3>
+                                    <h3><router-link :to="{name:'project.single'}">Power Energy</router-link></h3>
                                 </div>
                             </div>
                             <div class="text-bottom">
                                 <h4>consectetur adipisicing elit sitm Mollitia obcaecati quaerat ome impedit</h4>
-                                <a class="project-btn" href="#">View Project</a>
+                                <router-link class="project-btn" :to="{name:'project.single'}">View Project</router-link>
                             </div>
                         </div>
                     </div>
@@ -116,12 +116,12 @@
                                     <div class="counter-item">
                                         <h1>06</h1>
                                     </div>
-                                    <h3><a href="#">Power Energy</a></h3>
+                                    <h3><router-link :to="{name:'project.single'}">Power Energy</router-link></h3>
                                 </div>
                             </div>
                             <div class="text-bottom">
                                 <h4>consectetur adipisicing elit sitm Mollitia obcaecati quaerat ome impedit</h4>
-                                <a class="project-btn" href="#">View Project</a>
+                                <router-link class="project-btn" :to="{name:'project.single'}">View Project</router-link>
                             </div>
                         </div>
                     </div>
@@ -136,11 +136,11 @@
                     <div class="col-md-12">
                         <div class="page-link-item">
                             <ul>
-                                <li><a class="flaticon-left-arrow-1" href="#"></a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a class="active" href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a class="flaticon-right-arrow-1" href="#"></a></li>
+                                <li><router-link class="flaticon-left-arrow-1" :to="{name:'project.single'}"></router-link></li>
+                                <li><router-link :to="{name:'project.single'}">1</router-link></li>
+                                <li><router-link class="active" :to="{name:'project.single'}">2</router-link></li>
+                                <li><router-link :to="{name:'project.single'}">3</router-link></li>
+                                <li><router-link class="flaticon-right-arrow-1" :to="{name:'project.single'}"></router-link></li>
                             </ul>
                         </div>
                     </div>
