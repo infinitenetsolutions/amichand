@@ -84,24 +84,7 @@
                                         <!-- mega-menu end -->
                                         <li class="nav-item dropdown">
                                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">Services</a>
-                                            <div class="dropdown-menu left-1">
-                                                <div class="dropdown">
-                                                    <router-link class="dropdown-item" :to="{name:'services'}">PLC
-                                                    </router-link>
-                                                    <router-link class="dropdown-item" :to="{name:'services'}">
-                                                        Retrofitting Services</router-link>
-                                                    <router-link class="dropdown-item" :to="{name:'services'}">
-                                                        Electromechanical & Numerical </router-link>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- mega-menu start -->
-
-                                        <!-- mega-menu end -->
-                                        <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">Projects</a>
+                                                aria-haspopup="true" aria-expanded="false">Products</a>
                                             <div class="dropdown-menu left-1">
                                                 <ul class="dropdown">
                                                     <li>
@@ -121,6 +104,22 @@
                                             </div>
                                         </li>
 
+                                        <!-- mega-menu end -->
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">Services</a>
+                                            <div class="dropdown-menu left-1">
+                                                <div class="dropdown">
+                                                    <router-link class="dropdown-item" :to="{name:'services'}">PLC
+                                                    </router-link>
+                                                    <router-link class="dropdown-item" :to="{name:'services'}">
+                                                        Retrofitting Services</router-link>
+                                                    <router-link class="dropdown-item" :to="{name:'services'}">
+                                                        Electromechanical & Numerical </router-link>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- mega-menu start -->
 
 
                                         <li class="nav-item dropdown">
