@@ -23623,7 +23623,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   data: function data() {
     return {
       clients: [],
-      imagehost: sessionStorage.getItem('imagehost') + 'clients/'
+      imagehost: this.$imghost + 'clients/'
     };
   },
   created: function created() {
@@ -23637,7 +23637,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             case 0:
               _context.prev = 0;
               _context.next = 3;
-              return axios.get(sessionStorage.getItem('host') + "clients");
+              return axios.get(_this.$host + "clients");
 
             case 3:
               res = _context.sent;

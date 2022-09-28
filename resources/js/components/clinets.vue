@@ -18,12 +18,12 @@ export default {
     data() {
         return {
             clients: [],
-            imagehost: sessionStorage.getItem('imagehost') + 'clients/'
+            imagehost: this.$imghost + 'clients/'
         };
     },
     async created() {
         try {
-            const res = await axios.get(sessionStorage.getItem('host') + "clients");
+            const res = await axios.get(this.$host + "clients");
             this.clients = res.data;
         } catch (error) {
             console.log(error);
