@@ -376,8 +376,8 @@ input:-moz-placeholder {
 =====*****=====*****=====*****=====*****/
 
 .section-title {
-    margin: 0 auto 62px;
-    padding: 0;
+  margin: -62px auto -18px;
+  padding: 0;
     position: relative;
     text-align: center;
 }

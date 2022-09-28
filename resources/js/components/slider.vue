@@ -42,10 +42,11 @@
                     <!-- End of Slide -->
 
                     <!-- Third Slide -->
-                    <div class="carousel-item">
+
+                    <div v-for="item in items" :key="item.id" class="carousel-item">
 
                         <!-- Slide Background -->
-                        <img src="images/slider/2.jpg" alt="Slider Images" class="slide-image" />
+                        <img v-bind:src="imagehost+item.image_name" alt="Slider Images" class="slide-image" />
                         <div class="bs-slider-overlay"></div>
 
                         <div class="container">
@@ -54,46 +55,22 @@
                                 <!-- Slide Text Layer -->
                                 <div class="slide-text slide-style-right">
                                     <div class="sub-title">
-                                        <h4>we provide</h4>
+                                        <h4>{{ item.title}} </h4>
                                     </div>
                                     <div class="title-box">
-                                        <h2>We are the best industrial company <br> in the world </h2>
+                                        <h2>{{ item.sub_title }} </h2>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="#" class="btn-theme">Read more</a>
+                                        <a href="{{item.virtual_image_name}}" class="btn-theme">Read more</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <!-- End of Slide -->
 
-                    <!-- Third Slide -->
-                    <div class="carousel-item">
 
-                        <!-- Slide Background -->
-                        <img src="images/slider/3.jpg" alt="Slider Images" class="slide-image" />
-                        <div class="bs-slider-overlay"></div>
-
-                        <div class="container">
-
-                            <div class="row">
-                                <!-- Slide Text Layer -->
-                                <div class="slide-text slide-style-center">
-                                    <div class="sub-title">
-                                        <h4>we provide</h4>
-                                    </div>
-                                    <div class="title-box">
-                                        <h2>We are the best industrial company <br> in the world </h2>
-                                    </div>
-                                    <div class="btn-box">
-                                        <a href="#" class="btn-theme">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Slide -->
 
                 </div><!-- End of Wrapper For Slides -->
 
@@ -114,3 +91,28 @@
         <!-- Slick Section End -->
     </div>
 </template>
+
+<script>
+
+
+import axios from "axios";
+export default {
+    name: "slider",
+    data() {
+        return {
+            items: [],
+            imagehost: this.$imghost + 'slider/'
+        };
+    },
+    async created() {
+        try {
+            const res = await axios.get(this.$host + "slider");
+            this.items = res.data;
+        } catch (error) {
+            console.log(error);
+        }
+    },
+};
+
+
+</script>

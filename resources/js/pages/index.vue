@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="section-title">
                     <!-- <h4>OUR Services</h4> -->
-                    <h2>Our <span>Projects</span></h2>
+                    <h2>Our <span>Products</span></h2>
                     <p>Consectetur adipisicing elit. Excepturi nemo tenetur veniam repellat earum inventore modi
                         omnis.</p>
                 </div>
@@ -426,6 +426,20 @@ export default {
         sliderVue,
         testimonialVue
 
-    }
+    },
+    data() {
+        return {
+            projects: [],
+            imagehost: this.$host + 'projects/'
+        };
+    },
+    async created() {
+        try {
+            const res = await axios.get(this.$host + "projects");
+            this.items = res.data;
+        } catch (error) {
+            console.log(error);
+        }
+    },
 }
 </script>

@@ -1,51 +1,40 @@
 <template>
-    <div>
-    <!-- Client Section Start -->
-    <section class="client-section bg-f7 pb-70 pt-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="client_carousel" class="owl-carousel">
-                        <div class="item">
-                            <div class="client-img-item">
-                                <img src="images/partner/1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="client-img-item">
-                                <img src="images/partner/2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="client-img-item">
-                                <img src="images/partner/3.png" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="client-img-item">
-                                <img src="images/partner/4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="client-img-item">
-                                <img src="images/partner/5.png" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="client-img-item">
-                                <img src="images/partner/6.png" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="client-img-item">
-                                <img src="images/partner/2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Client Section End -->
+    <div class="bg-secondary p-2">
+        <split-carousel>
+            <split-carousel-item v-for="item in clients" :key="item.id">
+                <img v-bind:src="imagehost+item.images" alt="">
+            </split-carousel-item>
+        </split-carousel>
     </div>
 </template>
+  
+<script>
+import { SplitCarousel, SplitCarouselItem } from "vue-split-carousel";
+export default {
+    components: {
+        SplitCarousel,
+        SplitCarouselItem
+    },
+    data() {
+        return {
+            clients: [],
+            imagehost: sessionStorage.getItem('imagehost') + 'clients/'
+        };
+    },
+    async created() {
+        try {
+            const res = await axios.get(sessionStorage.getItem('host') + "clients");
+            this.clients = res.data;
+        } catch (error) {
+            console.log(error);
+        }
+    },
+};
+</script>
+  
+<style>
+.lol {
+
+    margin: 10px auto;
+}
+</style>
