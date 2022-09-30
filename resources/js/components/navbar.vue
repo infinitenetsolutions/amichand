@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="preloader"></div>
+       
 
         <!-- Start Page Wrapper  -->
         <div class="page-wrapper">
