@@ -52,12 +52,12 @@ const routes = [
     },
 
     {
-        path: "/services/single/:name",
+        path: "/services/single",
         name: "service.single",
         component: ServiceSingle,
     },
     {
-        path: "/project/single",
+        path: "/project/single/:name",
         name: "project.single",
         component: ProjectSingle,
     },

@@ -1,8 +1,5 @@
 <template>
     <div>
-
-
-
         <!-- Inner Section Start -->
         <section class="inner-area parallax-bg" data-background="images/bg/px-1.jpg" data-type="parallax"
             data-speed="3">
@@ -11,7 +8,7 @@
                     <div class="row">
                         <div class="col-12">
                             <h4>Products</h4>
-                            <p>Home <router-link :to="{name:'project.single'}">Products</router-link>
+                            <p>Home <router-link :to="{name:'home'}">Products</router-link>
                             </p>
                         </div>
                     </div>
@@ -33,13 +30,13 @@
                                         <h1>01</h1>
                                     </div>
                                     <h3>
-                                        <router-link :to="{name:'project.single',params: { name: 'erina' }}">{{item.log_title}}</router-link>
+                                        <router-link :to="{name:'project.single',params: { name: item.slug }}">{{item.log_title}}</router-link>
                                     </h3>
                                 </div>
                             </div>
                             <div class="text-bottom">
                                 <h4>{{item.log_description}}</h4>
-                                <router-link class="project-btn" to="projects/single/:name">View Project
+                                <router-link class="project-btn" :to="{name:'project.single',params: { name: item.slug }}">View Project
                                 </router-link>
                             </div>
                         </div>

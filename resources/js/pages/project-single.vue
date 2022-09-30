@@ -1,14 +1,14 @@
 <template>
     <div>
         <!-- Inner Section Start -->
-        <section class="inner-area parallax-bg" data-background="images/bg/px-1.jpg" data-type="parallax"
+        <section class="inner-area parallax-bg" data-background="../../images/bg/px-1.jpg" data-type="parallax"
             data-speed="3">
             <div class="container">
                 <div class="section-content">
                     <div class="row">
                         <div class="col-12">
-                            <h4>Projects details</h4>
-                            <p>Home <a href="#">Projects</a></p>
+                            <h4>Project details</h4>
+                            <p>Home <a href="#">Product</a></p>
                         </div>
                     </div>
                 </div>
@@ -24,7 +24,37 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="project-thumb">
-                                    <img  src="public/images/projects/details-1.jpg" alt="">
+                                    <!-- slider start -->
+                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100"
+                                                    src="https://amichand.com/public/images/slider/1.jpg"
+                                                    alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100"
+                                                    src="https://amichand.com/public/images/slider/1.jpg"
+                                                    alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100"
+                                                    src="https://amichand.com/public/images/slider/1.jpg"
+                                                    alt="Third slide">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                            data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                            data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- slider end -->
                                 </div>
                             </div>
                         </div>
@@ -119,51 +149,32 @@
         <!-- Projects Section End -->
 
         <!-- Client Section Start -->
-        <section class="client-section bg-f7 pb-60 pt-65">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="client_carousel" class="owl-carousel">
-                            <div class="item">
-                                <div class="client-img-item">
-                                    <img src="public/images/partner/1.png" alt="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-img-item">
-                                    <img src="public/images/partner/2.png" alt="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-img-item">
-                                    <img src="public/images/partner/3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-img-item">
-                                    <img src="public/images/partner/4.png" alt="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-img-item">
-                                    <img src="public/images/partner/5.png" alt="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-img-item">
-                                    <img src="public/images/partner/6.png" alt="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-img-item">
-                                    <img src="public/images/partner/2.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <clientsVue />
         <!-- Client Section End -->
     </div>
 </template>
+
+<script>
+import clientsVue from '../components/clinets.vue'
+
+export default {
+    name: 'project-details',
+    components: {
+        clientsVue
+    }
+    ,
+    data() {
+        return {
+            products: [],
+        };
+    },
+    async created() {
+        try {
+            const res = await axios.get(this.$host + "products");
+            this.products = res.data;
+        } catch (error) {
+            console.log(error);
+        }
+    },
+}
+</script>
