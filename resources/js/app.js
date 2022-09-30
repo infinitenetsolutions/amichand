@@ -8,7 +8,7 @@ import SplitCarousel from "vue-split-carousel";
 import VueProgressBar from "@aacassandra/vue3-progressbar";
 const app = createApp(App);
 
-if(location.hostname=="localhost"){
+if(location.hostname=="127.0.0.1"){
     app.config.globalProperties.$host = 'http://127.0.0.1:8000/api/'  //for localhost
     app.config.globalProperties.$imghost = 'http://127.0.0.1:8001/upload/'  //for localhost
 }else{

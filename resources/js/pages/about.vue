@@ -58,7 +58,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="thumb">
-                            <img src="images/features/h-1.jpg" alt="">
+                            <img src="public/images/features/h-1.jpg" alt="">
                             <div class="about-video">
                                 <h4>company video gane</h4>
                                 <a class="about-video-btn" href="#"><i class="flaticon-play-button-3"></i></a>
@@ -85,7 +85,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="team-col">
                             <div class="thumb">
-                                <img src="images/team/1.jpg" alt="">
+                                <img src="public/images/team/1.jpg" alt="">
                             </div>
                             <div class="content text-center">
                                 <h4><a href="#">mikel jackson</a></h4>
@@ -96,7 +96,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="team-col">
                             <div class="thumb">
-                                <img src="images/team/2.jpg" alt="">
+                                <img src="public/images/team/2.jpg" alt="">
                             </div>
                             <div class="content text-center">
                                 <h4><a href="#">CM Punk</a></h4>
@@ -107,7 +107,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="team-col">
                             <div class="thumb">
-                                <img src="images/team/3.jpg" alt="">
+                                <img src="public/images/team/3.jpg" alt="">
                             </div>
                             <div class="content text-center">
                                 <h4><a href="#">Hulk Hogan</a></h4>
@@ -118,7 +118,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="team-col">
                             <div class="thumb">
-                                <img src="images/team/4.jpg" alt="">
+                                <img src="public/images/team/4.jpg" alt="">
                             </div>
                             <div class="content text-center">
                                 <h4><a href="#">André the Giant</a></h4>

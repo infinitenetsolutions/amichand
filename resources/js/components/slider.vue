@@ -19,7 +19,7 @@
                     <div class="carousel-item active">
 
                         <!-- Slide Background -->
-                        <img src="images/slider/1.jpg" alt="Slider Images" class="slide-image" />
+                        <img src="public/images/slider/1.jpg" alt="Slider Images" class="slide-image" />
                         <div class="bs-slider-overlay"></div>
 
                         <div class="container">

@@ -81,7 +81,7 @@
                     <div class="container">
                         <!-- header dropdown buttons end-->
                         <a class="navbar-brand" href="index-2.html">
-                            <img id="logo_img" src="images/logo-2.png" alt=""></a>
+                            <img id="logo_img" src="public/images/logo-2.png" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbar-collapse-1" aria-controls="navbar-collapse-1" aria-expanded="false"
                                 aria-label="Toggle navigation">
@@ -230,17 +230,17 @@
                                     <ul class="dropdown-menu dropdown-menu-right cart dropdown-animation"
                                         aria-labelledby="header-drop-4">
                                         <li class="product-item">
-                                            <img src="images/shop/1.jpg" alt="">
+                                            <img src="public/images/shop/1.jpg" alt="">
                                             <a href="#">product name</a>
                                             <span>49.00</span>
                                         </li>
                                         <li class="product-item">
-                                            <img src="images/shop/2.jpg" alt="">
+                                            <img src="public/images/shop/2.jpg" alt="">
                                             <a href="#">product name</a>
                                             <span>80.00</span>
                                         </li>
                                         <li class="product-item">
-                                            <img src="images/shop/2.jpg" alt="">
+                                            <img src="public/images/shop/2.jpg" alt="">
                                             <a href="#">product name</a>
                                             <span>80.00</span>
                                         </li>
@@ -288,7 +288,7 @@
           <div class="row">
             <div class="col-md-3">
                 <div class="footer-item footer-widget-one">
-                  <img class="footer-logo mb-25" src="images/logo-1.png" alt="">
+                  <img class="footer-logo mb-25" src="public/images/logo-1.png" alt="">
                 <p>Dolorum quae quis cumque officia labore delectus at animi ducimus non nisi, dolores sapiente</p>
                   <hr>
                   <h6>Follow<span> Us</span></h6>
@@ -386,24 +386,24 @@
       <!------------------------------------------
         Main JavaScript
       <------------------------------------------>
-      <script src="js/jquery-3.2.1.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
+      <script src="public/js/jquery-3.2.1.min.js"></script>
+      <script src="public/js/popper.min.js"></script>
+      <script src="public/js/bootstrap.min.js"></script>
 
 
       <!-- Optional JavaScript -->
-      <script src="js/bootstrap-dropdownhover.min.js"></script>
-      <script src="js/bootstrap-slider.js"></script>
-      <script src="js/jquery.flexslider-min.js"></script>
-      <script src="js/slick.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/css3-animate-it.js"></script>
-      <script src="js/magnific-popup.min.js"></script>
-      <script src="js/jquery.fancybox.js"></script>
-      <script src="js/player-min.js"></script>
+      <script src="public/js/bootstrap-dropdownhover.min.js"></script>
+      <script src="public/js/bootstrap-slider.js"></script>
+      <script src="public/js/jquery.flexslider-min.js"></script>
+      <script src="public/js/slick.min.js"></script>
+      <script src="public/js/owl.carousel.min.js"></script>
+      <script src="public/js/css3-animate-it.js"></script>
+      <script src="public/js/magnific-popup.min.js"></script>
+      <script src="public/js/jquery.fancybox.js"></script>
+      <script src="public/js/player-min.js"></script>
 
       <!-- Custom JavaScript -->
-      <script src="js/script.js"></script>
+      <script src="public/js/script.js"></script>
 
 </body>
 

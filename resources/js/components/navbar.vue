@@ -43,7 +43,7 @@
                             <div class="container">
                                 <!-- header dropdown buttons end-->
                                 <router-link class="navbar-brand" :to="{name:'home'}">
-                                    <img id="logo_img" src="images/logo-1.png" alt="">
+                                    <img id="logo_img" src="public/images/logo-1.png" alt="">
                                 </router-link>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbar-collapse-1" aria-controls="navbar-collapse-1"

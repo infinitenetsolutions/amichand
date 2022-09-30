@@ -77,7 +77,7 @@
                     <div class="col-md-12 col-lg-8">
                         <div class="service-details">
                             <div class="thumb">
-                                <img src="images/service/details-1.jpg" alt="">
+                                <img src="public/images/service/details-1.jpg" alt="">
                             </div>
                             <div class="content">
                                 <h4>Industry Construction</h4>

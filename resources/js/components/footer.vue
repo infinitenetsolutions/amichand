@@ -7,7 +7,7 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-12">
                             <div class="footer-item footer-widget-one">
-                                <img class="footer-logo mb-25" src="images/logo-1.png" alt="">
+                                <img class="footer-logo mb-25" src="public/images/logo-1.png" alt="">
                                 <p>Dolorum quae quis cumque officia labore delectus at animi ducimus non nisi, dolores
                                     sapiente</p>
                                 <hr>

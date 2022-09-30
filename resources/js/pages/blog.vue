@@ -23,7 +23,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="blog-post">
                             <div class="thumb">
-                                <img alt="" src="images/blog/1.jpg">
+                                <img alt="" src="public/images/blog/1.jpg">
                             </div>
                             <div class="date-box">
                                 <div class="inner">
@@ -47,7 +47,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="blog-post">
                             <div class="thumb">
-                                <img alt="" src="images/blog/2.jpg">
+                                <img alt="" src="public/images/blog/2.jpg">
                             </div>
                             <div class="date-box">
                                 <div class="inner">
@@ -71,7 +71,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="blog-post">
                             <div class="thumb">
-                                <img alt="" src="images/blog/3.jpg">
+                                <img alt="" src="public/images/blog/3.jpg">
                             </div>
                             <div class="date-box">
                                 <div class="inner">
@@ -95,7 +95,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="blog-post">
                             <div class="thumb">
-                                <img alt="" src="images/blog/2.jpg">
+                                <img alt="" src="public/images/blog/2.jpg">
                             </div>
                             <div class="date-box">
                                 <div class="inner">
@@ -119,7 +119,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="blog-post">
                             <div class="thumb">
-                                <img alt="" src="images/blog/3.jpg">
+                                <img alt="" src="public/images/blog/3.jpg">
                             </div>
                             <div class="date-box">
                                 <div class="inner">
@@ -143,7 +143,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="blog-post">
                             <div class="thumb">
-                                <img alt="" src="images/blog/1.jpg">
+                                <img alt="" src="public/images/blog/1.jpg">
                             </div>
                             <div class="date-box">
                                 <div class="inner">
@@ -197,37 +197,37 @@
                         <div id="client_carousel" class="owl-carousel">
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/1.png" alt="">
+                                    <img src="public/images/partner/1.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/2.png" alt="">
+                                    <img src="public/images/partner/2.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/3.png" alt="">
+                                    <img src="public/images/partner/3.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/4.png" alt="">
+                                    <img src="public/images/partner/4.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/5.png" alt="">
+                                    <img src="public/images/partner/5.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/6.png" alt="">
+                                    <img src="public/images/partner/6.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/2.png" alt="">
+                                    <img src="public/images/partner/2.png" alt="">
                                 </div>
                             </div>
                         </div>

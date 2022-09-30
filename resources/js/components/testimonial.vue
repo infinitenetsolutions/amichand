@@ -16,7 +16,7 @@
                             <div class="item">
                                 <div class="testimonials-item">
                                     <div class="thumb">
-                                        <img src="images/testimonials/1.jpg" alt="">
+                                        <img src="public/images/testimonials/1.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <p><i class="fa fa-quote-left"></i>The others comfortable these days are all
@@ -30,7 +30,7 @@
                             <div class="item">
                                 <div class="testimonials-item">
                                     <div class="thumb">
-                                        <img src="images/testimonials/2.jpg" alt="">
+                                        <img src="public/images/testimonials/2.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <p><i class="fa fa-quote-left"></i>The others comfortable these days are all
@@ -44,7 +44,7 @@
                             <div class="item">
                                 <div class="testimonials-item">
                                     <div class="thumb">
-                                        <img src="images/testimonials/3.jpg" alt="">
+                                        <img src="public/images/testimonials/3.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <p><i class="fa fa-quote-left"></i>The others comfortable these days are all

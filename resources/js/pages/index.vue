@@ -10,7 +10,7 @@
                 <div class="col-md-4">
                     <div class="welcome-feature">
                         <div class="thumb">
-                            <img src="images/features/1.jpg" alt="features img">
+                            <img src="public/images/features/1.jpg" alt="features img">
                         </div>
                         <div class="content">
                             <div class="icon-box">
@@ -23,7 +23,7 @@
                 <div class="col-md-4">
                     <div class="welcome-feature">
                         <div class="thumb">
-                            <img src="images/features/2.jpg" alt="features img">
+                            <img src="public/images/features/2.jpg" alt="features img">
                         </div>
                         <div class="content">
                             <div class="icon-box">
@@ -36,7 +36,7 @@
                 <div class="col-md-4">
                     <div class="welcome-feature">
                         <div class="thumb">
-                            <img src="images/features/3.jpg" alt="features img">
+                            <img src="public/images/features/3.jpg" alt="features img">
                         </div>
                         <div class="content">
                             <div class="icon-box">
@@ -66,7 +66,7 @@
                 <div class="col-md-4">
                     <div class="service-item style-4">
                         <div class="thumb">
-                            <img alt="service img" src="images/service/1.jpg">
+                            <img alt="service img" src="public/images/service/1.jpg">
                             <div class="service-link-box">
                                 <a href="#">Read More</a>
                             </div>
@@ -81,7 +81,7 @@
                 <div class="col-md-4">
                     <div class="service-item style-4">
                         <div class="thumb">
-                            <img alt="service img" src="images/service/2.jpg">
+                            <img alt="service img" src="public/images/service/2.jpg">
                             <div class="service-link-box">
                                 <a href="#">Read More</a>
                             </div>
@@ -96,7 +96,7 @@
                 <div class="col-md-4">
                     <div class="service-item style-4">
                         <div class="thumb">
-                            <img alt="service img" src="images/service/3.jpg">
+                            <img alt="service img" src="public/images/service/3.jpg">
                             <div class="service-link-box">
                                 <a href="#">Read More</a>
                             </div>
@@ -110,7 +110,7 @@
                 <div class="col-md-4">
                     <div class="service-item style-4">
                         <div class="thumb">
-                            <img alt="service img" src="images/service/4.jpg">
+                            <img alt="service img" src="public/images/service/4.jpg">
                             <div class="service-link-box">
                                 <a href="#">Read More</a>
                             </div>
@@ -124,7 +124,7 @@
                 <div class="col-md-4">
                     <div class="service-item style-4">
                         <div class="thumb">
-                            <img alt="service img" src="images/service/5.jpg">
+                            <img alt="service img" src="public/images/service/5.jpg">
                             <div class="service-link-box">
                                 <a href="#">Read More</a>
                             </div>
@@ -138,7 +138,7 @@
                 <div class="col-md-4">
                     <div class="service-item style-4">
                         <div class="thumb">
-                            <img alt="service img" src="images/service/6.jpg">
+                            <img alt="service img" src="public/images/service/6.jpg">
                             <div class="service-link-box">
                                 <a href="#">Read More</a>
                             </div>
@@ -197,7 +197,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="thumb">
-                        <img src="images/features/h-1.jpg" alt="">
+                        <img src="public/images/features/h-1.jpg" alt="">
                         <div class="about-video">
                             <h4>company video gane</h4>
                             <a class="about-video-btn" href="#"><i class="flaticon-play-button-3"></i></a>
@@ -227,7 +227,7 @@
                         <div class="item">
                             <div class="projects-item">
                                 <div class="thumb">
-                                    <img src="images/projects/1.jpg" alt="">
+                                    <img src="public/images/projects/1.jpg" alt="">
                                 </div>
                                 <div class="content">
                                     <h1>01</h1>
@@ -241,7 +241,7 @@
                         <div class="item">
                             <div class="projects-item">
                                 <div class="thumb">
-                                    <img src="images/projects/2.jpg" alt="">
+                                    <img src="public/images/projects/2.jpg" alt="">
                                 </div>
                                 <div class="content">
                                     <h1>02</h1>
@@ -255,7 +255,7 @@
                         <div class="item">
                             <div class="projects-item">
                                 <div class="thumb">
-                                    <img src="images/projects/3.jpg" alt="">
+                                    <img src="public/images/projects/3.jpg" alt="">
                                 </div>
                                 <div class="content">
                                     <h1>03</h1>
@@ -269,7 +269,7 @@
                         <div class="item">
                             <div class="projects-item">
                                 <div class="thumb">
-                                    <img src="images/projects/4.jpg" alt="">
+                                    <img src="public/images/projects/4.jpg" alt="">
                                 </div>
                                 <div class="content">
                                     <h1>04</h1>
@@ -329,7 +329,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-post">
                         <div class="thumb">
-                            <img alt="" src="images/blog/1.jpg">
+                            <img alt="" src="public/images/blog/1.jpg">
                         </div>
                         <div class="date-box">
                             <div class="inner">
@@ -354,7 +354,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-post">
                         <div class="thumb">
-                            <img alt="" src="images/blog/2.jpg">
+                            <img alt="" src="public/images/blog/2.jpg">
                         </div>
                         <div class="date-box">
                             <div class="inner">
@@ -379,7 +379,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-post">
                         <div class="thumb">
-                            <img alt="" src="images/blog/3.jpg">
+                            <img alt="" src="public/images/blog/3.jpg">
                         </div>
                         <div class="date-box">
                             <div class="inner">

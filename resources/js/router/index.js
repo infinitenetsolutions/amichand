@@ -52,7 +52,7 @@ const routes = [
     },
 
     {
-        path: "/services/single",
+        path: "/services/single/:name",
         name: "service.single",
         component: ServiceSingle,
     },

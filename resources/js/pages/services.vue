@@ -26,7 +26,7 @@
                     <div class="col-md-4">
                         <div class="service-item style-4">
                             <div class="thumb">
-                                <img alt="service img" src="images/service/1.jpg">
+                                <img alt="service img" src="public/images/service/1.jpg">
                                 <div class="service-link-box">
                                     <router-link :to="{name:'service.single'}">Read More</router-link>
                                 </div>
@@ -40,7 +40,7 @@
                     <div class="col-md-4">
                         <div class="service-item style-4">
                             <div class="thumb">
-                                <img alt="service img" src="images/service/2.jpg">
+                                <img alt="service img" src="public/images/service/2.jpg">
                                 <div class="service-link-box">
                                     <router-link :to="{name:'service.single'}">Read More</router-link>
                                 </div>
@@ -54,7 +54,7 @@
                     <div class="col-md-4">
                         <div class="service-item style-4">
                             <div class="thumb">
-                                <img alt="service img" src="images/service/3.jpg">
+                                <img alt="service img" src="public/images/service/3.jpg">
                                 <div class="service-link-box">
                                     <router-link :to="{name:'service.single'}">Read More</router-link>
                                 </div>
@@ -68,7 +68,7 @@
                     <div class="col-md-4">
                         <div class="service-item style-4">
                             <div class="thumb">
-                                <img alt="service img" src="images/service/4.jpg">
+                                <img alt="service img" src="public/images/service/4.jpg">
                                 <div class="service-link-box">
                                     <router-link :to="{name:'service.single'}">Read More</router-link>
                                 </div>
@@ -82,7 +82,7 @@
                     <div class="col-md-4">
                         <div class="service-item style-4">
                             <div class="thumb">
-                                <img alt="service img" src="images/service/5.jpg">
+                                <img alt="service img" src="public/images/service/5.jpg">
                                 <div class="service-link-box">
                                     <router-link :to="{name:'service.single'}">Read More</router-link>
                                 </div>
@@ -96,7 +96,7 @@
                     <div class="col-md-4">
                         <div class="service-item style-4">
                             <div class="thumb">
-                                <img alt="service img" src="images/service/6.jpg">
+                                <img alt="service img" src="public/images/service/6.jpg">
                                 <div class="service-link-box">
                                     <router-link :to="{name:'service.single'}">Read More</router-link>
                                 </div>

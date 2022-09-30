@@ -24,7 +24,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="project-thumb">
-                                    <img  src="images/projects/details-1.jpg" alt="">
+                                    <img  src="public/images/projects/details-1.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -126,37 +126,37 @@
                         <div id="client_carousel" class="owl-carousel">
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/1.png" alt="">
+                                    <img src="public/images/partner/1.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/2.png" alt="">
+                                    <img src="public/images/partner/2.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/3.png" alt="">
+                                    <img src="public/images/partner/3.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/4.png" alt="">
+                                    <img src="public/images/partner/4.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/5.png" alt="">
+                                    <img src="public/images/partner/5.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/6.png" alt="">
+                                    <img src="public/images/partner/6.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/2.png" alt="">
+                                    <img src="public/images/partner/2.png" alt="">
                                 </div>
                             </div>
                         </div>

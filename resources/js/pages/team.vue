@@ -26,7 +26,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="team-col">
                             <div class="thumb">
-                                <img src="images/team/1.jpg" alt="">
+                                <img src="public/images/team/1.jpg" alt="">
                             </div>
                             <div class="content text-center">
                                 <h4><a href="#">mikel jackson</a></h4>
@@ -37,7 +37,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="team-col">
                             <div class="thumb">
-                                <img src="images/team/2.jpg" alt="">
+                                <img src="public/images/team/2.jpg" alt="">
                             </div>
                             <div class="content text-center">
                                 <h4><a href="#">CM Punk</a></h4>
@@ -48,7 +48,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="team-col">
                             <div class="thumb">
-                                <img src="images/team/3.jpg" alt="">
+                                <img src="public/images/team/3.jpg" alt="">
                             </div>
                             <div class="content text-center">
                                 <h4><a href="#">Hulk Hogan</a></h4>
@@ -59,7 +59,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="team-col">
                             <div class="thumb">
-                                <img src="images/team/4.jpg" alt="">
+                                <img src="public/images/team/4.jpg" alt="">
                             </div>
                             <div class="content text-center">
                                 <h4><a href="#">André the Giant</a></h4>
@@ -70,7 +70,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="team-col">
                             <div class="thumb">
-                                <img src="images/team/5.jpg" alt="">
+                                <img src="public/images/team/5.jpg" alt="">
                             </div>
                             <div class="content text-center">
                                 <h4><a href="#">The Rock</a></h4>
@@ -81,7 +81,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="team-col">
                             <div class="thumb">
-                                <img src="images/team/6.jpg" alt="">
+                                <img src="public/images/team/6.jpg" alt="">
                             </div>
                             <div class="content text-center">
                                 <h4><a href="#">Dusty Rhodes</a></h4>
@@ -92,7 +92,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="team-col">
                             <div class="thumb">
-                                <img src="images/team/7.jpg" alt="">
+                                <img src="public/images/team/7.jpg" alt="">
                             </div>
                             <div class="content text-center">
                                 <h4><a href="#">md. kalnagin</a></h4>
@@ -103,7 +103,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="team-col">
                             <div class="thumb">
-                                <img src="images/team/8.jpg" alt="">
+                                <img src="public/images/team/8.jpg" alt="">
                             </div>
                             <div class="content text-center">
                                 <h4><a href="#">mikel jackson</a></h4>

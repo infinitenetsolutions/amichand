@@ -23,7 +23,7 @@
                     <div class="col-md-8 col-lg-9">
                         <div class="blog-details">
                             <div class="details-thumb">
-                                <img src="images/blog/details-1.jpg" alt="">
+                                <img src="public/images/blog/details-1.jpg" alt="">
                             </div>
                             <div class="details-content mb-40">
                                 <h4>Travelling salesman and above it there hung</h4>
@@ -79,7 +79,7 @@
 
                             <!-- Blog Post Author -->
                             <div class="blog-admin mb-5">
-                                <img src="images/blog/a1.jpg" alt="">
+                                <img src="public/images/blog/a1.jpg" alt="">
                                 <div class="blog-admin-desc">
                                     <div class="clearfix">
                                         <h5>mikel jackson</h5>
@@ -103,7 +103,7 @@
                             <!-- Blog Comments -->
                             <div class="row blog-comments mb-4">
                                 <div class="col-sm-2">
-                                    <img src="images/blog/a2.jpg" alt="">
+                                    <img src="public/images/blog/a2.jpg" alt="">
                                 </div>
                                 <div class="col-sm-10">
                                     <div class="comment">
@@ -123,7 +123,7 @@
                             <!-- Blog Comments -->
                             <div class="row blog-comments blog-comments-reply mb-4">
                                 <div class="col-sm-2">
-                                    <img src="images/blog/a1.jpg" alt="">
+                                    <img src="public/images/blog/a1.jpg" alt="">
                                 </div>
                                 <div class="col-sm-10">
                                     <div class="comment">
@@ -142,7 +142,7 @@
                             <!-- Blog Comments -->
                             <div class="row blog-comments mb-5">
                                 <div class="col-sm-2">
-                                    <img src="images/blog/a3.jpg" alt="">
+                                    <img src="public/images/blog/a3.jpg" alt="">
                                 </div>
                                 <div class="col-sm-10">
                                     <div class="comment">
@@ -228,19 +228,19 @@
                                     <h3>Recent <span>posts</span></h3>
                                 </div>
                                 <div class="blog-small-item">
-                                    <img src="images/blog/small-1.jpg" alt="">
+                                    <img src="public/images/blog/small-1.jpg" alt="">
                                     <div class="tex">
                                         <h5><a href="#">Travelling salesman and above it there hung.</a></h5>
                                     </div>
                                 </div>
                                 <div class="blog-small-item">
-                                    <img src="images/blog/small-2.jpg" alt="">
+                                    <img src="public/images/blog/small-2.jpg" alt="">
                                     <div class="tex">
                                         <h5><a href="#">Travelling salesman and above it there hung.</a></h5>
                                     </div>
                                 </div>
                                 <div class="blog-small-item">
-                                    <img src="images/blog/small-3.jpg" alt="">
+                                    <img src="public/images/blog/small-3.jpg" alt="">
                                     <div class="tex">
                                         <h5><a href="#">Travelling salesman and above it there hung.</a></h5>
                                     </div>
@@ -277,37 +277,37 @@
                         <div id="client_carousel" class="owl-carousel">
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/1.png" alt="">
+                                    <img src="public/images/partner/1.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/2.png" alt="">
+                                    <img src="public/images/partner/2.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/3.png" alt="">
+                                    <img src="public/images/partner/3.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/4.png" alt="">
+                                    <img src="public/images/partner/4.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/5.png" alt="">
+                                    <img src="public/images/partner/5.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/6.png" alt="">
+                                    <img src="public/images/partner/6.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="client-img-item">
-                                    <img src="images/partner/2.png" alt="">
+                                    <img src="public/images/partner/2.png" alt="">
                                 </div>
                             </div>
                         </div>
