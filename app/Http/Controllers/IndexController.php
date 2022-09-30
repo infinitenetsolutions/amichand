@@ -29,4 +29,5 @@ class IndexController extends Controller
     {
         return DB::table('clients')->get();
     }
+    
 }

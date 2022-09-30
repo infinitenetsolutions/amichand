@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ProductsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +26,5 @@ Route::get('projects', [IndexController::class, 'projects'])->name('projects');
 Route::get('services', [IndexController::class, 'services'])->name('services');
 Route::get('testimonial', [IndexController::class, 'slider'])->name('testimonial');
 Route::get('clients', [IndexController::class, 'clients'])->name('clients');
+Route::get('contact', [ContactController::class, 'index'])->name('contact');
+Route::get('products', [ProductsController::class, 'index'])->name('products');

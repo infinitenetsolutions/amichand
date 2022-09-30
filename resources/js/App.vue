@@ -1,7 +1,6 @@
 <template >
     <div>
         <navbarVue />
-
         <router-view />
         <vue-progress-bar></vue-progress-bar>
         <footerVue />
@@ -13,6 +12,14 @@ import footerVue from './components/footer.vue';
 
 export default {
     name: 'app',
+
+    data() {
+        return {
+            about: [],
+
+        };
+    },
+
     components: {
         navbarVue,
         footerVue,
@@ -22,7 +29,7 @@ export default {
         //  [App.vue specific] When App.vue is finish loading finish the progress bar
         this.$Progress.finish();
     },
-    created() {
+    async created() {
         //  [App.vue specific] When App.vue is first loaded start the progress bar
         this.$Progress.start();
         //  hook the progress bar to start before we move router-view
@@ -43,6 +50,15 @@ export default {
             //  finish the progress bar
             this.$Progress.finish();
         });
+
+        try {
+            const res = await axios.get(this.$host + "contact");
+            this.about = res.data;
+            console.log(this.about);
+        } catch (error) {
+            console.log(error);
+        }
+
     },
 }
 </script>

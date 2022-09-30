@@ -34,7 +34,7 @@
                         <div class="service-item style-1 border-1px">
                             <div class="">
                                 <i class="fas fa-phone-office"></i>
-                                                        </div>
+                            </div>
                             <div class="content">
                                 <h5><a href="#">Contact No.</a></h5>
                                 <p>+91-8292580535 <br> +91-9905167484</p>
@@ -107,3 +107,21 @@
         </section>
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            conact: [],
+          
+        };
+    },
+    async created() {
+        try {
+            const res = await axios.get(this.$host + "contact");
+            this.items = res.data;
+        } catch (error) {
+            console.log(error);
+        }
+    },
+}
+</script>

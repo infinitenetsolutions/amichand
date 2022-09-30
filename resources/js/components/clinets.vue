@@ -1,7 +1,7 @@
 <template>
     <div class="bg-secondary p-2">
         <split-carousel>
-            <split-carousel-item v-for="item in clients" :key="item.id">
+            <split-carousel-item  v-for="item in clients" :key="item.id">
                 <img v-bind:src="imagehost+item.images" alt="">
             </split-carousel-item>
         </split-carousel>
