@@ -17,6 +17,7 @@
         <!-- Inner Section End -->
 
         <!-- Projects Section Start -->
+
         <section class="project-details-section pb-60">
             <div class="container">
                 <div class="row">
@@ -29,19 +30,13 @@
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100"
-                                                    src="https://amichand.com/public/images/slider/1.jpg"
-                                                    alt="First slide">
+                                                    v-bind:src='$imghost+"products/"+images[0].name' alt="First slide">
                                             </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100"
-                                                    src="https://amichand.com/public/images/slider/1.jpg"
+                                            <div class="carousel-item" v-for="item in images" :key="item.id">
+                                                <img class="d-block w-100" v-bind:src='$imghost+"products/"+ item.name'
                                                     alt="Second slide">
                                             </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100"
-                                                    src="https://amichand.com/public/images/slider/1.jpg"
-                                                    alt="Third slide">
-                                            </div>
+
                                         </div>
                                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
                                             data-slide="prev">
@@ -61,22 +56,9 @@
                         <div class="row mb-50">
                             <div class="col-md-8">
                                 <div class="project-title">
-                                    <h3>project <span>overview</span></h3>
+                                    <h3> {{ products.log_title }} </h3>
                                 </div>
-                                <p class="mb-25">It is a long established fact that a reader will be distracted by the
-                                    readable content of a page when looking at its layout. The point of using Lorem
-                                    Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                                    using 'Content here, content here', making it look like readable English. Many
-                                    desktop publishing packages and web page editors now use Lorem Ipsum as their
-                                    default model text, and a search for 'lorem ipsum' will uncover many web sites still
-                                    in their infancy. Various versions have evolved over the years, sometimes by
-                                    accident, sometimes on purpose (injected humour and the like).It is a long
-                                    established fact that a reader will be distracted by the readable content of a page
-                                    when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                    more-or-less normal distribution of letters, as opposed to using 'Content here,
-                                    content here', making it look like readable English. Many desktop publishing
-                                    packages and web page editors now use Lorem Ipsum as their default model text, and a
-                                    search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                                <p class="mb-25">{{products.log_description}}</p>
                                 <ul class="project-social">
                                     <span>Share:</span>
                                     <li><a href="#"><i class="flaticon-facebook-logo"></i></a></li>
@@ -87,59 +69,41 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="details-tag">
-                                    <ul>
+                                    <ul v-for="item in category" :key="item.id">
                                         <li>
-                                            <span>Project Category</span>
+                                            <span> <router-link class="text-white" :to="{name:'projects',}" >{{item.name}}</router-link></span>
                                             <span>Agriculture</span>
                                         </li>
-                                        <li>
-                                            <span>Date </span>
-                                            <span>21 March, 2018</span>
-                                        </li>
-                                        <li>
-                                            <span>Project Status</span>
-                                            <span>Running</span>
-                                        </li>
-                                        <li>
-                                            <span>Location</span>
-                                            <span>USA</span>
-                                        </li>
-                                        <li>
-                                            <span>Live Demo </span>
-                                            <span>www.YourSite.com</span>
-                                        </li>
+                                     
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="project-title">
-                                    <h3>challenge</h3>
+                                    <h3>Product <span>Special</span> Feature</h3>
                                 </div>
-                                <p class="mb-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-                                    necessitatibus, modi iusto eveniet reiciendis culpa a hic ipsa impedit nisi
-                                    nesciunt! Non id adipisci omnis nam tempora, nulla quaerat atque.</p>
-                                <ul class="challenge-tag">
-                                    <li><i class="fa fa-times"></i>consectetur adipisicing elit.</li>
-                                    <li><i class="fa fa-times"></i>consectetur adipisicing elit.</li>
-                                    <li><i class="fa fa-times"></i>consectetur adipisicing elit.</li>
-                                    <li><i class="fa fa-times"></i>consectetur adipisicing elit.</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="project-title">
-                                    <h3>solutions</h3>
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item challenge-tag row">
+                                        <div class="col-sm-6" v-for="item in feature" :key="item.id">
+                                            <li class=" accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                                aria-controls="panelsStayOpen-collapseOne">
+                                                <i class="fas fa-check"></i>{{ item.title}}
+                                            </li>
+
+                                            <div id="panelsStayOpen-collapseOne"
+                                                class=" accordion-collapse collapse show"
+                                                aria-labelledby="panelsStayOpen-headingOne">
+                                                <div class="accordion-body">
+                                                    <strong>{{ item.description}} </strong>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="mb-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-                                    necessitatibus, modi iusto eveniet reiciendis culpa a hic ipsa impedit nisi
-                                    nesciunt! Non id adipisci omnis nam tempora, nulla quaerat atque.</p>
-                                <ul class="challenge-tag">
-                                    <li><i class="fa fa-check"></i>consectetur adipisicing elit.</li>
-                                    <li><i class="fa fa-check"></i>consectetur adipisicing elit.</li>
-                                    <li><i class="fa fa-check"></i>consectetur adipisicing elit.</li>
-                                    <li><i class="fa fa-check"></i>consectetur adipisicing elit.</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -166,15 +130,25 @@ export default {
     data() {
         return {
             products: [],
+            feature: [],
+            images: [],
+            category: [],
+            all_products: []
         };
     },
     async created() {
         try {
-            const res = await axios.get(this.$host + "products");
-            this.products = res.data;
+
+            const res = await axios.get(this.$host + "products/single/" + this.$route.params.name);
+            this.products = res.data.product;
+            this.feature = res.data.feature;
+            this.images = res.data.images;
+            this.all_products = res.data.products;
+            this.category = res.data.category;
         } catch (error) {
             console.log(error);
         }
+
     },
 }
 </script>

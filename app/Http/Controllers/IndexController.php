@@ -11,13 +11,14 @@ class IndexController extends Controller
     {
         return DB::table('slider_tbl')->get();
     }
-    function projects()
+    function products()
     {
+        return DB::table('product_with_image')->limit(9)->get();
     }
 
     function services()
     {
-        return DB::table('testimonials')->get();
+        return DB::table('service_with_images')->limit(9)->get();
 
     }
     function  testimonial()
