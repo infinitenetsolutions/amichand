@@ -71,10 +71,13 @@
                                 <div class="details-tag">
                                     <ul v-for="item in category" :key="item.id">
                                         <li>
-                                            <span> <router-link class="text-white" :to="{name:'projects',}" >{{item.name}}</router-link></span>
+                                            <span>
+                                                <router-link class="text-white" :to="{name:'projects',}">{{item.name}}
+                                                </router-link>
+                                            </span>
                                             <span>Agriculture</span>
                                         </li>
-                                     
+
                                     </ul>
                                 </div>
                             </div>
@@ -97,7 +100,7 @@
                                                 class=" accordion-collapse collapse show"
                                                 aria-labelledby="panelsStayOpen-headingOne">
                                                 <div class="accordion-body">
-                                                    <strong>{{ item.description}} </strong>
+                                                    <strong class="pl-2 pr-2">{{ item.description}} </strong>
 
                                                 </div>
                                             </div>
@@ -106,11 +109,24 @@
                                 </div>
                             </div>
                         </div>
+
+
+
                     </div>
                 </div>
             </div>
         </section>
         <!-- Projects Section End -->
+        <section>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="project-title text-center project-details project-title">
+                        <h3 class="text-uppercase">Product <span class="text-warning">RANGE</span> </h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
         <!-- Client Section Start -->
         <clientsVue />

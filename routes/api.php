@@ -27,6 +27,8 @@ Route::get('home/products', [IndexController::class, 'products'])->name('home.pr
 Route::get('home/services', [IndexController::class, 'services'])->name('services');
 Route::get('testimonial', [IndexController::class, 'slider'])->name('testimonial');
 Route::get('clients', [IndexController::class, 'clients'])->name('clients');
+Route::get('category', [IndexController::class, 'category'])->name('category');
+
 // home page end
 // contact start
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
@@ -34,12 +36,12 @@ Route::post('contact/store', [ContactController::class, 'store'])->name('contact
 
 // contact end
 // product start
-Route::get('products', [ProductsController::class, 'index'])->name('products');
+Route::get('products/{category}', [ProductsController::class, 'index'])->name('products');
 Route::get('products/single/{slug}', [ProductsController::class, 'product_single'])->name('products.single');
 // product end
 
 // service start
-Route::get('services', [ServiceController::class, 'index'])->name('services');
+Route::get('services/{category}', [ServiceController::class, 'index'])->name('services');
 Route::get('services/single/{slug}', [ServiceController::class, 'service_single'])->name('services.single');
 
 // service end

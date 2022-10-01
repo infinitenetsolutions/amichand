@@ -87,16 +87,11 @@
                                                 aria-haspopup="true" aria-expanded="false">Products</a>
                                             <div class="dropdown-menu left-1">
                                                 <ul class="dropdown">
-                                                    <li>
-                                                        <router-link :to="{name:'projects'}" class="dropdown-item">
-                                                            L&amp;T
-                                                            SWITCHGEARS</router-link>
+                                                    <li v-for="item in product_category" :key="item.id">
+                                                        <router-link class="dropdown-item"   :to="{name:'products',params:{category:item.name.toLowerCase()}}" >
+                                                         {{ item.name }}</router-link>
                                                     </li>
-                                                    <li>
-                                                        <router-link :to="{name:'projects'}" class="dropdown-item">LV
-                                                            ELECTRICAL
-                                                            PANELS</router-link>
-                                                    </li>
+                                             
 
 
 
@@ -110,12 +105,9 @@
                                                 aria-haspopup="true" aria-expanded="false">Services</a>
                                             <div class="dropdown-menu left-1">
                                                 <div class="dropdown">
-                                                    <router-link class="dropdown-item" :to="{name:'services'}">PLC
+                                                    <router-link  v-for="item in service_category" :key="item.id" class="dropdown-item" :to="{name:'services',params:{category: item.name.toLowerCase()}}">{{item.name}}
                                                     </router-link>
-                                                    <router-link class="dropdown-item" :to="{name:'services'}">
-                                                        Retrofitting Services</router-link>
-                                                    <router-link class="dropdown-item" :to="{name:'services'}">
-                                                        Electromechanical & Numerical </router-link>
+                                                  
                                                 </div>
                                             </div>
                                         </li>
@@ -154,4 +146,25 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+    name:'navbar',
+    data() {
+        return {
+            product_category: [],
+            service_category:[]
+        };
+    },
+    async created() {
+        try {
+            const res = await axios.get(this.$host + "category");
+            this.product_category = res.data.product_category;
+            this.service_category = res.data.service_category;
+
+        } catch (error) {
+            console.log(error);
+        }
+    },
+}
+</script>
 

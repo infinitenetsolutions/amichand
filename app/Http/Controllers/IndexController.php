@@ -19,16 +19,21 @@ class IndexController extends Controller
     function services()
     {
         return DB::table('service_with_images')->limit(9)->get();
-
     }
     function  testimonial()
     {
         return DB::table('testimonials')->get();
-
     }
     function clients()
     {
         return DB::table('clients')->get();
     }
-    
+
+    function category()
+    {
+      $service_category=   DB::table('categories')->get();
+      $product_category=    DB::table('product_categories')->get();
+      return response()->json(['service_category'=>$service_category,'product_category'=>$product_category]);
+    }
+ 
 }

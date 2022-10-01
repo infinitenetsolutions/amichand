@@ -26,13 +26,13 @@ const routes = [
         component: Contact,
     },
     {
-        path: "/services",
+        path: "/services/:category",
         name: "services",
         component: Services,
     },
     {
-        path: "/projects",
-        name: "projects",
+        path: "/products/:category",
+        name: "products",
         component: Projects,
     },
     {

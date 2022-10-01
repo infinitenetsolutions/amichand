@@ -7,9 +7,11 @@ use Illuminate\Support\Facades\DB;
 
 class ServiceController extends Controller
 {
-    function index()
+    function index($category)
     {
-        return DB::table('service_with_images')->get();
+        $cat=DB::table('categories')->where('name','like','%'.$category.'%')->first();
+        $services= DB::table('service_with_images')->where('category',$cat->id)->get();
+        return $services;
     }
     function service_single($slug)
     {

@@ -7,9 +7,12 @@ use Illuminate\Support\Facades\DB;
 
 class ProductsController extends Controller
 {
-    function index()
+    function index($category)
     {
-        return DB::table('product_with_image')->groupBy('id')->get();
+        $cat=DB::table('product_categories')->where('name','like','%'.$category.'%')->first();
+       $products= DB::table('product_with_image')->where('category',$cat->id)->get();
+       $category = DB::table('product_categories')->get();
+       return response()->json(['products' => $products, 'category' => $category]);
     }
     function product_single($slug)
     {
