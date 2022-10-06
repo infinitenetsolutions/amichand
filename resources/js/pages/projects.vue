@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-sm-3 p-2 content">
+                <div class="col-sm-3 p-2 content">
                     <h3 class="text-uppercase mb-3" > <span class="border-bottom border-warning" >Our</span> <span class="text-warning">Category</span></h3>
                     <div class="details-tag bg-primary-dark ">
                         <ul v-for="item in category" :key="item.id">
@@ -67,7 +67,7 @@
 
                     </div>
 
-                </div> -->
+                </div>
             </div>
         </section>
         <!-- product Section End -->

@@ -29,31 +29,12 @@
                                             <i class="flaticon-right-arrow-1"></i>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a class="" href="#">Risk Analysis
+                                    <li v-for="item in all_service" >
+                                        <a class="" href="#">{{item.log_title}}
                                             <i class="flaticon-right-arrow-1"></i>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a class="" href="#">Industial law
-                                            <i class="flaticon-right-arrow-1"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Manufacturing
-                                            <i class="flaticon-right-arrow-1"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Petroleum and Gas
-                                            <i class="flaticon-right-arrow-1"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Welding Engineering
-                                            <i class="flaticon-right-arrow-1"></i>
-                                        </a>
-                                    </li>
+                                  
                                 </ul>
                             </div>
                             <div class="download-box  mb-40">
@@ -80,93 +61,70 @@
                                 <img src="public/images/service/details-1.jpg" alt="">
                             </div>
                             <div class="content">
-                                <h4>Industry Construction</h4>
-                                <p class="mb-20">Industry Construction is a diverse subject that derives its breadth
-                                    from the need to design and manufacture everything from small individual parts and
-                                    devices to large systems The role of a mechanical engineer is to take a product from
-                                    an idea to the marketplace. In order to accomplish this, a broad range of skills are
-                                    needed. the mechanical engineer needs to acquire particular skills and knowledge.
-                                    He/she needs to understand the forces and the thermal environment that a product,
-                                    its parts, or its subsystems will encounter; to design them for functionality,
-                                    aesthetics, and the ability to withstand the forces and the thermal environment they
-                                    will be subjected to; and to determine the best way to manufacture them and ensure
-                                    they will operate without failure. Perhaps the one skill that is the mechanical
-                                    engineer’s exclusive domain is the ability to analyze and design objects and systems
-                                    with motion.</p>
-                                <h4>Service Features</h4>
-                                <p class="mb-40">Consectetur adipisicing elit. Facilis illum consectetur officia ad
-                                    eveniet consequatur repellat, reiciendis expedita ratione molestiae eos dolor dolore
-                                    saepe aut aliquid suscipit quod vitae ut.</p>
-
+                                <h4>{{service.log_title}}</h4>
+                                <p class="mb-20">{{service.log_description}}</p>
+                             
+                              
                                 <div class="service-tab mb-40">
 
                                     <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                        <li class="nav-item">
+                                        <li v-if="service.title1" class="nav-item"  >
                                             <a class="nav-link active" id="features-one-tab" data-toggle="tab"
                                                 href="#features-one" role="tab" aria-controls="features-one"
-                                                aria-selected="true">Features One</a>
+                                                aria-selected="true">{{service.title1}}</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="features-two-tab" data-toggle="tab"
-                                                href="#features-two" role="tab" aria-controls="features-two"
-                                                aria-selected="false">Features Two</a>
+                                        <li v-if="service.title2" class="nav-item"  >
+                                            <a class="nav-link " id="features-one-tab" data-toggle="tab"
+                                                href="#features-two" role="tab" aria-controls="features-one"
+                                                aria-selected="true">{{service.title2}}</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="features-three-tab" data-toggle="tab"
-                                                href="#features-three" role="tab" aria-controls="features-three"
-                                                aria-selected="false">Features Three</a>
+                                        <li  v-if="service.title3" class="nav-item" >
+                                            <a class="nav-link " id="features-one-tab" data-toggle="tab"
+                                                href="#features-three" role="tab" aria-controls="features-one"
+                                                aria-selected="true">{{service.title3}}</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="features-four-tab" data-toggle="tab"
-                                                href="#features-four" role="tab" aria-controls="features-four"
-                                                aria-selected="false">Features Three</a>
+                                        <li v-if="service.title4" class="nav-item"  >
+                                            <a class="nav-link " id="features-one-tab" data-toggle="tab"
+                                                href="#features-four" role="tab" aria-controls="features-one"
+                                                aria-selected="true">{{service.title4}}</a>
                                         </li>
+                                        <li v-if="service.title5" class="nav-item"  >
+                                            <a class="nav-link " id="features-one-tab" data-toggle="tab"
+                                                href="#features-five" role="tab" aria-controls="features-one"
+                                                aria-selected="true">{{service.title5}}</a>
+                                        </li>
+                                      
                                     </ul>
 
                                     <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="features-one" role="tabpanel"
+                                        <div v-if="service.title1" class="tab-pane fade show active" id="features-one" role="tabpanel"
                                             aria-labelledby="features-one-tab">
-                                            <h4>Features One</h4>
-                                            <p>Consectetur adipisicing elit. Inventore dolorum amet corrupti expedita
-                                                explicabo consectetur laboriosam ipsa error voluptatum necessitatibus
-                                                quia ratione facere sint alias aliquid laudantium, dolores eligendi
-                                                eveniet. Consectetur adipisicing elit. Inventore dolorum amet corrupti
-                                                expedita explicabo consectetur laboriosam ipsa error voluptatum
-                                                necessitatibus quia ratione facere sint alias aliquid laudantium,
-                                                dolores eligendi eveniet.</p>
+                                            <h4>{{service.title1}}</h4>
+                                            <p>{{service.description1 }}</p>
+
                                         </div>
-                                        <div class="tab-pane fade" id="features-two" role="tabpanel"
+                                        <div v-if="service.title2" class="tab-pane fade" id="features-two" role="tabpanel"
                                             aria-labelledby="features-two-tab">
-                                            <h4>Features two</h4>
-                                            <p>Consectetur adipisicing elit. Inventore dolorum amet corrupti expedita
-                                                explicabo consectetur laboriosam ipsa error voluptatum necessitatibus
-                                                quia ratione facere sint alias aliquid laudantium, dolores eligendi
-                                                eveniet. Consectetur adipisicing elit. Inventore dolorum amet corrupti
-                                                expedita explicabo consectetur laboriosam ipsa error voluptatum
-                                                necessitatibus quia ratione facere sint alias aliquid laudantium,
-                                                dolores eligendi eveniet.</p>
+                                            <h4>{{service.title2}}</h4>
+                                            <p>{{service.description2 }}</p>
+
                                         </div>
-                                        <div class="tab-pane fade" id="features-three" role="tabpanel"
+                                        <div v-if="service.title3" class="tab-pane fade" id="features-three" role="tabpanel"
                                             aria-labelledby="features-three-tab">
-                                            <h4>Features three</h4>
-                                            <p>Consectetur adipisicing elit. Inventore dolorum amet corrupti expedita
-                                                explicabo consectetur laboriosam ipsa error voluptatum necessitatibus
-                                                quia ratione facere sint alias aliquid laudantium, dolores eligendi
-                                                eveniet. Consectetur adipisicing elit. Inventore dolorum amet corrupti
-                                                expedita explicabo consectetur laboriosam ipsa error voluptatum
-                                                necessitatibus quia ratione facere sint alias aliquid laudantium,
-                                                dolores eligendi eveniet.</p>
+                                            <h4>{{service.title3}}</h4>
+                                            <p>{{service.description3 }}</p>
+
                                         </div>
-                                        <div class="tab-pane fade" id="features-four" role="tabpanel"
+                                        <div v-if="service.title4" class="tab-pane fade" id="features-four" role="tabpanel"
                                             aria-labelledby="features-four-tab">
-                                            <h4>Features four</h4>
-                                            <p>Consectetur adipisicing elit. Inventore dolorum amet corrupti expedita
-                                                explicabo consectetur laboriosam ipsa error voluptatum necessitatibus
-                                                quia ratione facere sint alias aliquid laudantium, dolores eligendi
-                                                eveniet. Consectetur adipisicing elit. Inventore dolorum amet corrupti
-                                                expedita explicabo consectetur laboriosam ipsa error voluptatum
-                                                necessitatibus quia ratione facere sint alias aliquid laudantium,
-                                                dolores eligendi eveniet.</p>
+                                            <h4>{{service.title4}}</h4>
+                                            <p>{{service.description4 }}</p>
+
+                                        </div>
+                                        <div v-if="service.title5" class="tab-pane fade" id="features-five" role="tabpanel"
+                                            aria-labelledby="features-four-tab">
+                                            <h4>{{service.title5}}</h4>
+                                            <p>{{service.description5 }}</p>
                                         </div>
                                     </div>
 
@@ -198,5 +156,29 @@ export default {
     components: {
         clinetsVue
     }
+
+    ,
+    data() {
+        return {
+            service: [],
+            images: [],
+            category: [],
+            all_service:[],
+        
+        };
+    },
+    async created() {
+        try {
+
+            const res = await axios.get(this.$host + "services/single/" + this.$route.params.name);
+            this.service = res.data.service;
+            this.images = res.data.images;
+            this.category = res.data.category;
+            this.all_service=res.data.all_service;
+        } catch (error) {
+            console.log(error);
+        }
+
+    },
 }
 </script>

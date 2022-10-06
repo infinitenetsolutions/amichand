@@ -28,7 +28,7 @@
                             <div class="thumb">
                                 <img alt="service img" v-bind:src="$imghost+'services/'+item.img_name">
                                 <div class="service-link-box">
-                                    <router-link :to="{name:'service.single'}">Read More</router-link>
+                                    <router-link :to="{name:'service.single',params:{name:item.slug}}">Read More</router-link>
                                 </div>
                             </div>
                             <div class="content">
@@ -72,7 +72,8 @@ export default {
         } catch (error) {
             console.log(error);
         }
-    }
+    },
+  
   
 }
 </script>

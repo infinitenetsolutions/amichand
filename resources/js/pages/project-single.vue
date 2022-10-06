@@ -72,7 +72,9 @@
                                     <ul v-for="item in category" :key="item.id">
                                         <li>
                                             <span>
-                                                <router-link class="text-white" :to="{name:'projects',}">{{item.name}}
+                                                <router-link class="text-white"
+                                                    :to="{name:'products',params:{category:item.name.toLowerCase()}}">
+                                                    {{item.name}}
                                                 </router-link>
                                             </span>
                                             <span>Agriculture</span>
@@ -89,7 +91,7 @@
                                 </div>
                                 <div class="accordion" id="accordionPanelsStayOpenExample">
                                     <div class="accordion-item challenge-tag row">
-                                        <div class="col-sm-6" v-for="item in feature" :key="item.id">
+                                        <div class="col-sm-6" v-for="(item,index) in feature" :key="item.id">
                                             <li class=" accordion-button" type="button" data-bs-toggle="collapse"
                                                 data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                                 aria-controls="panelsStayOpen-collapseOne">

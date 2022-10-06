@@ -7189,9 +7189,9 @@ M > P Css Style
   text-align: center;
 }
 
-.projects-item,.service-item .thumb img {
+/* .projects-item,.service-item .thumb img {
   height: 240px !important;
-}
+} */
 
 .bg-primary-dark {
   background-color: #091426;

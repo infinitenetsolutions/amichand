@@ -18,6 +18,7 @@ class ServiceController extends Controller
         $service =  DB::table('services')->where('slug', $slug)->first();
         $category= DB::table('categories')->get();
         $images = DB::table('service_images')->where('service_id', $service->id)->get();
-        return response()->json(['service' => $service, 'images' => $images,'category'=>$category]);
+        $all_services = DB::table('service_with_images')->limit(10)->get();
+        return response()->json(['service' => $service, 'images' => $images,'category'=>$category,'all_service'=>$all_services]);
     }
 }
