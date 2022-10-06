@@ -15,35 +15,10 @@
                 <!-- Wrapper For Slides -->
                 <div class="carousel-inner" role="listbox">
 
-                    <!-- Third Slide -->
-                    <div class="carousel-item active">
+           
+                    <!--  Slide -->
 
-                        <!-- Slide Background -->
-                        <img src="public/images/slider/1.jpg" alt="Slider Images" class="slide-image" />
-                        <div class="bs-slider-overlay"></div>
-
-                        <div class="container">
-                            <div class="row">
-                                <!-- Slide Text Layer -->
-                                <div class="slide-text slide-style-left">
-                                    <div class="sub-title">
-                                        <h4>we provide</h4>
-                                    </div>
-                                    <div class="title-box">
-                                        <h2>We are the best industrial company <br> in the world </h2>
-                                    </div>
-                                    <div class="btn-box">
-                                        <a href="#" class="btn-theme">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Slide -->
-
-                    <!-- Third Slide -->
-
-                    <div v-for="item in items" :key="item.id" class="carousel-item">
+                    <div v-for="(item,index) in items" :key="item.id" class="carousel-item" v-bind:class="index==1 ? 'active':''">
 
                         <!-- Slide Background -->
                         <img v-bind:src="imagehost+item.image_name" alt="Slider Images" class="slide-image" />

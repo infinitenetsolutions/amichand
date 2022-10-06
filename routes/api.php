@@ -23,8 +23,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 // for home page all api start
 Route::get('slider', [IndexController::class, 'slider'])->name('slider');
-Route::get('home/products', [IndexController::class, 'products'])->name('home.products');
-Route::get('home/services', [IndexController::class, 'services'])->name('services');
+Route::get('index', [IndexController::class, 'index'])->name('index');
+Route::get('about/{type}', [IndexController::class, 'about'])->name('about');
+
 Route::get('testimonial', [IndexController::class, 'slider'])->name('testimonial');
 Route::get('clients', [IndexController::class, 'clients'])->name('clients');
 Route::get('category', [IndexController::class, 'category'])->name('category');
