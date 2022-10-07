@@ -26,7 +26,7 @@
                             </div>
                             <div class="content">
                                 <h5><a href="#">Contact Info</a></h5>
-                                <p>INDUSTRIAL ESTATE ADITYAPUR, JAMSHEDPUR</p>
+                                <p>{{site_info.address}}</p>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                             </div>
                             <div class="content">
                                 <h5><a href="#">Contact No.</a></h5>
-                                <p>+91-8292580535 <br> +91-9905167484</p>
+                                <p>{{site_info.phone}} <br> {{site_info.phone2}}</p>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                             </div>
                             <div class="content">
                                 <h5><a href="#">Email</a></h5>
-                                <p> <a href="mailto:INFO@AMITEC.IN">INFO@AMITEC.IN</a> </p>
+                                <p> <a v-bind:href="'mailto:'+site_info.email">{{site_info.email}}</a> </p>
                                 <br>
                             </div>
                         </div>
@@ -111,14 +111,14 @@
 export default {
     data() {
         return {
-            conact: [],
+            site_info: [],
           
         };
     },
     async created() {
         try {
             const res = await axios.get(this.$host + "contact");
-            this.items = res.data;
+            this.site_info = res.data;
         } catch (error) {
             console.log(error);
         }

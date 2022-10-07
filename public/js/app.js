@@ -24136,7 +24136,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      conact: []
+      site_info: []
     };
   },
   created: function created() {
@@ -24154,7 +24154,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
             case 3:
               res = _context.sent;
-              _this.items = res.data;
+              _this.site_info = res.data;
               _context.next = 10;
               break;
 
@@ -25993,9 +25993,101 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"inner-area parallax-bg\" data-background=\"images/bg/px-1.jpg\" data-type=\"parallax\" data-speed=\"3\"><div class=\"container\"><div class=\"section-content\"><div class=\"row\"><div class=\"col-12\"><h4>contact</h4><p>Home <a href=\"#\">contact</a></p></div></div></div></div></section>", 1);
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"contact-details pb-0\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><div class=\"service-item style-1 border-1px\"><div class=\"service-icon\"><i class=\"fas fa-map-marker-alt\"></i></div><div class=\"content\"><h5><a href=\"#\">Contact Info</a></h5><p>INDUSTRIAL ESTATE ADITYAPUR, JAMSHEDPUR</p></div></div></div><div class=\"col-lg-4\"><div class=\"service-item style-1 border-1px\"><div class=\"\"><i class=\"fas fa-phone-office\"></i></div><div class=\"content\"><h5><a href=\"#\">Contact No.</a></h5><p>+91-8292580535 <br> +91-9905167484</p></div></div></div><div class=\"col-lg-4\"><div class=\"service-item style-1 border-1px\"><div class=\"\"><i class=\"fad fa-envelope-open-text\"></i></div><div class=\"content\"><h5><a href=\"#\">Email</a></h5><p><a href=\"mailto:INFO@AMITEC.IN\">INFO@AMITEC.IN</a></p><br></div></div></div></div></div></section>", 1);
+var _hoisted_2 = {
+  "class": "contact-details pb-0"
+};
+var _hoisted_3 = {
+  "class": "container"
+};
+var _hoisted_4 = {
+  "class": "row"
+};
+var _hoisted_5 = {
+  "class": "col-lg-4"
+};
+var _hoisted_6 = {
+  "class": "service-item style-1 border-1px"
+};
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", {
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "service-icon"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fas fa-map-marker-alt"
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_8 = {
+  "class": "content"
+};
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#"
+}, "Contact Info")], -1
+/* HOISTED */
+);
+
+var _hoisted_10 = {
+  "class": "col-lg-4"
+};
+var _hoisted_11 = {
+  "class": "service-item style-1 border-1px"
+};
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": ""
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fas fa-phone-office"
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_13 = {
+  "class": "content"
+};
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#"
+}, "Contact No.")], -1
+/* HOISTED */
+);
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_16 = {
+  "class": "col-lg-4"
+};
+var _hoisted_17 = {
+  "class": "service-item style-1 border-1px"
+};
+
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": ""
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fad fa-envelope-open-text"
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_19 = {
+  "class": "content"
+};
+
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#"
+}, "Email")], -1
+/* HOISTED */
+);
+
+var _hoisted_21 = ["href"];
+
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", {
   "class": "contact-details pb-60"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "container"
@@ -26083,7 +26175,17 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 );
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Inner Section Start "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Inner Section End "), _hoisted_2, _hoisted_3]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Inner Section Start "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Inner Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.site_info.address), 1
+  /* TEXT */
+  )])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [_hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.site_info.phone) + " ", 1
+  /* TEXT */
+  ), _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.site_info.phone2), 1
+  /* TEXT */
+  )])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [_hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: 'mailto:' + $data.site_info.email
+  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.site_info.email), 9
+  /* TEXT, PROPS */
+  , _hoisted_21)]), _hoisted_22])])])])])]), _hoisted_23]);
 }
 
 /***/ }),
