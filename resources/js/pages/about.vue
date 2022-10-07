@@ -17,57 +17,7 @@
         <!-- Inner Section End -->
 
         <!-- Company Section Start -->
-        <section class="company-section">
-            <div class="container">
-                <div class="row about-features">
-                    <div class="col-md-8">
-                        <div class="content">
-                            <h5>About Industry</h5>
-                            <h1>Our <span>Company</span></h1>
-                            <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptates
-                                amet voluptatum at aliquid veniam iste deleniti porro, natus inventore, quod itaque,
-                                quae, officiis tenetur! Libero tempora eius, recusandae. Corporis quia, architecto
-                                fugiat rerum, quod nihil possimus.</p>
-                            <ul class="company-list mr-50">
-                                <li><i class="pe-7s-angle-right"></i>Team of Professional</li>
-                                <li><i class="pe-7s-angle-right"></i>Smart Technology</li>
-                                <li><i class="pe-7s-angle-right"></i>Full of services css</li>
-                                <li><i class="pe-7s-angle-right"></i>Need It Fast? We Can Help.</li>
-                            </ul>
-                            <ul class="company-list">
-                                <li><i class="pe-7s-angle-right"></i>Team of Professional</li>
-                                <li><i class="pe-7s-angle-right"></i>Smart Technology</li>
-                                <li><i class="pe-7s-angle-right"></i>Need It Fast? We Can Help.</li>
-                                <li><i class="pe-7s-angle-right"></i>Full of services css</li>
-                            </ul>
-                            <div class="company-funfact">
-                                <div class="funfact-item">
-                                    <h2>80+</h2>
-                                    <h4>projects</h4>
-                                </div>
-                                <div class="funfact-item">
-                                    <h2>99+</h2>
-                                    <h4>Happy Clients</h4>
-                                </div>
-                                <div class="funfact-item">
-                                    <h2>75+</h2>
-                                    <h4>Award Won</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="thumb">
-                            <img src="public/images/features/h-1.jpg" alt="">
-                            <div class="about-video">
-                                <h4>company video gane</h4>
-                                <a class="about-video-btn" href="#"><i class="flaticon-play-button-3"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <aboutVue />
         <!-- Company Section End -->
 
         <!-- team Section Start -->
@@ -75,10 +25,8 @@
             <div class="container">
                 <div class="row">
                     <div class="section-title">
-                        <h4>MEET OUR TEAM</h4>
-                        <h2>OUR <span>TEAM</span></h2>
-                        <p>Consectetur adipisicing elit. Excepturi nemo tenetur veniam repellat earum inventore modi
-                            omnis.</p>
+                        <h2>OUR <span class=" border-bottom border-warning  border-2" >TEAM</span></h2>
+                        <p>Our team EXPERT MEMBERS</p>
                     </div>
                 </div>
                 <div class="row">
@@ -138,10 +86,26 @@
 </template>
 <script>
 import testimonialVue from '../components/testimonial.vue';
+import aboutVue from '../components/about.vue';
 export default {
     name: 'about',
     components: {
-        testimonialVue
+        testimonialVue,
+        aboutVue
     }
+    , data() {
+        return {
+            team: [],
+
+        };
+    },
+    async created() {
+        try {
+            const res = await axios.get(this.$host + "team");
+            this.team = res.data;
+        } catch (error) {
+            console.log(error);
+        }
+    },
 }
 </script>

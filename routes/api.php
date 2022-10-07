@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProductsController;
@@ -26,7 +27,7 @@ Route::get('slider', [IndexController::class, 'slider'])->name('slider');
 Route::get('index', [IndexController::class, 'index'])->name('index');
 Route::get('about/{type}', [IndexController::class, 'about'])->name('about');
 
-Route::get('testimonial', [IndexController::class, 'slider'])->name('testimonial');
+Route::get('testimonial', [IndexController::class, 'testimonial'])->name('testimonial');
 Route::get('clients', [IndexController::class, 'clients'])->name('clients');
 Route::get('category', [IndexController::class, 'category'])->name('category');
 
@@ -46,3 +47,8 @@ Route::get('services/{category}', [ServiceController::class, 'index'])->name('se
 Route::get('services/single/{slug}', [ServiceController::class, 'service_single'])->name('services.single');
 
 // service end
+
+// about 
+Route::get('team', [AboutController::class, 'team'])->name('team');
+
+// about end

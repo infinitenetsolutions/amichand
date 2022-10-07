@@ -7,16 +7,16 @@
                     <div class="col-md-8">
                         <div class="content">
 
-                            <h1>Our <span>Company</span></h1>
+                            <h1>WelCome to <span class=" border-bottom border-warning  border-2">Amichand</span></h1>
                             <p class="p-text">{{about.massage}}.</p>
 
                             <div class="company-funfact">
                                 <div class="funfact-item">
-                                    <h2>80+</h2>
-                                    <h4>projects</h4>
+                                    <h2>{{all_product}}+</h2>
+                                    <h4>Products</h4>
                                 </div>
                                 <div class="funfact-item">
-                                    <h2>99+</h2>
+                                    <h2>{{all_clients}}+</h2>
                                     <h4>Happy Clients</h4>
                                 </div>
                                 <div class="funfact-item">
@@ -28,10 +28,10 @@
                     </div>
                     <div class="col-md-4">
                         <div class="thumb">
-                            <img src="public/images/features/h-1.jpg" alt="">
+                            <img v-bind:src="$imghost+'about/'+about.images" v-bind:alt="about.name">
                             <div class="about-video">
-                                <h4>company video gane</h4>
-                                <a class="about-video-btn" href="#"><i class="flaticon-play-button-3"></i></a>
+                                <h4> Our company  </h4>
+                                <a class="about-video-btn" href="#"><i class="far fa-building"></i></a>
                             </div>
                         </div>
                     </div>
@@ -43,16 +43,21 @@
 </template>
 <script>
 export default {
-    name:'about',
+    name: 'about',
     data() {
         return {
-         about:''
+            about: {},
+            all_product: 0,
+            all_clients: 0
         }
     },
     async created() {
         try {
             const res = await axios.get(this.$host + "about/about");
-            this.about = res.data;
+            this.about = res.data.about;
+            this.all_product = res.data.all_product;
+            this.all_clients = res.data.all_clients;
+
 
         } catch (error) {
             console.log(error);

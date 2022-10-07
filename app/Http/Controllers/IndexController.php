@@ -12,14 +12,17 @@ class IndexController extends Controller
     function index()
     {
         $products = DB::table('product_with_image')->limit(9)->get();
-        $service = DB::table('service_with_images')->limit(9)->get();
-    
-        return response()->json(['products' => $products, 'service' => $service]);
+        $services = DB::table('service_with_images')->limit(9)->get();
 
+        return response()->json(['products' => $products, 'services' => $services]);
     }
 
-    function about($type){
-        return DB::table('abouts')->where('type',$type)->get();
+    function about($type)
+    {
+        $all_product = DB::table('products')->count('id');
+        $all_clients = DB::table('clients')->count('id');
+        $about =  DB::table('abouts')->where('type', $type)->first();
+        return response()->json(['all_product' => $all_product, 'all_clients' => $all_clients, 'about' => $about]);
     }
 
     function slider()

@@ -23661,7 +23661,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   name: 'about',
   data: function data() {
     return {
-      about: ''
+      about: {},
+      all_product: 0,
+      all_clients: 0
     };
   },
   created: function created() {
@@ -23679,21 +23681,23 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
             case 3:
               res = _context.sent;
-              _this.about = res.data;
-              _context.next = 10;
+              _this.about = res.data.about;
+              _this.all_product = res.data.all_product;
+              _this.all_clients = res.data.all_clients;
+              _context.next = 12;
               break;
 
-            case 7:
-              _context.prev = 7;
+            case 9:
+              _context.prev = 9;
               _context.t0 = _context["catch"](0);
               console.log(_context.t0);
 
-            case 10:
+            case 12:
             case "end":
               return _context.stop();
           }
         }
-      }, _callee, null, [[0, 7]]);
+      }, _callee, null, [[0, 9]]);
     }))();
   }
 });
@@ -23916,6 +23920,68 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/testimonial.vue?vue&type=script&lang=js":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/testimonial.vue?vue&type=script&lang=js ***!
+  \*****************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return generator._invoke = function (innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; }(innerFn, self, context), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; this._invoke = function (method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); }; } function maybeInvokeDelegate(delegate, context) { var method = delegate.iterator[context.method]; if (undefined === method) { if (context.delegate = null, "throw" === context.method) { if (delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method)) return ContinueSentinel; context.method = "throw", context.arg = new TypeError("The iterator does not provide a 'throw' method"); } return ContinueSentinel; } var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) { if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; } return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, define(Gp, "constructor", GeneratorFunctionPrototype), define(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (object) { var keys = []; for (var key in object) { keys.push(key); } return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) { "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); } }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'testimonial',
+  data: function data() {
+    return {
+      testimonial: []
+    };
+  },
+  created: function created() {
+    var _this = this;
+
+    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+      var res;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.prev = 0;
+              _context.next = 3;
+              return axios.get(_this.$host + "testimonial");
+
+            case 3:
+              res = _context.sent;
+              _this.testimonial = res.data;
+              _context.next = 10;
+              break;
+
+            case 7:
+              _context.prev = 7;
+              _context.t0 = _context["catch"](0);
+              console.log(_context.t0);
+
+            case 10:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee, null, [[0, 7]]);
+    }))();
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/about.vue?vue&type=script&lang=js":
 /*!******************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/pages/about.vue?vue&type=script&lang=js ***!
@@ -23928,11 +23994,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _components_testimonial_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/testimonial.vue */ "./resources/js/components/testimonial.vue");
+/* harmony import */ var _components_about_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/about.vue */ "./resources/js/components/about.vue");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return generator._invoke = function (innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; }(innerFn, self, context), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; this._invoke = function (method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); }; } function maybeInvokeDelegate(delegate, context) { var method = delegate.iterator[context.method]; if (undefined === method) { if (context.delegate = null, "throw" === context.method) { if (delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method)) return ContinueSentinel; context.method = "throw", context.arg = new TypeError("The iterator does not provide a 'throw' method"); } return ContinueSentinel; } var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) { if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; } return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, define(Gp, "constructor", GeneratorFunctionPrototype), define(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (object) { var keys = []; for (var key in object) { keys.push(key); } return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) { "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); } }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'about',
   components: {
-    testimonialVue: _components_testimonial_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+    testimonialVue: _components_testimonial_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    aboutVue: _components_about_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  data: function data() {
+    return {
+      team: []
+    };
+  },
+  created: function created() {
+    var _this = this;
+
+    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+      var res;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.prev = 0;
+              _context.next = 3;
+              return axios.get(_this.$host + "team");
+
+            case 3:
+              res = _context.sent;
+              _this.team = res.data;
+              _context.next = 10;
+              break;
+
+            case 7:
+              _context.prev = 7;
+              _context.t0 = _context["catch"](0);
+              console.log(_context.t0);
+
+            case 10:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee, null, [[0, 7]]);
+    }))();
   }
 });
 
@@ -24059,7 +24173,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             case 3:
               res = _context.sent;
               _this.products = res.data.products;
-              _this.service = res.data.service;
+              _this.services = res.data.services;
               _context.next = 11;
               break;
 
@@ -24420,32 +24534,72 @@ var _hoisted_5 = {
   "class": "content"
 };
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Our "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Company")], -1
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("WelCome to "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "border-bottom border-warning border-2"
+}, "Amichand")], -1
 /* HOISTED */
 );
 
 var _hoisted_7 = {
   "class": "p-text"
 };
-
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_8 = {
   "class": "company-funfact"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+};
+var _hoisted_9 = {
   "class": "funfact-item"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "80+"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "projects")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "funfact-item"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "99+"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "Happy Clients")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "funfact-item"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "75+"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "Award Won")])], -1
+};
+
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "Products", -1
 /* HOISTED */
 );
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-4\"><div class=\"thumb\"><img src=\"public/images/features/h-1.jpg\" alt=\"\"><div class=\"about-video\"><h4>company video gane</h4><a class=\"about-video-btn\" href=\"#\"><i class=\"flaticon-play-button-3\"></i></a></div></div></div>", 1);
+var _hoisted_11 = {
+  "class": "funfact-item"
+};
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "Happy Clients", -1
+/* HOISTED */
+);
+
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "funfact-item"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "75+"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "Award Won")], -1
+/* HOISTED */
+);
+
+var _hoisted_14 = {
+  "class": "col-md-4"
+};
+var _hoisted_15 = {
+  "class": "thumb"
+};
+var _hoisted_16 = ["src", "alt"];
+
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "about-video"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, " Our company "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  "class": "about-video-btn",
+  href: "#"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "far fa-building"
+})])], -1
+/* HOISTED */
+);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Company Section Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.about.massage) + ".", 1
   /* TEXT */
-  ), _hoisted_8])]), _hoisted_9])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Company Section End ")]);
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.all_product) + "+", 1
+  /* TEXT */
+  ), _hoisted_10]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.all_clients) + "+", 1
+  /* TEXT */
+  ), _hoisted_12]), _hoisted_13])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    src: _ctx.$imghost + 'about/' + $data.about.images,
+    alt: $data.about.name
+  }, null, 8
+  /* PROPS */
+  , _hoisted_16), _hoisted_17])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Company Section End ")]);
 }
 
 /***/ }),
@@ -25081,12 +25235,109 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
+var _hoisted_1 = {
+  "class": "testimonials-section pb-70"
+};
+var _hoisted_2 = {
+  "class": "container"
+};
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"testimonials-section pb-70\"><div class=\"container\"><div class=\"row\"><div class=\"section-title\"><h4>OUR testimonials</h4><h2>client <span>testimonials</span></h2><p>Consectetur adipisicing elit. Excepturi nemo tenetur veniam repellat earum inventore modi omnis.</p></div></div><div class=\"row testimonials-post\"><div class=\"col-md-12\"><div id=\"testimonials_carousel\" class=\"owl-carousel\"><div class=\"item\"><div class=\"testimonials-item\"><div class=\"thumb\"><img src=\"public/images/testimonials/1.jpg\" alt=\"\"></div><div class=\"content\"><p><i class=\"fa fa-quote-left\"></i>The others comfortable these days are all happy and free listen to a story now the world do not move to the beat of just one drum what might be right for you may not be story of a man.<i class=\"fa fa-quote-right\"></i></p><small><strong>MR.BAILEY PETER</strong> - Designer</small></div></div></div><div class=\"item\"><div class=\"testimonials-item\"><div class=\"thumb\"><img src=\"public/images/testimonials/2.jpg\" alt=\"\"></div><div class=\"content\"><p><i class=\"fa fa-quote-left\"></i>The others comfortable these days are all happy and free listen to a story now the world do not move to the beat of just one drum what might be right for you may not be story of a man.<i class=\"fa fa-quote-right\"></i></p><small><strong>MR.BAILEY PETER</strong> - Designer</small></div></div></div><div class=\"item\"><div class=\"testimonials-item\"><div class=\"thumb\"><img src=\"public/images/testimonials/3.jpg\" alt=\"\"></div><div class=\"content\"><p><i class=\"fa fa-quote-left\"></i>The others comfortable these days are all happy and free listen to a story now the world do not move to the beat of just one drum what might be right for you may not be story of a man.<i class=\"fa fa-quote-right\"></i></p><small><strong>MR.BAILEY PETER</strong> - Designer</small></div></div></div></div></div></div></div></section>", 1);
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "row"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "section-title"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("client "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "border-bottom border-warning border-2"
+}, "testimonials")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "What clients are saying."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br")])], -1
+/* HOISTED */
+);
 
-var _hoisted_2 = [_hoisted_1];
-function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, _hoisted_2);
+var _hoisted_4 = {
+  "class": "row testimonials-post"
+};
+var _hoisted_5 = {
+  id: "carouselExampleIndicators",
+  "class": "carousel slide",
+  "data-ride": "carousel"
+};
+var _hoisted_6 = {
+  "class": "carousel-inner"
+};
+var _hoisted_7 = {
+  "class": "item"
+};
+var _hoisted_8 = {
+  "class": "testimonials-item"
+};
+var _hoisted_9 = {
+  "class": "thumb"
+};
+var _hoisted_10 = ["src"];
+var _hoisted_11 = {
+  "class": "content"
+};
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fa fa-quote-left"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fa fa-quote-right"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  "class": "carousel-control-prev",
+  href: "#carouselExampleIndicators",
+  role: "button",
+  "data-slide": "prev"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "carousel-control-prev-icon",
+  "aria-hidden": "true"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "sr-only"
+}, "Previous")], -1
+/* HOISTED */
+);
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  "class": "carousel-control-next",
+  href: "#carouselExampleIndicators",
+  role: "button",
+  "data-slide": "next"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "carousel-control-next-icon",
+  "aria-hidden": "true"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "sr-only"
+}, "Next")], -1
+/* HOISTED */
+);
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.testimonial, function (item, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["carousel-item", index == 0 ? 'active' : ''])
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+      src: _ctx.$imghost + 'testimonial/' + item.images,
+      alt: ""
+    }, null, 8
+    /* PROPS */
+    , _hoisted_10)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.massage), 1
+    /* TEXT */
+    ), _hoisted_13]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.name), 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" - " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.designation), 1
+    /* TEXT */
+    )])])])])], 2
+    /* CLASS */
+    );
+  }), 256
+  /* UNKEYED_FRAGMENT */
+  ))]), _hoisted_14, _hoisted_15])])])])]);
 }
 
 /***/ }),
@@ -25107,14 +25358,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"inner-area parallax-bg\" data-background=\"images/bg/px-1.jpg\" data-type=\"parallax\" data-speed=\"3\"><div class=\"container\"><div class=\"section-content\"><div class=\"row\"><div class=\"col-12\"><h4>about</h4><p>Home <a href=\"#\">about</a></p></div></div></div></div></section>", 1);
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"company-section\"><div class=\"container\"><div class=\"row about-features\"><div class=\"col-md-8\"><div class=\"content\"><h5>About Industry</h5><h1>Our <span>Company</span></h1><p class=\"p-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptates amet voluptatum at aliquid veniam iste deleniti porro, natus inventore, quod itaque, quae, officiis tenetur! Libero tempora eius, recusandae. Corporis quia, architecto fugiat rerum, quod nihil possimus.</p><ul class=\"company-list mr-50\"><li><i class=\"pe-7s-angle-right\"></i>Team of Professional</li><li><i class=\"pe-7s-angle-right\"></i>Smart Technology</li><li><i class=\"pe-7s-angle-right\"></i>Full of services css</li><li><i class=\"pe-7s-angle-right\"></i>Need It Fast? We Can Help.</li></ul><ul class=\"company-list\"><li><i class=\"pe-7s-angle-right\"></i>Team of Professional</li><li><i class=\"pe-7s-angle-right\"></i>Smart Technology</li><li><i class=\"pe-7s-angle-right\"></i>Need It Fast? We Can Help.</li><li><i class=\"pe-7s-angle-right\"></i>Full of services css</li></ul><div class=\"company-funfact\"><div class=\"funfact-item\"><h2>80+</h2><h4>projects</h4></div><div class=\"funfact-item\"><h2>99+</h2><h4>Happy Clients</h4></div><div class=\"funfact-item\"><h2>75+</h2><h4>Award Won</h4></div></div></div></div><div class=\"col-md-4\"><div class=\"thumb\"><img src=\"public/images/features/h-1.jpg\" alt=\"\"><div class=\"about-video\"><h4>company video gane</h4><a class=\"about-video-btn\" href=\"#\"><i class=\"flaticon-play-button-3\"></i></a></div></div></div></div></div></section>", 1);
-
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"team-section bg-f8\"><div class=\"container\"><div class=\"row\"><div class=\"section-title\"><h4>MEET OUR TEAM</h4><h2>OUR <span>TEAM</span></h2><p>Consectetur adipisicing elit. Excepturi nemo tenetur veniam repellat earum inventore modi omnis.</p></div></div><div class=\"row\"><div class=\"col-lg-3 col-md-4 col-sm-6\"><div class=\"team-col\"><div class=\"thumb\"><img src=\"public/images/team/1.jpg\" alt=\"\"></div><div class=\"content text-center\"><h4><a href=\"#\">mikel jackson</a></h4><h5>designer</h5></div></div></div><div class=\"col-lg-3 col-md-4 col-sm-6\"><div class=\"team-col\"><div class=\"thumb\"><img src=\"public/images/team/2.jpg\" alt=\"\"></div><div class=\"content text-center\"><h4><a href=\"#\">CM Punk</a></h4><h5>designer</h5></div></div></div><div class=\"col-lg-3 col-md-4 col-sm-6\"><div class=\"team-col\"><div class=\"thumb\"><img src=\"public/images/team/3.jpg\" alt=\"\"></div><div class=\"content text-center\"><h4><a href=\"#\">Hulk Hogan</a></h4><h5>designer</h5></div></div></div><div class=\"col-lg-3 col-md-4 col-sm-6\"><div class=\"team-col\"><div class=\"thumb\"><img src=\"public/images/team/4.jpg\" alt=\"\"></div><div class=\"content text-center\"><h4><a href=\"#\">André the Giant</a></h4><h5>designer</h5></div></div></div></div></div></section>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"team-section bg-f8\"><div class=\"container\"><div class=\"row\"><div class=\"section-title\"><h2>OUR <span class=\"border-bottom border-warning border-2\">TEAM</span></h2><p>Our team EXPERT MEMBERS</p></div></div><div class=\"row\"><div class=\"col-lg-3 col-md-4 col-sm-6\"><div class=\"team-col\"><div class=\"thumb\"><img src=\"public/images/team/1.jpg\" alt=\"\"></div><div class=\"content text-center\"><h4><a href=\"#\">mikel jackson</a></h4><h5>designer</h5></div></div></div><div class=\"col-lg-3 col-md-4 col-sm-6\"><div class=\"team-col\"><div class=\"thumb\"><img src=\"public/images/team/2.jpg\" alt=\"\"></div><div class=\"content text-center\"><h4><a href=\"#\">CM Punk</a></h4><h5>designer</h5></div></div></div><div class=\"col-lg-3 col-md-4 col-sm-6\"><div class=\"team-col\"><div class=\"thumb\"><img src=\"public/images/team/3.jpg\" alt=\"\"></div><div class=\"content text-center\"><h4><a href=\"#\">Hulk Hogan</a></h4><h5>designer</h5></div></div></div><div class=\"col-lg-3 col-md-4 col-sm-6\"><div class=\"team-col\"><div class=\"thumb\"><img src=\"public/images/team/4.jpg\" alt=\"\"></div><div class=\"content text-center\"><h4><a href=\"#\">André the Giant</a></h4><h5>designer</h5></div></div></div></div></div></section>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_aboutVue = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("aboutVue");
+
   var _component_testimonialVue = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("testimonialVue");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Inner Section Start "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Inner Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Company Section Start "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Company Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" team Section Start "), _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" team Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" testimonials Section Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_testimonialVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" testimonials Section End ")]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Inner Section Start "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Inner Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Company Section Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_aboutVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Company Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" team Section Start "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" team Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" testimonials Section Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_testimonialVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" testimonials Section End ")]);
 }
 
 /***/ }),
@@ -25417,7 +25668,10 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"welcome-feature-section pb-40\"><div class=\"container\"><div class=\"row\"><div class=\"col-md-4\"><div class=\"welcome-feature\"><div class=\"thumb\"><img src=\"public/images/features/1.jpg\" alt=\"features img\"></div><div class=\"content\"><div class=\"icon-box\"><i class=\"flaticon-3d\"></i></div><h2>Need Fast? We Can Help</h2></div></div></div><div class=\"col-md-4\"><div class=\"welcome-feature\"><div class=\"thumb\"><img src=\"public/images/features/2.jpg\" alt=\"features img\"></div><div class=\"content\"><div class=\"icon-box\"><i class=\"flaticon-engineer\"></i></div><h2>70 years experience</h2></div></div></div><div class=\"col-md-4\"><div class=\"welcome-feature\"><div class=\"thumb\"><img src=\"public/images/features/3.jpg\" alt=\"features img\"></div><div class=\"content\"><div class=\"icon-box\"><i class=\"flaticon-idea\"></i></div><h2>Punctual Delivery Time</h2></div></div></div></div></div></section>", 1);
 
 var _hoisted_2 = {
-  "class": "service-section4 bg-f9 pb-40"
+  "class": "service-section4 bg-f9 pb-40",
+  style: {
+    "background-image": "url('images/bg/px-1.jpg')"
+  }
 };
 var _hoisted_3 = {
   "class": "container"
@@ -25427,7 +25681,9 @@ var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "row"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "section-title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h4>OUR Services</h4> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Our "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Products")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Consectetur adipisicing elit. Excepturi nemo tenetur veniam repellat earum inventore modi omnis.")])], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <h4>OUR Services</h4> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Our "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "border-bottom border-warning border-2"
+}, "Products")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Consectetur adipisicing elit. Excepturi nemo tenetur veniam repellat earum inventore modi omnis.")])], -1
 /* HOISTED */
 );
 
@@ -25435,30 +25691,69 @@ var _hoisted_5 = {
   "class": "row"
 };
 var _hoisted_6 = {
-  "class": "col-md-4"
+  "class": "projects-item style-2"
 };
 var _hoisted_7 = {
-  "class": "service-item style-4"
-};
-var _hoisted_8 = {
   "class": "thumb"
 };
-var _hoisted_9 = ["src"];
+var _hoisted_8 = ["src"];
+var _hoisted_9 = {
+  "class": "content"
+};
 var _hoisted_10 = {
+  "class": "counter-item"
+};
+var _hoisted_11 = {
+  "class": "text-bottom"
+};
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" View Product ");
+
+var _hoisted_13 = {
+  "class": "projects-section over-layer-white parallax-bg",
+  style: {
+    "background-image": "url('images/bg/px-1.jpg')"
+  },
+  "data-type": "parallax",
+  "data-speed": "5"
+};
+var _hoisted_14 = {
+  "class": "container"
+};
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "row"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "section-title"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Our "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "border-bottom border-warning border-2"
+}, "Services")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Consectetur adipisicing elit. Excepturi nemo tenetur veniam repellat earum inventore modi omnis.")])], -1
+/* HOISTED */
+);
+
+var _hoisted_16 = {
+  "class": "row"
+};
+var _hoisted_17 = {
+  "class": "service-item style-4"
+};
+var _hoisted_18 = {
+  "class": "thumb"
+};
+var _hoisted_19 = ["src"];
+var _hoisted_20 = {
   "class": "service-link-box"
 };
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("View Product ");
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Read More ");
 
-var _hoisted_12 = {
+var _hoisted_22 = {
   "class": "content"
 };
 
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"projects-section over-layer-white parallax-bg\" style=\"background-image:url(images/bg/px-1.jpg);\" data-type=\"parallax\" data-speed=\"5\"><div class=\"container\"><div class=\"row\"><div class=\"section-title\"><h4>OUR Services</h4><h2>Our <span>Services</span></h2><p>Consectetur adipisicing elit. Excepturi nemo tenetur veniam repellat earum inventore modi omnis.</p></div></div><div class=\"row\"><div class=\"col-md-12\"><div id=\"projects_carousel\" class=\"owl-carousel\"><div class=\"item\"><div class=\"projects-item\"><div class=\"thumb\"><img src=\"public/images/projects/1.jpg\" alt=\"\"></div><div class=\"content\"><h1>01</h1><h3>PLC</h3><!-- &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt\n                                            laudantium, itaque temporibus doloribus reiciendis.&lt;/p&gt;\n                                        &lt;a class=&quot;project-btn&quot; href=&quot;#&quot;&gt;View Project&lt;/a&gt; --></div></div></div><div class=\"item\"><div class=\"projects-item\"><div class=\"thumb\"><img src=\"public/images/projects/2.jpg\" alt=\"\"></div><div class=\"content\"><h1>02</h1><h3>Retrofitting Services</h3><!-- &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt\n                                            laudantium, itaque temporibus doloribus reiciendis.&lt;/p&gt;\n                                        &lt;a class=&quot;project-btn&quot; href=&quot;#&quot;&gt;View Project&lt;/a&gt; --></div></div></div><div class=\"item\"><div class=\"projects-item\"><div class=\"thumb\"><img src=\"public/images/projects/3.jpg\" alt=\"\"></div><div class=\"content\"><h1>03</h1><h3>Electromechanical &amp; Numerical</h3><!-- &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt\n                                            laudantium, itaque temporibus doloribus reiciendis.&lt;/p&gt;\n                                        &lt;a class=&quot;project-btn&quot; href=&quot;#&quot;&gt;View Project&lt;/a&gt; --></div></div></div><div class=\"item\"><div class=\"projects-item\"><div class=\"thumb\"><img src=\"public/images/projects/4.jpg\" alt=\"\"></div><div class=\"content\"><h1>04</h1><h3>PLC</h3><!-- &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt\n                                            laudantium, itaque temporibus doloribus reiciendis.&lt;/p&gt;\n                                        &lt;a class=&quot;project-btn&quot; href=&quot;#&quot;&gt;View Project&lt;/a&gt; --></div></div></div></div></div></div></div></section>", 1);
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"contact-divider pb-70\"><div class=\"container\"><div class=\"row\"><div class=\"col-md-8\"><div class=\"contact-item\"><h5>plant is an industrial site</h5><h3>The factory or manufacturing</h3><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div></div><div class=\"col-md-4 offset-md-0\"><div class=\"contact-btn-item mt-3\"><a class=\"contact-btn style-1\" href=\"#\">appointment now</a><h3>+099 123 123 123</h3></div></div></div></div></section>", 1);
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"contact-divider pb-70\"><div class=\"container\"><div class=\"row\"><div class=\"col-md-8\"><div class=\"contact-item\"><h5>plant is an industrial site</h5><h3>The factory or manufacturing</h3><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div></div><div class=\"col-md-4 offset-md-0\"><div class=\"contact-btn-item mt-3\"><a class=\"contact-btn style-1\" href=\"#\">appointment now</a><h3>+099 123 123 123</h3></div></div></div></div></section>", 1);
-
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"blog-section bg-f8\"><div class=\"container\"><div class=\"row\"><div class=\"section-title\"><h4>OUR blog</h4><h2>Latest <span>blog</span></h2><p>Consectetur adipisicing elit. Excepturi nemo tenetur veniam repellat earum inventore modi omnis.</p></div></div><div class=\"row\"><div class=\"col-md-6 col-lg-4\"><div class=\"blog-post\"><div class=\"thumb\"><img alt=\"\" src=\"public/images/blog/1.jpg\"></div><div class=\"date-box\"><div class=\"inner\"><div class=\"date\"><b>24</b> sep </div><div class=\"comment\"><i class=\"fa fa-commenting-o\" aria-hidden=\"true\"></i> 8 </div></div></div><div class=\"content\"><h3>HERE WILL BE THE TITLE</h3><p>There are many variations passages available, but the lorem, ipsum... </p></div><a href=\"blog-details.html\" class=\"read-btn\">Continue Reading <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i></a></div></div><div class=\"col-md-6 col-lg-4\"><div class=\"blog-post\"><div class=\"thumb\"><img alt=\"\" src=\"public/images/blog/2.jpg\"></div><div class=\"date-box\"><div class=\"inner\"><div class=\"date\"><b>26</b> sep </div><div class=\"comment\"><i class=\"fa fa-commenting-o\" aria-hidden=\"true\"></i> 2 </div></div></div><div class=\"content\"><h3>HERE WILL BE THE TITLE</h3><p>There are many variations passages available, but the lorem, ipsum... </p></div><a href=\"blog-details.html\" class=\"read-btn\">Continue Reading <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i></a></div></div><div class=\"col-md-6 col-lg-4\"><div class=\"blog-post\"><div class=\"thumb\"><img alt=\"\" src=\"public/images/blog/3.jpg\"></div><div class=\"date-box\"><div class=\"inner\"><div class=\"date\"><b>30</b> sep </div><div class=\"comment\"><i class=\"fa fa-commenting-o\" aria-hidden=\"true\"></i> 9 </div></div></div><div class=\"content\"><h3>HERE WILL BE THE TITLE</h3><p>There are many variations passages available, but the lorem, ipsum... </p></div><a href=\"blog-details.html\" class=\"read-btn\">Continue Reading <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i></a></div></div></div></div></section>", 1);
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"blog-section bg-f8\"><div class=\"container\"><div class=\"row\"><div class=\"section-title\"><h4>OUR blog</h4><h2>Latest <span>blog</span></h2><p>Consectetur adipisicing elit. Excepturi nemo tenetur veniam repellat earum inventore modi omnis.</p></div></div><div class=\"row\"><div class=\"col-md-6 col-lg-4\"><div class=\"blog-post\"><div class=\"thumb\"><img alt=\"\" src=\"public/images/blog/1.jpg\"></div><div class=\"date-box\"><div class=\"inner\"><div class=\"date\"><b>24</b> sep </div><div class=\"comment\"><i class=\"fa fa-commenting-o\" aria-hidden=\"true\"></i> 8 </div></div></div><div class=\"content\"><h3>HERE WILL BE THE TITLE</h3><p>There are many variations passages available, but the lorem, ipsum... </p></div><a href=\"blog-details.html\" class=\"read-btn\">Continue Reading <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i></a></div></div><div class=\"col-md-6 col-lg-4\"><div class=\"blog-post\"><div class=\"thumb\"><img alt=\"\" src=\"public/images/blog/2.jpg\"></div><div class=\"date-box\"><div class=\"inner\"><div class=\"date\"><b>26</b> sep </div><div class=\"comment\"><i class=\"fa fa-commenting-o\" aria-hidden=\"true\"></i> 2 </div></div></div><div class=\"content\"><h3>HERE WILL BE THE TITLE</h3><p>There are many variations passages available, but the lorem, ipsum... </p></div><a href=\"blog-details.html\" class=\"read-btn\">Continue Reading <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i></a></div></div><div class=\"col-md-6 col-lg-4\"><div class=\"blog-post\"><div class=\"thumb\"><img alt=\"\" src=\"public/images/blog/3.jpg\"></div><div class=\"date-box\"><div class=\"inner\"><div class=\"date\"><b>30</b> sep </div><div class=\"comment\"><i class=\"fa fa-commenting-o\" aria-hidden=\"true\"></i> 9 </div></div></div><div class=\"content\"><h3>HERE WILL BE THE TITLE</h3><p>There are many variations passages available, but the lorem, ipsum... </p></div><a href=\"blog-details.html\" class=\"read-btn\">Continue Reading <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i></a></div></div></div></div></section>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_sliderVue = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("sliderVue");
@@ -25473,13 +25768,38 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_clientsVue = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("clientsVue");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" slider start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_sliderVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" slider end "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Features Section Start "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Features Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Services Section Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.products, function (item) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-      alt: "service img",
-      src: _ctx.$imghost + 'products/' + item.img_name
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" slider start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_sliderVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" slider end "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Features Section Start "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Features Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Product Section Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.products, function (item, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      "class": "col-md-6 col-lg-4",
+      key: item.id
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+      src: _ctx.$imghost + 'products/' + item.img_name,
+      alt: ""
     }, null, 8
     /* PROPS */
-    , _hoisted_9), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    , _hoisted_8), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(index + 1), 1
+    /* TEXT */
+    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      to: {
+        name: 'project.single',
+        params: {
+          name: item.slug
+        }
+      }
+    }, {
+      "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+        return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.log_title), 1
+        /* TEXT */
+        )];
+      }),
+      _: 2
+      /* DYNAMIC */
+
+    }, 1032
+    /* PROPS, DYNAMIC_SLOTS */
+    , ["to"])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.log_description.substr(0, 70)) + "..", 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
       "class": "project-btn",
       to: {
         name: 'project.single',
@@ -25489,21 +25809,49 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       }
     }, {
       "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-        return [_hoisted_11];
+        return [_hoisted_12];
       }),
       _: 2
       /* DYNAMIC */
 
     }, 1032
     /* PROPS, DYNAMIC_SLOTS */
-    , ["to"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.log_title), 1
+    , ["to"])])])]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Products Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" about start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_aboutVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" about end "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Service Section Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.services, function (item) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      key: item.id,
+      "class": "col-md-4"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+      alt: "service img",
+      src: _ctx.$imghost + 'services/' + item.img_name
+    }, null, 8
+    /* PROPS */
+    , _hoisted_19), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      to: {
+        name: 'service.single',
+        params: {
+          name: item.slug
+        }
+      }
+    }, {
+      "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+        return [_hoisted_21];
+      }),
+      _: 2
+      /* DYNAMIC */
+
+    }, 1032
+    /* PROPS, DYNAMIC_SLOTS */
+    , ["to"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.log_title), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.log_description.substring(1, 85)) + " ..", 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.log_description.substr(0, 40)), 1
     /* TEXT */
     )])])]);
-  }), 256
-  /* UNKEYED_FRAGMENT */
-  ))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Services Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" about start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_aboutVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" about end "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Projects Section Start "), _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Projects Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Contact Section Start "), _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Contact Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" testimonials Section Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_testimonialVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" testimonials Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Blog Section Start "), _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Blog Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" contact vue start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_contactVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" contact vue end "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" clients vue start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_clientsVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" clients vue end ")], 64
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" service Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Contact Section Start "), _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Contact Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" testimonials Section Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_testimonialVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" testimonials Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Blog Section Start "), _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Blog Section End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" contact vue start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_contactVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" contact vue end "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" clients vue start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_clientsVue), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" clients vue end ")], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -49891,12 +50239,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _testimonial_vue_vue_type_template_id_0a43ffb8__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./testimonial.vue?vue&type=template&id=0a43ffb8 */ "./resources/js/components/testimonial.vue?vue&type=template&id=0a43ffb8");
-/* harmony import */ var _home_raja_Public_ins_amichand_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _testimonial_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./testimonial.vue?vue&type=script&lang=js */ "./resources/js/components/testimonial.vue?vue&type=script&lang=js");
+/* harmony import */ var _home_raja_Public_ins_amichand_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
-const script = {}
+
+
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_raja_Public_ins_amichand_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_testimonial_vue_vue_type_template_id_0a43ffb8__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/testimonial.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_raja_Public_ins_amichand_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_testimonial_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_testimonial_vue_vue_type_template_id_0a43ffb8__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/testimonial.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -50271,6 +50621,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_slider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_slider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./slider.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/slider.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/components/testimonial.vue?vue&type=script&lang=js":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/testimonial.vue?vue&type=script&lang=js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_testimonial_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_testimonial_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./testimonial.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/testimonial.vue?vue&type=script&lang=js");
  
 
 /***/ }),

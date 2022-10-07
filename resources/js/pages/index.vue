@@ -51,120 +51,83 @@
     </section>
     <!-- Features Section End -->
 
-    <!-- Services Section Start -->
-    <section class="service-section4 bg-f9 pb-40">
+    <!-- Product Section Start -->
+    <section class="service-section4 bg-f9 pb-40" style="background-image:url('images/bg/px-1.jpg')">
         <div class="container">
             <div class="row">
                 <div class="section-title">
                     <!-- <h4>OUR Services</h4> -->
-                    <h2>Our <span>Products</span></h2>
+                    <h2>Our <span class=" border-bottom border-warning  border-2">Products</span></h2>
                     <p>Consectetur adipisicing elit. Excepturi nemo tenetur veniam repellat earum inventore modi
                         omnis.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4" v-for="item in products">
-                    <div class="service-item style-4">
+                <div class="col-md-6 col-lg-4" v-for="(item,index) in products" :key="item.id">
+                    <div class="projects-item style-2">
                         <div class="thumb">
-                            <img alt="service img" v-bind:src="$imghost+'products/'+item.img_name">
-                            <div class="service-link-box">
-                                <router-link class="project-btn"
-                                    :to="{name:'project.single',params: { name: item.slug }}">View Product
-                                </router-link>
+                            <img v-bind:src="$imghost+'products/'+item.img_name" alt="">
+                            <div class="content">
+                                <div class="counter-item">
+                                    <h1>{{index+1}}</h1>
+                                </div>
+                                <h3>
+                                    <router-link :to="{name:'project.single',params: { name: item.slug }}">
+                                        {{item.log_title}}</router-link>
+                                </h3>
                             </div>
                         </div>
-                        <div class="content">
-                            <h3>{{item.log_title}}
-                            </h3>
-                            <h4>{{item.log_description.substring(1,85)}} ..</h4>
+                        <div class="text-bottom">
+                            <h4>{{item.log_description.substr(0,70)}}..</h4>
+                            <router-link class="project-btn" :to="{name:'project.single',params: { name: item.slug }}">
+                                View Product
+                            </router-link>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <!-- Services Section End -->
+    <!-- Products Section End -->
     <!-- about start -->
     <aboutVue />
     <!-- about end -->
-    <!-- Projects Section Start -->
-    <section class="projects-section over-layer-white parallax-bg" style="background-image:url(images/bg/px-1.jpg);"
+    <!-- Service Section Start -->
+    <section class="projects-section over-layer-white parallax-bg" style="background-image:url('images/bg/px-1.jpg');"
         data-type="parallax" data-speed="5">
         <div class="container">
             <div class="row">
                 <div class="section-title">
-                    <h4>OUR Services</h4>
-                    <h2>Our <span>Services</span></h2>
+
+                    <h2>Our <span class=" border-bottom border-warning  border-2">Services</span></h2>
                     <p>Consectetur adipisicing elit. Excepturi nemo tenetur veniam repellat earum inventore modi
                         omnis.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <div id="projects_carousel" class=" owl-carousel">
-                        <div class="item">
-                            <div class="projects-item">
-                                <div class="thumb">
-                                    <img src="public/images/projects/1.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <h1>01</h1>
-                                    <h3>PLC</h3>
-                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-                                            laudantium, itaque temporibus doloribus reiciendis.</p>
-                                        <a class="project-btn" href="#">View Project</a> -->
-                                </div>
+        
+                <div v-for="item in services" :key="item.id" class="col-md-4">
+                    <div class="service-item style-4">
+                        <div class="thumb">
+                            <img alt="service img" v-bind:src="$imghost+'services/'+item.img_name">
+                            <div class="service-link-box">
+                                <router-link :to="{name:'service.single',params:{name:item.slug}}">Read More
+                                </router-link>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="projects-item">
-                                <div class="thumb">
-                                    <img src="public/images/projects/2.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <h1>02</h1>
-                                    <h3>Retrofitting Services</h3>
-                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-                                            laudantium, itaque temporibus doloribus reiciendis.</p>
-                                        <a class="project-btn" href="#">View Project</a> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="projects-item">
-                                <div class="thumb">
-                                    <img src="public/images/projects/3.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <h1>03</h1>
-                                    <h3>Electromechanical & Numerical</h3>
-                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-                                            laudantium, itaque temporibus doloribus reiciendis.</p>
-                                        <a class="project-btn" href="#">View Project</a> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="projects-item">
-                                <div class="thumb">
-                                    <img src="public/images/projects/4.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <h1>04</h1>
-                                    <h3>PLC</h3>
-                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-                                            laudantium, itaque temporibus doloribus reiciendis.</p>
-                                        <a class="project-btn" href="#">View Project</a> -->
-                                </div>
-                            </div>
+                        <div class="content">
+                            <h3>{{item.log_title}}</h3>
+                            <h4>{{item.log_description.substr(0,40)}}</h4>
                         </div>
                     </div>
                 </div>
+
+
             </div>
+
         </div>
     </section>
-    <!-- Projects Section End -->
+    <!-- service Section End -->
 
     <!-- Contact Section Start -->
     <section class="contact-divider pb-70">
@@ -320,7 +283,7 @@ export default {
         try {
             const res = await axios.get(this.$host + "index");
             this.products = res.data.products;
-            this.service = res.data.service;
+            this.services = res.data.services;
 
         } catch (error) {
             console.log(error);
