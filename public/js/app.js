@@ -27268,7 +27268,7 @@ if (location.hostname == "127.0.0.1") {
 
   app.config.globalProperties.$imghost = 'https://amichand.com/admin/public/upload/'; //for server
 
-  app.config.globalProperties.$imghost1 = 'https://amichand.com/admin/public/'; //for server
+  app.config.globalProperties.$imghost1 = 'https://amichand.com/public/'; //for server
 }
 
 app.use(_router__WEBPACK_IMPORTED_MODULE_1__["default"]).use((vue_split_carousel__WEBPACK_IMPORTED_MODULE_3___default())).use((_aacassandra_vue3_progressbar__WEBPACK_IMPORTED_MODULE_4___default())).mount("#app");

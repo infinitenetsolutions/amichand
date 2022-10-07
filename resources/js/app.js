@@ -17,7 +17,7 @@ if (location.hostname == "127.0.0.1") {
 
     app.config.globalProperties.$host = 'https://amichand.com/api/'   //for server
     app.config.globalProperties.$imghost = 'https://amichand.com/admin/public/upload/'  //for server
-    app.config.globalProperties.$imghost1 = 'https://amichand.com/admin/public/'  //for server
+    app.config.globalProperties.$imghost1 = 'https://amichand.com/public/'  //for server
 
 }
 
