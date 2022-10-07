@@ -15,7 +15,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return DB::table('site_infos')->get();
+        return DB::table('site_infos')->first();
     }
 
     /**

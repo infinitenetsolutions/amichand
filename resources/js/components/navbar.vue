@@ -16,7 +16,7 @@
                                     <ul>
                                         <li>
                                             <i class="flaticon-flash"></i>
-                                            325, Dreem streen Borgona united, London.
+                                           {{site_info.address}} | <i class="fas fa-phone-office"></i> {{site_info.phone}} , {{site_info.phone2}}
                                         </li>
                                     </ul>
                                 </div>
@@ -24,11 +24,11 @@
                             <div class="col-lg-2">
                                 <div class="social-icons">
                                     <ul>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-envelope"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                                        <li v-if="site_info.twitter" ><a v-bind:href="site_info.twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li v-if="site_info.facebook" ><a v-bind:href="site_info.facebook"><i class="fab fa-facebook"></i></a></li>
+                                    <li v-if="site_info.instagram" ><a v-bind:href="site_info.instagram"><i class="fab fa-instagram"></i></a></li>
+                                    <li v-if="site_info.whatsapp" ><a v-bind:href="site_info.whatsapp"><i class="fas fa-envelope"></i></a></li>
+                                    <li v-if="site_info.youtube" ><a v-bind:href="site_info.youtube"><i class="fab fa-youtube"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                             <div class="container">
                                 <!-- header dropdown buttons end-->
                                 <router-link class="navbar-brand" :to="{name:'home'}">
-                                    <img id="logo_img" src="public/images/logo-1.png" alt="">
+                                    <img id="logo_img" v-bind:src="$imghost1+'images/logo-1.png'" alt="">
                                 </router-link>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbar-collapse-1" aria-controls="navbar-collapse-1"
@@ -149,10 +149,12 @@
 <script>
 export default {
     name:'navbar',
+    inject:['site_info'],
     data() {
         return {
             product_category: [],
-            service_category:[]
+            service_category:[],
+            site_info:[]
         };
     },
     async created() {
@@ -161,6 +163,8 @@ export default {
             this.product_category = res.data.product_category;
             this.service_category = res.data.service_category;
 
+            const res1 = await axios.get(this.$host + "contact");
+            this.site_info = res1.data;
         } catch (error) {
             console.log(error);
         }

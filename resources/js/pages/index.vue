@@ -157,7 +157,8 @@
     <!-- testimonials Section End -->
 
     <!-- Blog Section Start -->
-    <section class="blog-section bg-f8">
+    
+    <!-- <section class="blog-section bg-f8">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -245,7 +246,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Blog Section End -->
     <!-- contact vue start -->
     <contactVue />

@@ -51,14 +51,9 @@ export default {
             this.$Progress.finish();
         });
 
-        try {
-            const res = await axios.get(this.$host + "contact");
-            this.about = res.data;
-            console.log(this.about);
-        } catch (error) {
-            console.log(error);
-        }
 
+    
     },
+   
 }
 </script>
