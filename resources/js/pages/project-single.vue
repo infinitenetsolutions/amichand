@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Inner Section Start -->
-        <section class="inner-area parallax-bg" data-background="../../images/bg/px-1.jpg" data-type="parallax"
+        <section class="inner-area parallax-bg" style="background-image: url('images/bg/px-1.jpg')" data-type="parallax"
             data-speed="3">
             <div class="container">
                 <div class="section-content">
