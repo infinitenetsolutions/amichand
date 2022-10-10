@@ -10,7 +10,7 @@
                 <div class="col-md-4">
                     <div class="welcome-feature">
                         <div class="thumb">
-                            <img src="public/images/features/1.jpg" alt="features img">
+                            <img src="/images/features/1.jpg" alt="features img">
                         </div>
                         <div class="content">
                             <div class="icon-box">
@@ -23,7 +23,7 @@
                 <div class="col-md-4">
                     <div class="welcome-feature">
                         <div class="thumb">
-                            <img src="public/images/features/2.jpg" alt="features img">
+                            <img src="/images/features/2.jpg" alt="features img">
                         </div>
                         <div class="content">
                             <div class="icon-box">
@@ -36,7 +36,7 @@
                 <div class="col-md-4">
                     <div class="welcome-feature">
                         <div class="thumb">
-                            <img src="public/images/features/3.jpg" alt="features img">
+                            <img src="/images/features/3.jpg" alt="features img">
                         </div>
                         <div class="content">
                             <div class="icon-box">
@@ -172,7 +172,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-post">
                         <div class="thumb">
-                            <img alt="" src="public/images/blog/1.jpg">
+                            <img alt="" src="/images/blog/1.jpg">
                         </div>
                         <div class="date-box">
                             <div class="inner">
@@ -197,7 +197,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-post">
                         <div class="thumb">
-                            <img alt="" src="public/images/blog/2.jpg">
+                            <img alt="" src="/images/blog/2.jpg">
                         </div>
                         <div class="date-box">
                             <div class="inner">
@@ -222,7 +222,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-post">
                         <div class="thumb">
-                            <img alt="" src="public/images/blog/3.jpg">
+                            <img alt="" src="/images/blog/3.jpg">
                         </div>
                         <div class="date-box">
                             <div class="inner">

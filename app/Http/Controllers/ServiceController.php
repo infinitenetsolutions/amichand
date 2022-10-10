@@ -10,7 +10,7 @@ class ServiceController extends Controller
     function index($category)
     {
         $cat=DB::table('categories')->where('name','like','%'.$category.'%')->first();
-        $services= DB::table('service_with_images')->where('category',$cat->id)->get();
+        $services = DB::select('select `services`.`id` AS `id`,`services`.`category` AS `category`,`services`.`log_title` AS `log_title`,`services`.`slug` AS `slug`,`services`.`log_description` AS `log_description`,`service_images`.`name` AS `img_name` from (`services` join `service_images`) where `services`.`id` = `service_images`.`service_id` group by `services`.`id` && where `category`='.$cat->id.'');
         return $services;
     }
     function service_single($slug)

@@ -11,8 +11,13 @@ class IndexController extends Controller
 
     function index()
     {
-        $products = DB::table('product_with_image')->limit(9)->get();
-        $services = DB::table('service_with_images')->limit(9)->get();
+        // $products = DB::table('product_with_image')->limit(9)->get();
+        // $services = DB::table('service_with_images')->limit(9)->get();
+
+
+        $products = DB::select('select `products`.`id` AS `id`,`products`.`category` AS `category`,`products`.`log_title` AS `log_title`,`products`.`slug` AS `slug`,`products`.`log_description` AS `log_description`,`product_images`.`name` AS `img_name` from (`products` join `product_images`) where `products`.`id` = `product_images`.`product_id` group by `products`.`id` limit 9');
+        $services = DB::select('select `services`.`id` AS `id`,`services`.`category` AS `category`,`services`.`log_title` AS `log_title`,`services`.`slug` AS `slug`,`services`.`log_description` AS `log_description`,`service_images`.`name` AS `img_name` from (`services` join `service_images`) where `services`.`id` = `service_images`.`service_id` group by `services`.`id` limit 9');
+
 
         return response()->json(['products' => $products, 'services' => $services]);
     }
