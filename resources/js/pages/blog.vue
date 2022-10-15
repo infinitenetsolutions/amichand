@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Inner Section Start -->
-        <section class="inner-area parallax-bg" style="background-image: url('images/bg/px-1.jpg')" data-type="parallax"
+        <section class="inner-area parallax-bg"  v-bind:style="{ backgroundImage: 'url(' + $imghost1 + image+')' }" data-type="parallax"
             data-speed="3">
             <div class="container">
                 <div class="section-content">
@@ -240,3 +240,14 @@
 
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            image:'images/bg/px-1.jpg',
+
+        }
+    },
+}
+</script>

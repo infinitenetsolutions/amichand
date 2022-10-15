@@ -10,7 +10,7 @@
                 <div class="col-md-4">
                     <div class="welcome-feature">
                         <div class="thumb">
-                            <img src="/images/features/1.jpg" alt="features img">
+                            <img v-bind:src="$imghost1+'images/features/1.jpg'" alt="features img">
                         </div>
                         <div class="content">
                             <div class="icon-box">
@@ -23,7 +23,7 @@
                 <div class="col-md-4">
                     <div class="welcome-feature">
                         <div class="thumb">
-                            <img src="/images/features/2.jpg" alt="features img">
+                            <img v-bind:src="$imghost1+'images/features/2.jpg'" alt="features img">
                         </div>
                         <div class="content">
                             <div class="icon-box">
@@ -36,7 +36,7 @@
                 <div class="col-md-4">
                     <div class="welcome-feature">
                         <div class="thumb">
-                            <img src="/images/features/3.jpg" alt="features img">
+                            <img v-bind:src="$imghost1+'images/features/3.jpg'" alt="features img">
                         </div>
                         <div class="content">
                             <div class="icon-box">
