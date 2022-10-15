@@ -442,7 +442,8 @@ input:-moz-placeholder {
   color: #9c9c9c;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 26px margin: 0 auto;
+  line-height: 26px;
+   margin: 0 auto;
   max-width: 484px;
 }
 
@@ -7208,4 +7209,8 @@ M > P Css Style
 }
 .border-bottom {
     border-bottom: 2px solid !important;
+}
+
+.section-content .row .col-12{
+  margin-top: 20px;
 }
