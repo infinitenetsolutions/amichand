@@ -50,5 +50,8 @@ Route::get('services/single/{slug}', [ServiceController::class, 'service_single'
 
 // about 
 Route::get('team', [AboutController::class, 'team'])->name('team');
+Route::get('mission/vision', [AboutController::class, 'mission_vision'])->name('mission_vision');
+
+
 
 // about end
