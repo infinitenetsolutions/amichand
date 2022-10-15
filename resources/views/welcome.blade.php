@@ -11,8 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css')}}">
-
     <link rel="stylesheet" href="{{ asset('css/menu.css')}}">
     <link rel="stylesheet" href="{{ asset('css/custom-animation.css')}}">
     <!-- Style CSS -->

@@ -59,7 +59,7 @@
 
                                         <!-- mega-menu end -->
                                         <li class="nav-item dropdown active">
-                                            <router-link :to="{name:'home'}" class="nav-link dropdown-toggle"
+                                            <router-link :to="{name:'home'}" class="nav-link "
                                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home
                                             </router-link>
 
@@ -115,7 +115,7 @@
 
 
                                         <li class="nav-item dropdown">
-                                            <router-link :to="{name:'career'}" class="nav-link dropdown-toggle"
+                                            <router-link :to="{name:'career'}" class="nav-link "
                                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Career
                                             </router-link>
 
@@ -123,7 +123,7 @@
 
                                         <!-- mega-menu end -->
                                         <li class="nav-item dropdown">
-                                            <router-link to="contact" class="nav-link dropdown-toggle">
+                                            <router-link to="contact" class="nav-link ">
                                                 Contact</router-link>
 
                                         </li>

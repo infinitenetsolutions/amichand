@@ -68,7 +68,7 @@ header.header .container{
 }
 
 .header .navbar-nav .dropdown-toggle::after {
-    font-family: 'FontAwesome';
+    font-family: 'Font Awesome 5 Pro';
     content: "\f107";
     position: absolute;
     top: 51%;

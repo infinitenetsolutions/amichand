@@ -25515,7 +25515,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     to: {
       name: 'home'
     },
-    "class": "nav-link dropdown-toggle",
+    "class": "nav-link",
     "data-toggle": "dropdown",
     "aria-haspopup": "true",
     "aria-expanded": "false"
@@ -25603,7 +25603,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     to: {
       name: 'career'
     },
-    "class": "nav-link dropdown-toggle",
+    "class": "nav-link",
     "data-toggle": "dropdown",
     "aria-haspopup": "true",
     "aria-expanded": "false"
@@ -25616,7 +25616,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" mega-menu end "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_59, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "contact",
-    "class": "nav-link dropdown-toggle"
+    "class": "nav-link"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_60];

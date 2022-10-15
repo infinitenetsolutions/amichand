@@ -443,7 +443,7 @@ input:-moz-placeholder {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 26px;
-   margin: 0 auto;
+  margin: 0 auto;
   max-width: 484px;
 }
 
@@ -4233,7 +4233,7 @@ Inner Css Style
 
 .inner-area p a:before {
   content: "";
-  font-family: FontAwesome;
+  font-family: 'Font Awesome 5 Pro';
   font-size: 13px;
   color: #fff;
   margin: 0 8px;
@@ -7207,10 +7207,19 @@ M > P Css Style
     padding-left: 3rem !important;
   }
 }
+
 .border-bottom {
-    border-bottom: 2px solid !important;
+  border-bottom: 2px solid !important;
 }
 
-.section-content .row .col-12{
+.section-content .row .col-12 {
   margin-top: 20px;
+}
+
+.style-2 .thumb img {
+  height: 250px !important;
+}
+
+.style-4 .thumb img {
+  height: 220px !important;
 }
