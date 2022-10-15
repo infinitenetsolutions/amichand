@@ -15,7 +15,7 @@
                                 <div class="contact-info">
                                     <ul>
                                         <li>
-                                            <i class="flaticon-flash"></i>
+                                            <i class="fas fa-building"></i>
                                            {{site_info.address}} | <i class="fas fa-phone-office"></i> {{site_info.phone}} , {{site_info.phone2}}
                                         </li>
                                     </ul>

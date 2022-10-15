@@ -25262,7 +25262,7 @@ var _hoisted_7 = {
 };
 
 var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "flaticon-flash"
+  "class": "fas fa-building"
 }, null, -1
 /* HOISTED */
 );
