@@ -4896,7 +4896,7 @@ Contact Details Css Style
 }
 
 .contact-details .service-item.style-1 {
-  padding: 18px 24px;
+  padding: 6px 24px;
   border: 1px solid #eee;
   background-color: #fbfbfb;
 }
@@ -7222,4 +7222,13 @@ M > P Css Style
 
 .style-4 .thumb img {
   height: 220px !important;
+}
+
+.career{
+  margin-bottom: 0px !important;
+}
+ #panelsStayOpen-collapseOne{
+  padding: 0px 17px 0px 17px;
+  background-color: #091426;
+  color: #fff;
 }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProductsController;
@@ -52,6 +53,9 @@ Route::get('services/single/{slug}', [ServiceController::class, 'service_single'
 Route::get('team', [AboutController::class, 'team'])->name('team');
 Route::get('mission/vision', [AboutController::class, 'mission_vision'])->name('mission_vision');
 
-
-
 // about end
+
+// career start
+Route::get('career', [CareerController::class, 'index'])->name('career');
+
+// career end

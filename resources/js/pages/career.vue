@@ -2,8 +2,8 @@
     <div>
 
         <!-- Inner Section Start -->
-        <section class="inner-area parallax-bg"  v-bind:style="{ backgroundImage: 'url(' + $imghost1 + image+')' }" data-type="parallax"
-            data-speed="3">
+        <section class="inner-area parallax-bg" v-bind:style="{ backgroundImage: 'url(' + $imghost1 + image+')' }"
+            data-type="parallax" data-speed="3">
             <div class="container">
                 <div class="section-content">
                     <div class="row">
@@ -18,7 +18,7 @@
         <!-- Inner Section End -->
 
         <!-- slider start  -->
-       
+
 
         <!-- slider end -->
         <section class="contact-details pb-70">
@@ -59,34 +59,31 @@
                             </form>
                         </div>
                         <div class="col-12 col-sm-12 col-md-5 col-lg-5">
-                            <h3 class="title">CURRENT  <span>OPENINGS</span></h3>
-                            <div class="service-item style-1 border-1px">
-                                <div class="service-icon">
-                                    <i class="far fa-briefcase"></i>
-                                </div>
-                                <div class="content">
-                                    <h5><a href="#">Contact Info</a></h5>
-                                    <p> 325, Dreem streen Borgona<br> united, London.</p>
-                                </div>
-                            </div>
-                            <div class="service-item style-1 border-1px">
-                                <div class="">
-                                    <i class="far fa-briefcase"></i>
-                                </div>
-                                <div class="content">
-                                    <h5><a href="#">Business Hours</a></h5>
-                                    <p>Monday-Friday: 10am to 8pm <br>Saturday: 11am to 3pm</p>
-                                </div>
-                            </div>
-                            <div class="service-item style-1 border-1px">
-                                <div class="">
-                                    <i class="far fa-briefcase"></i>
-                                </div>
-                                <div class="content">
-                                    <h5><a href="#">Email</a></h5>
-                                    <p><a href="#">info@bdCoder.com</a> <br> <a href="#">set-info@bdCoder.com</a> </p>
+                            <h3 class="title">CURRENT <span>OPENINGS</span></h3>
+
+                            <div class="accordion " id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item challenge-tag row">
+                                    <div v-for="(item,index) in career" :key="item.id">
+                                        <li class=" accordion-button career service-item style-1 border-1px" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                            aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                            <h5> <i class="far fa-briefcase"></i> {{ item.name}} </h5> <small class="text-info">Start
+                                                From {{
+                                                item.start}}</small> | <small class="text-danger">Last Date {{
+                                                item.end}}</small>
+                                        </li>
+
+                                        <div id="panelsStayOpen-collapseOne" v-bind:class="index==0?'show':''" class=" accordion-collapse collapse "
+                                            aria-labelledby="panelsStayOpen-headingOne">
+                                            <div class="accordion-body">
+                                                <strong class="pl-2 pr-2">{{ item.description}} </strong>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -109,8 +106,16 @@
 export default {
     data() {
         return {
-            image:'images/bg/px-1.jpg',
-
+            image: 'images/bg/px-1.jpg',
+            career: {}
+        }
+    },
+    async created() {
+        try {
+            const res = await axios.get(this.$host + "career");
+            this.career = res.data;
+        } catch (error) {
+            console.log(error);
         }
     },
 }
