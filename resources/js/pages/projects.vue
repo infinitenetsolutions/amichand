@@ -100,7 +100,7 @@ export default {
             products: [],
             category: [],
             image: 'images/bg/px-1.jpg',
-
+            url1: ''
         };
     },
     methods: {
