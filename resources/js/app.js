@@ -6,6 +6,7 @@ import router from './router';
 import App from './App.vue'
 import SplitCarousel from "vue-split-carousel";
 import VueProgressBar from "@aacassandra/vue3-progressbar";
+import { applyStyles } from '@popperjs/core';
 const app = createApp(App);
 
 if (location.hostname == "127.0.0.1") {
@@ -20,9 +21,6 @@ if (location.hostname == "127.0.0.1") {
     app.config.globalProperties.$imghost1 = 'https://amichand.com/public/'  //for server
 
 }
-
-
-
 
 
 
