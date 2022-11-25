@@ -1,8 +1,8 @@
 <template>
     <div>
         <!-- Inner Section Start -->
-        <section class="inner-area parallax-bg"  :style="{ backgroundImage: 'url(' + $imghost1 + image+')' }" data-type="parallax"
-            data-speed="3">
+        <section class="inner-area parallax-bg" :style="{ backgroundImage: 'url(' + $imghost1 + image + ')' }"
+            data-type="parallax" data-speed="3">
             <div class="container">
                 <div class="section-content">
                     <div class="row">
@@ -26,8 +26,8 @@
                                 <ul>
 
                                     <li v-for="(item, index) in all_service">
-                                        <router-link :class="item.slug==$route.params.name ? 'active': ''"
-                                            :to="{name:'service.single',params:{name:item.slug}}"> {{item.log_title}} <i
+                                        <router-link :class="item.slug == $route.params.name ? 'active' : ''"
+                                            :to="{ name: 'service.single', params: { name: item.slug } }"> {{ item.log_title }} <i
                                                 class="flaticon-right-arrow-1"></i></router-link>
 
                                     </li>
@@ -45,7 +45,7 @@
                                     <h4>Contact us </h4>
                                     <p>24 hours online support our customer.replacing a multi-lined selection of text.
                                     </p>
-                                    <router-link :to="{name:'contact'}">Contact us</router-link>
+                                    <router-link :to="{ name: 'contact' }">Contact us</router-link>
                                 </div>
                             </div>
                         </div>
@@ -57,10 +57,10 @@
                                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner">
 
-                                        <div class="carousel-item" v-for="(item,index) in images" :key="item.id"
-                                            :class="index==0 ? 'active':''">
-                                            <img height="333px" class="d-block w-100" :src='$imghost+"services/"+ item.name'
-                                                :alt="item.name">
+                                        <div class="carousel-item" v-for="(item, index) in images" :key="item.id"
+                                            :class="index == 0 ? 'active' : ''">
+                                            <img height="333px" class="d-block w-100"
+                                                :src='$imghost + "services/" + item.name' :alt="item.name">
                                         </div>
 
                                     </div>
@@ -78,8 +78,8 @@
                                 <!-- slider end -->
                             </div>
                             <div class="content">
-                                <h4>{{service.log_title}}</h4>
-                                <p class="mb-20">{{service.log_description}}</p>
+                                <h4>{{ service.log_title }}</h4>
+                                <p class="mb-20">{{ service.log_description }}</p>
 
 
                                 <div class="service-tab mb-40">
@@ -88,27 +88,27 @@
                                         <li v-if="service.title1" class="nav-item">
                                             <a class="nav-link active" id="features-one-tab" data-toggle="tab"
                                                 href="#features-one" role="tab" aria-controls="features-one"
-                                                aria-selected="true">{{service.title1}}</a>
+                                                aria-selected="true">{{ service.title1 }}</a>
                                         </li>
                                         <li v-if="service.title2" class="nav-item">
                                             <a class="nav-link " id="features-one-tab" data-toggle="tab"
                                                 href="#features-two" role="tab" aria-controls="features-one"
-                                                aria-selected="true">{{service.title2}}</a>
+                                                aria-selected="true">{{ service.title2 }}</a>
                                         </li>
                                         <li v-if="service.title3" class="nav-item">
                                             <a class="nav-link " id="features-one-tab" data-toggle="tab"
                                                 href="#features-three" role="tab" aria-controls="features-one"
-                                                aria-selected="true">{{service.title3}}</a>
+                                                aria-selected="true">{{ service.title3 }}</a>
                                         </li>
                                         <li v-if="service.title4" class="nav-item">
                                             <a class="nav-link " id="features-one-tab" data-toggle="tab"
                                                 href="#features-four" role="tab" aria-controls="features-one"
-                                                aria-selected="true">{{service.title4}}</a>
+                                                aria-selected="true">{{ service.title4 }}</a>
                                         </li>
                                         <li v-if="service.title5" class="nav-item">
                                             <a class="nav-link " id="features-one-tab" data-toggle="tab"
                                                 href="#features-five" role="tab" aria-controls="features-one"
-                                                aria-selected="true">{{service.title5}}</a>
+                                                aria-selected="true">{{ service.title5 }}</a>
                                         </li>
 
                                     </ul>
@@ -116,32 +116,32 @@
                                     <div class="tab-content" id="myTabContent">
                                         <div v-if="service.title1" class="tab-pane fade show active" id="features-one"
                                             role="tabpanel" aria-labelledby="features-one-tab">
-                                            <h4>{{service.title1}}</h4>
-                                            <p>{{service.description1 }}</p>
+                                            <h4>{{ service.title1 }}</h4>
+                                            <p>{{ service.description1 }}</p>
 
                                         </div>
                                         <div v-if="service.title2" class="tab-pane fade" id="features-two"
                                             role="tabpanel" aria-labelledby="features-two-tab">
-                                            <h4>{{service.title2}}</h4>
-                                            <p>{{service.description2 }}</p>
+                                            <h4>{{ service.title2 }}</h4>
+                                            <p>{{ service.description2 }}</p>
 
                                         </div>
                                         <div v-if="service.title3" class="tab-pane fade" id="features-three"
                                             role="tabpanel" aria-labelledby="features-three-tab">
-                                            <h4>{{service.title3}}</h4>
-                                            <p>{{service.description3 }}</p>
+                                            <h4>{{ service.title3 }}</h4>
+                                            <p>{{ service.description3 }}</p>
 
                                         </div>
                                         <div v-if="service.title4" class="tab-pane fade" id="features-four"
                                             role="tabpanel" aria-labelledby="features-four-tab">
-                                            <h4>{{service.title4}}</h4>
-                                            <p>{{service.description4 }}</p>
+                                            <h4>{{ service.title4 }}</h4>
+                                            <p>{{ service.description4 }}</p>
 
                                         </div>
                                         <div v-if="service.title5" class="tab-pane fade" id="features-five"
                                             role="tabpanel" aria-labelledby="features-four-tab">
-                                            <h4>{{service.title5}}</h4>
-                                            <p>{{service.description5 }}</p>
+                                            <h4>{{ service.title5 }}</h4>
+                                            <p>{{ service.description5 }}</p>
                                         </div>
                                     </div>
 
@@ -155,15 +155,16 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6" v-if="service.youtube!=''">
-                        <iframe width="560" height="315" :src="service.youtube" title="YouTube video player"
-                            frameborder="0"
+                    <div class="col-sm-6" v-if="service.youtube != ''">
+                        <iframe v-if="service.youtube.startsWith('http')" width="560" height="315" :src="service.youtube"
+                            title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                    <div class="col-sm-6" v-if="service.view360!=''">
-                        <iframe :src="service.view360" width="560" height="315" style="border:0;"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="col-sm-6" v-if="service.view360 != ''">
+                        <iframe v-if="service.view360.startsWith('http')" :src="service.view360" width="560" height="315"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -189,7 +190,7 @@ export default {
             images: [],
             category: [],
             all_service: [],
-            image:'images/bg/px-1.jpg',
+            image: 'images/bg/px-1.jpg',
 
 
         };
