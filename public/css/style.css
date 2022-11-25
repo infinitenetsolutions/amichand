@@ -4861,9 +4861,9 @@ Contact Details Css Style
   width: 50px;
 }
 
-.form-row {}
 
-.form-row .form-group {}
+
+
 
 .form-row .form-group input.form-control {
   background-color: #fbfbfb;
@@ -4871,11 +4871,24 @@ Contact Details Css Style
   font-size: 16px;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
-  height: 56px;
+  /* height: 56px; */
   letter-spacing: 0.6px;
   text-transform: capitalize;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
+
+.form-row .form-group select.form-control {
+  background-color: #fbfbfb;
+  border: 1px solid #5c5c5c;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  /* height: 56px; */
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+  /* padding-bottom: 10px; */
+}
+
 
 .form-row textarea.form-control {
   background-color: #fbfbfb;
@@ -4897,7 +4910,7 @@ Contact Details Css Style
 
 .contact-details .service-item.style-1 {
   padding: 6px 24px;
-  border: 1px solid #eee;
+  border: 1px solid rgb(139, 132, 132);
   background-color: #fbfbfb;
 }
 
@@ -7224,11 +7237,14 @@ M > P Css Style
   height: 220px !important;
 }
 
-.career{
+.career {
   margin-bottom: 0px !important;
 }
- #panelsStayOpen-collapseOne{
+
+.career-dropdown {
   padding: 0px 17px 0px 17px;
   background-color: #091426;
   color: #fff;
+ 
+
 }

@@ -57,5 +57,6 @@ Route::get('mission/vision', [AboutController::class, 'mission_vision'])->name('
 
 // career start
 Route::get('career', [CareerController::class, 'index'])->name('career');
+Route::post('career/apply', [CareerController::class, 'store'])->name('career.store');
 
 // career end
