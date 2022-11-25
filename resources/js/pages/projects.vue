@@ -23,7 +23,7 @@
 
                 <div class="col-sm-9">
                     <h3 class="text-uppercase mb-3 mpl-5"> <span class="border-bottom border-warning">Our</span> <span
-                            class="text-warning">Company</span></h3>
+                            class="text-warning">Products</span></h3>
 
                     <div class="mpl-5 p-2">
                         <div class="row">
