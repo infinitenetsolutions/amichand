@@ -155,7 +155,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6" v-if="service.youtube.startsWith('http')">
+                    <div class="col-sm-6" v-if=" service.youtube!='' && service.youtube.startsWith('http')">
                         <iframe width="560" height="315" :src="service.youtube" title="YouTube video player"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
