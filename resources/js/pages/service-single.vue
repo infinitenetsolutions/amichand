@@ -161,7 +161,7 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                    <div class="col-sm-6" v-if="service.view360.startsWith('http')">
+                    <div class="col-sm-6" v-if="service.view360!=''">
                         <iframe :src="service.view360" width="560" height="315" style="border:0;"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
