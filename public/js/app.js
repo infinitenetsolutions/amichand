@@ -27701,8 +27701,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["carousel-item", index == 0 ? 'active' : '']),
       key: item.id
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-      height: "333px",
-      "class": "d-block w-100",
+      "class": "d-block w-100 h-333",
       src: _ctx.$imghost + "services/" + item.name,
       alt: item.name
     }, null, 8

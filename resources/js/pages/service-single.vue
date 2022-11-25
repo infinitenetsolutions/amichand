@@ -59,7 +59,7 @@
 
                                         <div class="carousel-item" v-for="(item, index) in images" :key="item.id"
                                             :class="index == 0 ? 'active' : ''">
-                                            <img height="333px" class="d-block w-100"
+                                            <img  class="d-block w-100 h-333"
                                                 :src='$imghost + "services/" + item.name' :alt="item.name">
                                         </div>
 
