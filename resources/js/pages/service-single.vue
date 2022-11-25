@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Inner Section Start -->
-        <section class="inner-area parallax-bg"  v-bind:style="{ backgroundImage: 'url(' + $imghost1 + image+')' }" data-type="parallax"
+        <section class="inner-area parallax-bg"  :style="{ backgroundImage: 'url(' + $imghost1 + image+')' }" data-type="parallax"
             data-speed="3">
             <div class="container">
                 <div class="section-content">
@@ -26,7 +26,7 @@
                                 <ul>
 
                                     <li v-for="(item, index) in all_service">
-                                        <router-link v-bind:class="item.slug==$route.params.name ? 'active': ''"
+                                        <router-link :class="item.slug==$route.params.name ? 'active': ''"
                                             :to="{name:'service.single',params:{name:item.slug}}"> {{item.log_title}} <i
                                                 class="flaticon-right-arrow-1"></i></router-link>
 
@@ -58,9 +58,9 @@
                                     <div class="carousel-inner">
 
                                         <div class="carousel-item" v-for="(item,index) in images" :key="item.id"
-                                            v-bind:class="index==0 ? 'active':''">
-                                            <img class="d-block w-100" v-bind:src='$imghost+"services/"+ item.name'
-                                                v-bind:alt="item.name">
+                                            :class="index==0 ? 'active':''">
+                                            <img height="333px" class="d-block w-100" :src='$imghost+"services/"+ item.name'
+                                                :alt="item.name">
                                         </div>
 
                                     </div>
@@ -156,13 +156,13 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6" v-if="service.youtube.startsWith('http')">
-                        <iframe width="560" height="315" v-bind:src="service.youtube" title="YouTube video player"
+                        <iframe width="560" height="315" :src="service.youtube" title="YouTube video player"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
                     <div class="col-sm-6" v-if="service.view360.startsWith('http')">
-                        <iframe v-bind:src="service.view360" width="560" height="315" style="border:0;"
+                        <iframe :src="service.view360" width="560" height="315" style="border:0;"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -182,7 +182,6 @@ export default {
     components: {
         clinetsVue
     }
-
     ,
     data() {
         return {
