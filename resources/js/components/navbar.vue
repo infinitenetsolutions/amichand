@@ -123,7 +123,7 @@
 
                                         <!-- mega-menu end -->
                                         <li class="nav-item dropdown">
-                                            <router-link to="contact" class="nav-link ">
+                                            <router-link to="/contact" class="nav-link ">
                                                 Contact</router-link>
 
                                         </li>

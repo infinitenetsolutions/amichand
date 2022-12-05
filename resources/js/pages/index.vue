@@ -143,7 +143,7 @@
                 </div>
                 <div class="col-md-4 offset-md-0">
                     <div class="contact-btn-item mt-3">
-                        <a class="contact-btn style-1" href="#">appointment now</a>
+                        <router-link  class="contact-btn style-1"  to="/contact" >Contact us></router-link>
                         <h3>+099 123 123 123</h3>
                     </div>
                 </div>
