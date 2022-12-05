@@ -12,28 +12,26 @@
                                 <div class="icon-box">
                                     <i class="flaticon-pin-1"></i>
                                 </div>
-                                <h6>Address: Amichand Technological Pvt. Limited
-                                    B19/B20, Phase 7, Adityapur Industrial Estate
-                                    Adityapur, Jamshedpur –832109
+                                <h6>{{ site_info.address }}
                                 </h6>
                             </div>
                             <div class="contact-info">
                                 <div class="icon-box">
                                     <i class="fas fa-phone"></i>
                                 </div>
-                                <h6>+91-8292580535 / +91-9905167484</h6>
+                                <h6> {{ site_info.phone }} <br> {{ site_info.phone2 }}</h6>
                             </div>
                             <div class="contact-info">
                                 <div class="icon-box">
                                     <i class="fas fa-envelope"></i>
                                 </div>
-                                <h6> info@amitec.in</h6>
+                                <h6>  <a v-bind:href="'mailto:'+site_info.email">{{site_info.email}}</a> </h6>
                             </div>
                             <div class="contact-info">
                                 <div class="icon-box">
                                     <i class="fab fa-internet-explorer"></i>
                                 </div>
-                                <h6><a href="#">http://www.amitec.in/</a></h6>
+                                <h6><a href="#">http://www.amichand.com/</a></h6>
                             </div>
                         </div>
                     </div>
@@ -68,6 +66,21 @@
 </template>
 <script>
 export default {
-    name:'contact'
+    name: 'contact',
+    data() {
+        return {
+            site_info: [],
+
+
+        };
+    },
+    async created() {
+        try {
+            const res = await axios.get(this.$host + "contact");
+            this.site_info = res.data;
+        } catch (error) {
+            console.log(error);
+        }
+    },
 }
 </script>

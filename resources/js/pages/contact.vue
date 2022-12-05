@@ -109,6 +109,7 @@
 </template>
 <script>
 export default {
+    
     data() {
         return {
             site_info: [],
