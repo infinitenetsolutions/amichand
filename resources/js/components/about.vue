@@ -8,7 +8,7 @@
                         <div class="content">
 
                             <h1>WelCome to <span class=" border-bottom border-warning  border-2">Amichand</span></h1>
-                            <p class="p-text">{{about.massage}}.</p>
+                            <p class="p-text" v-html="about.massage"> </p>
 
                             <div class="company-funfact">
                                 <div class="funfact-item">

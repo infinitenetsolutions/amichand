@@ -80,7 +80,7 @@
                                     <li><i class="fas fa-phone-volume"></i> Phone : {{ site_info.phone2}} </li>
                                     <li><i class="fas fa-envelope-open-text"></i> <a href="mailto:">Email:
                                             {{site_info.email}}</a></li>
-                                            <li><i class="fas fa-map"></i> <a href="mailto:">Google Map
+                                            <li><i class="fas fa-map"></i> <a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d117697.39849123852!2d86.12405182694233!3d22.800844467339946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1samichand!5e0!3m2!1sen!2sin!4v1670240671214!5m2!1sen!2sin">Google Map
                                             </a></li>
                                 </ul>
 

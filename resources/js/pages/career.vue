@@ -8,8 +8,8 @@
                 <div class="section-content">
                     <div class="row">
                         <div class="col-12">
-                            <h4>contact</h4>
-                            <p>Home <a href="#">contact</a></p>
+                            <h4>Career</h4>
+                            <p>Home <a href="#">Career</a></p>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
 
                                     <div class="form-group col-md-12">
                                         <div class="contact-textarea">
-                                            <textarea v-model="form.massage" class="form-control" rows="6" placeholder="Wright Message"
+                                            <textarea v-model="form.massage" class="form-control" rows="6" placeholder="Write Message"
                                                 id="message" name="message" required></textarea>
                                             <button @click=careerForm  class="btn btn-theme mt-4" type="button" value="Submit Form">Send
                                                 Message</button>
