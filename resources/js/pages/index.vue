@@ -10,7 +10,7 @@
                 <div class="col-md-4">
                     <div class="welcome-feature">
                         <div class="thumb">
-                            <img v-bind:src="$imghost1+'images/features/1.jpg'" alt="features img">
+                            <img v-bind:src="$imghost1 + 'images/features/1.jpg'" alt="features img">
                         </div>
                         <div class="content">
                             <div class="icon-box">
@@ -23,7 +23,7 @@
                 <div class="col-md-4">
                     <div class="welcome-feature">
                         <div class="thumb">
-                            <img v-bind:src="$imghost1+'images/features/2.jpg'" alt="features img">
+                            <img v-bind:src="$imghost1 + 'images/features/2.jpg'" alt="features img">
                         </div>
                         <div class="content">
                             <div class="icon-box">
@@ -36,7 +36,7 @@
                 <div class="col-md-4">
                     <div class="welcome-feature">
                         <div class="thumb">
-                            <img v-bind:src="$imghost1+'images/features/3.jpg'" alt="features img">
+                            <img v-bind:src="$imghost1 + 'images/features/3.jpg'" alt="features img">
                         </div>
                         <div class="content">
                             <div class="icon-box">
@@ -63,23 +63,24 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-lg-4" v-for="(item,index) in products" :key="item.id">
+                <div class="col-md-6 col-lg-4" v-for="(item, index) in products" :key="item.id">
                     <div class="projects-item style-2">
                         <div class="thumb">
-                            <img v-bind:src="$imghost+'products/'+item.img_name" alt="">
+                            <img v-bind:src="$imghost + 'products/' + item.img_name" alt="">
                             <div class="content">
                                 <div class="counter-item">
-                                    <h1>{{index+1}}</h1>
+                                    <h1>{{ index + 1 }}</h1>
                                 </div>
                                 <h3>
-                                    <router-link :to="{name:'project.single',params: { name: item.slug }}">
-                                        {{item.log_title}}</router-link>
+                                    <router-link :to="{ name: 'project.single', params: { name: item.slug } }">
+                                        {{ item.log_title }}</router-link>
                                 </h3>
                             </div>
                         </div>
                         <div class="text-bottom">
-                            <h4>{{item.log_description.substr(0,70)}}..</h4>
-                            <router-link class="project-btn" :to="{name:'project.single',params: { name: item.slug }}">
+                            <h4>{{ item.log_description.substr(0, 70) }}..</h4>
+                            <router-link class="project-btn"
+                                :to="{ name: 'project.single', params: { name: item.slug } }">
                                 View Product
                             </router-link>
                         </div>
@@ -105,19 +106,19 @@
                 </div>
             </div>
             <div class="row">
-        
+
                 <div v-for="item in services" :key="item.id" class="col-md-4">
                     <div class="service-item style-4">
                         <div class="thumb">
-                            <img alt="service img" v-bind:src="$imghost+'services/'+item.img_name">
+                            <img alt="service img" v-bind:src="$imghost + 'services/' + item.img_name">
                             <div class="service-link-box">
-                                <router-link :to="{name:'service.single',params:{name:item.slug}}">Read More
+                                <router-link :to="{ name: 'service.single', params: { name: item.slug } }">Read More
                                 </router-link>
                             </div>
                         </div>
                         <div class="content">
-                            <h3>{{item.log_title}}</h3>
-                            <h4>{{item.log_description.substr(0,40)}}</h4>
+                            <h3>{{ item.log_title }}</h3>
+                            <h4>{{ item.log_description.substr(0, 40) }}</h4>
                         </div>
                     </div>
                 </div>
@@ -143,7 +144,7 @@
                 </div>
                 <div class="col-md-4 offset-md-0">
                     <div class="contact-btn-item mt-3">
-                        <router-link  class="contact-btn style-1"  to="/contact" >Contact us></router-link>
+                        <router-link class="contact-btn style-1" to="/contact">Contact us></router-link>
                         <h3>+099 123 123 123</h3>
                     </div>
                 </div>
@@ -157,7 +158,7 @@
     <!-- testimonials Section End -->
 
     <!-- Blog Section Start -->
-    
+
     <!-- <section class="blog-section bg-f8">
         <div class="container">
             <div class="row">
@@ -249,7 +250,47 @@
     </section> -->
     <!-- Blog Section End -->
     <!-- contact vue start -->
-    <contactVue />
+    <!-- Contact Section Start -->
+    <section class="contact-section pb-70">
+        <div class="container">
+            <div class="row contact-bg">
+                <div class="col-md-12 col-lg-4 p-0">
+                    <div class="contact-text">
+                        <h2>Get in <span>Touch</span></h2>
+                        <p>Consectetur adipisicing elit. Temporibus error quod necessitatibus</p>
+                        <div class="contact-info">
+                            <div class="icon-box">
+                                <i class="flaticon-pin-1"></i>
+                            </div>
+                            <h6>{{ site_info.address }}
+                            </h6>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-box">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h6> {{ site_info.phone }} <br> {{ site_info.phone2 }}</h6>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h6> <a v-bind:href="'mailto:' + site_info.email">{{ site_info.email }}</a> </h6>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-box">
+                                <i class="fab fa-internet-explorer"></i>
+                            </div>
+                            <h6><a href="#">http://www.amichand.com/</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-8 style-2">
+                    <contactVue />
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- contact vue end -->
     <!-- clients vue start -->
     <clientsVue />
@@ -276,6 +317,8 @@ export default {
         return {
             products: [],
             services: [],
+            site_info: [],
+
 
 
         };
@@ -289,6 +332,14 @@ export default {
         } catch (error) {
             console.log(error);
         }
+
+        try {
+            const res = await axios.get(this.$host + "contact");
+            this.site_info = res.data;
+        } catch (error) {
+            console.log(error);
+        }
+
     },
 }
 </script>
