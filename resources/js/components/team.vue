@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="section-title">
                         <h2>OUR <span class=" border-bottom border-warning  border-2">TEAM</span></h2>
-                        <p>Our team EXPERT MEMBERS</p>
+                        <p>Our team Expert Members</p>
                     </div>
                 </div>
                 <div class="row mt-4">
