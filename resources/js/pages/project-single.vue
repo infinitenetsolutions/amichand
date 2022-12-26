@@ -77,7 +77,7 @@
                                                     {{item.name}}
                                                 </router-link>
                                             </span>
-                                            <span>Agriculture</span>
+                                          
                                         </li>
 
                                     </ul>
