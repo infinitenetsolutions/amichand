@@ -52,7 +52,7 @@
     <!-- Features Section End -->
 
     <!-- Product Section Start -->
-    <section class="service-section4 bg-f9 pb-40" style="background-image:url('images/bg/px-1.jpg')">
+    <section class="service-section4 bg-f9 pb-40" style='background-image:url("images/bg/px-1.jpg")'>
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -77,7 +77,7 @@
                             </div>
                         </div>
                         <div class="text-bottom">
-                            <h4>{{ item.log_description.substr(3, 70) }}..</h4>
+                            <h4 v-html=" item.log_description.substr(0, 70)"></h4>
                             <router-link class="project-btn"
                                 :to="{ name: 'project.single', params: { name: item.slug } }">
                                 View Product
