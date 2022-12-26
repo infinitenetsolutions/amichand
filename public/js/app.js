@@ -27162,7 +27162,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"section-content\"><div class=\"row\"><div class=\"col-12\"><h4>Project details</h4><p>Home <a href=\"#\">Product</a></p></div></div></div></div>", 1);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"section-content\"><div class=\"row\"><div class=\"col-12\"><h4>Product details</h4><p>Home <a href=\"#\">Product</a></p></div></div></div></div>", 1);
 
 var _hoisted_2 = [_hoisted_1];
 var _hoisted_3 = {
@@ -27587,7 +27587,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"section-content\"><div class=\"row\"><div class=\"col-12\"><h4>Service single</h4><p>Home <a href=\"#\">Services</a></p></div></div></div></div>", 1);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\"><div class=\"section-content\"><div class=\"row\"><div class=\"col-12\"><h4>Service Details</h4><p>Home <a href=\"#\">Services</a></p></div></div></div></div>", 1);
 
 var _hoisted_2 = [_hoisted_1];
 var _hoisted_3 = {

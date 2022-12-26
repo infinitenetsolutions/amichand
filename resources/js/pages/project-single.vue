@@ -7,7 +7,7 @@
                 <div class="section-content">
                     <div class="row">
                         <div class="col-12">
-                            <h4>Project details</h4>
+                            <h4>Product details</h4>
                             <p>Home <a href="#">Product</a></p>
                         </div>
                     </div>
