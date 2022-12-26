@@ -52,7 +52,7 @@
     <!-- Features Section End -->
 
     <!-- Product Section Start -->
-    <section class="service-section4 bg-f9 pb-40" style='background-image:url("images/bg/px-1.jpg")'>
+    <section class="service-section4 bg-f9 pb-40" :style="{'background-image':'url('+$imghost+'images/bg/px-1.jpg)'}" >
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -71,7 +71,7 @@
                                     <h1>{{ index + 1 }}</h1>
                                 </div>
                                 <h3>
-                                    <router-link :to="{ name: 'project.single', params: { name: item.slug } }" v-html="item.log_title">
+                                    <router-link :to="{ name: 'project.single', params: { name: item.slug } }" v-html="item.log_title.substr(0, 20)">
                                         </router-link>
                                 </h3>
                             </div>
@@ -93,8 +93,7 @@
     <aboutVue />
     <!-- about end -->
     <!-- Service Section Start -->
-    <section class="projects-section over-layer-white parallax-bg" style="background-image:url('images/bg/px-1.jpg');"
-        data-type="parallax" data-speed="5">
+    <section class="projects-section over-layer-white parallax-bg" :style="{'background-image':'url('+$imghost+'images/bg/px-1.jpg)'}"   :data-type="'parallax'" data-speed="5">
         <div class="container">
             <div class="row">
                 <div class="section-title">
