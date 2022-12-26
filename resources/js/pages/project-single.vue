@@ -28,12 +28,9 @@
                                     <!-- slider start -->
                                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img class="d-block w-100"
-                                                    v-bind:src='$imghost+"products/"+images[0].name' alt="First slide">
-                                            </div>
-                                            <div class="carousel-item" v-for="item in images" :key="item.id">
-                                                <img class="d-block w-100" v-bind:src='$imghost+"products/"+ item.name'
+                                         
+                                            <div v-for="item in images" :key="item.id"  :class="index==0? 'carousel-item active': 'carousel-item ' ">
+                                                <img class="d-block w-100 h-400" v-bind:src='$imghost+"products/"+ item.name'
                                                     alt="Second slide">
                                             </div>
 
