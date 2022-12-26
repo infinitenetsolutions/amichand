@@ -25,10 +25,10 @@
                             <div class="service-list mb-40">
                                 <ul>
 
-                                    <li v-for="(item,index) in all_service">
+                                    <li v-for="(item, index) in all_service">
                                         <router-link :class="item.slug == $route.params.name ? 'active' : ''"
-                                            :to="{ name: 'service.single', params: { name: item.slug } }"> {{ item.log_title }} <i
-                                                class="flaticon-right-arrow-1"></i></router-link>
+                                            :to="{ name: 'service.single', params: { name: item.slug } }">
+                                            {{ item.log_title }} <i class="flaticon-right-arrow-1"></i></router-link>
 
                                     </li>
 
@@ -59,8 +59,8 @@
 
                                         <div class="carousel-item" v-for="(item, index) in images" :key="item.id"
                                             :class="index == 0 ? 'active' : ''">
-                                            <img  class="d-block w-100 h-333"
-                                                :src='$imghost + "services/" + item.name' :alt="item.name">
+                                            <img class="d-block w-100 h-333" :src='$imghost + "services/" + item.name'
+                                                :alt="item.name">
                                         </div>
 
                                     </div>
@@ -156,14 +156,14 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6" v-if="service.youtube != ''">
-                        <iframe v-if="service.youtube.startsWith('http')" width="560" height="315" :src="service.youtube"
-                            title="YouTube video player" frameborder="0"
+                        <iframe v-if="service.youtube.startsWith('http')" width="560" height="315"
+                            :src="service.youtube" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
                     <div class="col-sm-6" v-if="service.view360 != ''">
-                        <iframe v-if="service.view360.startsWith('http')" :src="service.view360" width="560" height="315"
-                            style="border:0;" allowfullscreen="" loading="lazy"
+                        <iframe v-if="service.view360.startsWith('http')" :src="service.view360" width="560"
+                            height="315" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>

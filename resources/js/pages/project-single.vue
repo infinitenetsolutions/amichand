@@ -1,8 +1,8 @@
 <template>
     <div>
         <!-- Inner Section Start -->
-        <section class="inner-area parallax-bg"  v-bind:style="{ backgroundImage: 'url(' + $imghost1 + image+')' }" data-type="parallax"
-            data-speed="3">
+        <section class="inner-area parallax-bg" v-bind:style="{ backgroundImage: 'url(' + $imghost1 + image + ')' }"
+            data-type="parallax" data-speed="3">
             <div class="container">
                 <div class="section-content">
                     <div class="row">
@@ -28,10 +28,11 @@
                                     <!-- slider start -->
                                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
-                                         
-                                            <div v-for="(item,index) in images" :key="item.id"  :class="index==0? 'carousel-item active': 'carousel-item ' ">
-                                                <img class="d-block w-100 h-400" v-bind:src='$imghost+"products/"+ item.name'
-                                                    alt="Second slide">
+
+                                            <div v-for="(item, index) in images" :key="item.id"
+                                                :class="index == 0 ? 'carousel-item active' : 'carousel-item '">
+                                                <img class="d-block w-100 h-400"
+                                                    v-bind:src='$imghost + "products/" + item.name' alt="Second slide">
                                             </div>
 
                                         </div>
@@ -55,13 +56,14 @@
                                 <div class="project-title">
                                     <h3> {{ products.log_title }} </h3>
                                 </div>
-                                <p class="mb-25">{{products.log_description}}</p>
+                                <p class="mb-25">{{ products.log_description }}</p>
                                 <ul class="project-social">
                                     <span>Share:</span>
-                                    <li><a href="#"><i class="flaticon-facebook-logo"></i></a></li>
-                                    <li><a href="#"><i class="flaticon-twitter"></i></a></li>
-                                    <li><a href="#"><i class="flaticon-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="flaticon-social-media"></i></a></li>
+                                    <li><a class="bg-primary" href="#"><i class="fab fa-facebook text-white"></i></a></li>
+                                    <li><a class="bg-info" href="#"><i class="fab fa-twitter text-white"></i></a></li>
+                                    <li><a class="bg-secondary" href="#"><i class="fab fa-linkedin text-white"></i></a></li>
+                                    <li><a class="bg-success" href="#"><i class="fab fa-whatsapp text-white"></i></a></li>
+                                    <li><a class="bg-warning" href="#"><i class="fab fa-instagram text-white"></i></a></li>
                                 </ul>
                             </div>
                             <div class="col-md-4">
@@ -70,11 +72,11 @@
                                         <li>
                                             <span>
                                                 <router-link class="text-white"
-                                                    :to="{name:'products',params:{category:item.name.toLowerCase()}}">
-                                                    {{item.name}}
+                                                    :to="{ name: 'products', params: { category: item.name.toLowerCase() } }">
+                                                    {{ item.name }}
                                                 </router-link>
                                             </span>
-                                          
+
                                         </li>
 
                                     </ul>
@@ -88,18 +90,18 @@
                                 </div>
                                 <div class="accordion" id="accordionPanelsStayOpenExample">
                                     <div class="accordion-item challenge-tag row">
-                                        <div class="col-sm-6" v-for="(item,index) in feature" :key="item.id">
+                                        <div class="col-sm-6" v-for="(item, index) in feature" :key="item.id">
                                             <li class=" accordion-button" type="button" data-bs-toggle="collapse"
                                                 data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                                 aria-controls="panelsStayOpen-collapseOne">
-                                                <i class="fas fa-check"></i>{{ item.title}}
+                                                <i class="fas fa-check"></i>{{ item.title }}
                                             </li>
 
                                             <div id="panelsStayOpen-collapseOne"
                                                 class=" accordion-collapse collapse show"
                                                 aria-labelledby="panelsStayOpen-headingOne">
                                                 <div class="accordion-body">
-                                                    <strong class="pl-2 pr-2">{{ item.description}} </strong>
+                                                    <strong class="pl-2 pr-2">{{ item.description }} </strong>
 
                                                 </div>
                                             </div>
@@ -149,7 +151,7 @@ export default {
             images: [],
             category: [],
             all_products: [],
-            image:'images/bg/px-1.jpg',
+            image: 'images/bg/px-1.jpg',
 
         };
     },

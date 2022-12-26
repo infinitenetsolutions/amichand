@@ -27237,7 +27237,7 @@ var _hoisted_18 = {
   "class": "mb-25"
 };
 
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<ul class=\"project-social\"><span>Share:</span><li><a href=\"#\"><i class=\"flaticon-facebook-logo\"></i></a></li><li><a href=\"#\"><i class=\"flaticon-twitter\"></i></a></li><li><a href=\"#\"><i class=\"flaticon-linkedin\"></i></a></li><li><a href=\"#\"><i class=\"flaticon-social-media\"></i></a></li></ul>", 1);
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<ul class=\"project-social\"><span>Share:</span><li><a class=\"bg-primary\" href=\"#\"><i class=\"fab fa-facebook text-white\"></i></a></li><li><a class=\"bg-info\" href=\"#\"><i class=\"fab fa-twitter text-white\"></i></a></li><li><a class=\"bg-secondary\" href=\"#\"><i class=\"fab fa-linkedin text-white\"></i></a></li><li><a class=\"bg-success\" href=\"#\"><i class=\"fab fa-whatsapp text-white\"></i></a></li><li><a class=\"bg-warning\" href=\"#\"><i class=\"fab fa-instagram text-white\"></i></a></li></ul>", 1);
 
 var _hoisted_20 = {
   "class": "col-md-4"
