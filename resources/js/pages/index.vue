@@ -77,7 +77,7 @@
                             </div>
                         </div>
                         <div class="text-bottom">
-                            <h4>{{ item.log_description.substr(0, 70) }}..</h4>
+                            <h4>{{ item.log_description.substr(3, 70) }}..</h4>
                             <router-link class="project-btn"
                                 :to="{ name: 'project.single', params: { name: item.slug } }">
                                 View Product
