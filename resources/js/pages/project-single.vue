@@ -29,7 +29,7 @@
                                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                          
-                                            <div v-for="item in images" :key="item.id"  :class="index==0? 'carousel-item active': 'carousel-item ' ">
+                                            <div v-for="(item,index) in images" :key="item.id"  :class="index==0? 'carousel-item active': 'carousel-item ' ">
                                                 <img class="d-block w-100 h-400" v-bind:src='$imghost+"products/"+ item.name'
                                                     alt="Second slide">
                                             </div>
