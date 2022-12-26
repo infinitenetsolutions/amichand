@@ -25,7 +25,7 @@
                             <div class="service-list mb-40">
                                 <ul>
 
-                                    <li v-for="(item, index) in all_service">
+                                    <li v-for="(item,index) in all_service">
                                         <router-link :class="item.slug == $route.params.name ? 'active' : ''"
                                             :to="{ name: 'service.single', params: { name: item.slug } }"> {{ item.log_title }} <i
                                                 class="flaticon-right-arrow-1"></i></router-link>
