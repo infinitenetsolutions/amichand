@@ -71,7 +71,7 @@
                                     <h1>{{ index + 1 }}</h1>
                                 </div>
                                 <h3>
-                                    <router-link :to="{ name: 'project.single', params: { name: item.slug } }" v-html="item.log_title.substr(0, 20)">
+                                    <router-link :to="{ name: 'project.single', params: { name: item.slug } }" v-html="item.log_title.substr(0, 20)"> 
                                         </router-link>
                                 </h3>
                             </div>
@@ -114,7 +114,7 @@
                             </div>
                         </div>
                         <div class="content">
-                            <h3>{{ item.log_title }}</h3>
+                            <h3>{{ item.log_title.substr(0, 22) }}</h3>
                             <h4>{{ item.log_description.substr(0, 40) }}</h4>
                         </div>
                     </div>
