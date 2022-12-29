@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <form id="ajax-contact" method="post" action="http://heatmaponline.com/html/intruder/php/contact.php">
+        <form id="contact" method="post" >
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <input type="text" name="f_name" id="f_name" class="form-control" placeholder="First Name" required>
@@ -19,7 +19,7 @@
                     <div class="contact-textarea">
                         <textarea class="form-control" rows="6" placeholder="Write Message" id="message" name="message"
                             required></textarea>
-                        <button class="btn btn-theme mt-4" type="submit" value="Submit Form">Send
+                        <button class="btn btn-theme mt-4" type="submit"  value="Submit Form">Send
                             Message</button>
                     </div>
                 </div>
@@ -29,6 +29,7 @@
     </div>
 </template>
 <script>
+import axios from 'axios';
 export default {
     name: 'contact',
     data() {
@@ -38,8 +39,11 @@ export default {
 
         };
     },
-    async created() {
-
-    },
+    method: {
+        contact() {
+            form = new FormData(document.getElementById('contact'))
+            axios.post('contact/store',form)
+        }
+    }
 }
 </script>
