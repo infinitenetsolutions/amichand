@@ -152,7 +152,7 @@ a {
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #ed1616;
+  color: #fcab03;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -256,7 +256,7 @@ input:-moz-placeholder {
     Color Style ( Default Theme Color Style )
 /*======= ****========****=======*/
 .theme-color {
-  color: #ed1616 !important;
+  color: #fcab03 !important;
 }
 
 .theme-color-2 {
@@ -268,7 +268,7 @@ input:-moz-placeholder {
 }
 
 .bg-theme-color {
-  background: #ed1616 !important;
+  background: #fcab03 !important;
 }
 
 .bg-f7 {
@@ -405,7 +405,7 @@ input:-moz-placeholder {
 }
 
 .section-title h4:after {
-  background-color: #ed1616;
+  background-color: #fcab03;
   content: "";
   height: 1px;
   left: -24px;
@@ -427,7 +427,7 @@ input:-moz-placeholder {
 }
 
 .section-title h2 span {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .section-title h6 {
@@ -455,7 +455,7 @@ input:-moz-placeholder {
 }
 
 .section-title .title-attend:before {
-  background-color: #ed1616;
+  background-color: #fcab03;
   bottom: -15px;
   content: "";
   display: inline-block;
@@ -482,7 +482,7 @@ input:-moz-placeholder {
   border-radius: 0;
   border: none;
   color: #fff;
-  background: #ed1616;
+  background: #fcab03;
   letter-spacing: 1px;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -514,7 +514,7 @@ input:-moz-placeholder {
 
 .btn-theme-1:hover {
   color: #ffffff;
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .btn-black {
@@ -524,7 +524,7 @@ input:-moz-placeholder {
 
 .btn-black:hover {
   color: #ffffff;
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .btn-white {
@@ -535,30 +535,30 @@ input:-moz-placeholder {
 
 .btn-white:hover {
   color: #ffffff;
-  background: #ed1616;
-  border: 1px solid #ed1616;
+  background: #fcab03;
+  border: 1px solid #fcab03;
 }
 
 .btn-transparent {
-  color: #ed1616;
+  color: #fcab03;
   background: transparent;
 }
 
 .btn-transparent:hover {
   color: #ffffff;
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .btn-bordered {
-  color: #ed1616;
+  color: #fcab03;
   background: transparent;
-  border: 1px solid #ed1616;
+  border: 1px solid #fcab03;
 }
 
 .btn-bordered:hover {
   color: #ffffff;
-  background: #ed1616;
-  border: 1px solid #ed1616;
+  background: #fcab03;
+  border: 1px solid #fcab03;
 }
 
 .btn-shop {
@@ -569,8 +569,8 @@ input:-moz-placeholder {
 }
 
 .btn-shop:hover {
-  background: #ed1616;
-  border: 1px solid #ed1616;
+  background: #fcab03;
+  border: 1px solid #fcab03;
   color: #FFF;
 }
 
@@ -593,7 +593,7 @@ input:-moz-placeholder {
 /*Scrollup CSS*/
 
 .scrollup {
-  background-color: #ed1616;
+  background-color: #fcab03;
   border-radius: 50%;
   bottom: 25px;
   color: #ffffff;
@@ -632,7 +632,7 @@ a.scrollup i {
 }
 
 a.scrollup:hover i {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 a.scrollup:active i,
@@ -675,7 +675,7 @@ a.scrollup:focus i {
 }
 
 .service-item.style-1:hover i {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .service-item.style-1 .content {
@@ -691,7 +691,7 @@ a.scrollup:focus i {
 }
 
 .service-item.style-1 .content h5:hover a {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 
@@ -764,7 +764,7 @@ a.scrollup:focus i {
 }
 
 .top-bar .contact-info i {
-  color: #ed1616;
+  color: #fcab03;
   font-size: 16px;
   margin-right: 6px;
 }
@@ -827,7 +827,7 @@ a.scrollup:focus i {
 }
 
 .header.header-style-2 .menu-hover-2 .dropdown-buttons .btn-group .btn {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .header.header-style-2 .top-bar {
@@ -926,7 +926,7 @@ a.scrollup:focus i {
 .header .menu-style.menu-hover-2 .navbar-nav li.active a.nav-link,
 .header .menu-style.menu-hover-2 .navbar-nav li:focus a.nav-link,
 .header .menu-style.menu-hover-2 .navbar-nav li:hover a.nav-link {
-  background-color: #ed1616;
+  background-color: #fcab03;
 }
 
 .header .menu-style.menu-hover-2 .navbar-nav li.active a.nav-link:hover,
@@ -948,7 +948,7 @@ a.dropdown-item.active {
 }
 
 .header .dropdown-menu {
-  border-top: 2px solid #ed1616;
+  border-top: 2px solid #fcab03;
 }
 
 .header ul.navbar-nav li.nav-item div.dropdown-menu .dropdown a.dropdown-item:hover,
@@ -967,7 +967,7 @@ a.dropdown-item.active {
 }
 
 .header .menu-hover-2 .dropdown-buttons .btn-group .btn {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .header .dropdown-buttons .btn-group .btn {
@@ -1022,7 +1022,7 @@ a.dropdown-item.active {
 }
 
 .header-btn a {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #fff;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -1039,7 +1039,7 @@ a.dropdown-item.active {
 
 .header-btn a:hover {
   background-color: #091426;
-  color: #ed1616;
+  color: #fcab03;
 }
 
 
@@ -1063,7 +1063,7 @@ a.dropdown-item.active {
 .dropdown-buttons .menu-search-box ul {
   background-color: transparent;
   border-radius: 0;
-  border-top: 2px solid #ed1616;
+  border-top: 2px solid #fcab03;
   min-width: 230px;
   padding: 0;
   top: 15px;
@@ -1184,7 +1184,7 @@ a.dropdown-item.active {
 }
 
 .header .btn-group .product-item span {
-  color: #ed1616;
+  color: #fcab03;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.6px;
@@ -1328,10 +1328,10 @@ a.dropdown-item.active {
 
 .indicators-line>.carousel-indicators .active {
   margin: 1px 5px 1px 1px;
-  box-shadow: 0 0 0 2px #ed1616;
+  box-shadow: 0 0 0 2px #fcab03;
   background-color: transparent;
   position: relative;
-  border-color: #ed1616;
+  border-color: #fcab03;
   -webkit-transition: box-shadow 0.3s ease;
   -moz-transition: box-shadow 0.3s ease;
   -o-transition: box-shadow 0.3s ease;
@@ -1345,7 +1345,7 @@ a.dropdown-item.active {
 
 .indicators-line>.carousel-indicators .active:before {
   transform: scale(0.5);
-  background-color: #ed1616;
+  background-color: #fcab03;
   content: "";
   position: absolute;
   left: -1px;
@@ -1516,7 +1516,7 @@ a.dropdown-item.active {
   padding: 17px 30px;
   white-space: nowrap;
   letter-spacing: 1px;
-  background: #ed1616;
+  background: #fcab03;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -1919,7 +1919,7 @@ a.dropdown-item.active {
 }
 
 .video-area h2 span {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .video-area .container {
@@ -1959,7 +1959,7 @@ a.btn-primary {
   padding: 17px 30px;
   white-space: nowrap;
   letter-spacing: 1px;
-  background: #ed1616;
+  background: #fcab03;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -2138,8 +2138,8 @@ a.btn-primary {
 
 .gallery-filter li a:hover,
 .gallery-filter li.active a {
-  color: #ed1616;
-  border: 1px solid #ed1616;
+  color: #fcab03;
+  border: 1px solid #fcab03;
 }
 
 
@@ -2154,7 +2154,7 @@ canvas {
 #particles-js {
   width: 100%;
   height: 600px;
-  background-color: #ed1616;
+  background-color: #fcab03;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
@@ -2224,7 +2224,7 @@ Welcome Feature Css Style
 }
 
 .welcome-feature .icon-box {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #fff;
   display: inline-block;
   font-size: 29px;
@@ -2254,7 +2254,7 @@ Welcome Feature Css Style
 }
 
 .welcome-feature-section.style-2 .section-title h4 {
-  color: #ed1616;
+  color: #fcab03;
   margin-left: 10px;
 }
 
@@ -2272,7 +2272,7 @@ Welcome Feature Css Style
 }
 
 .welcome-feature-section.style-2 .section-title h2:after {
-  background-color: #ed1616;
+  background-color: #fcab03;
   content: "";
   height: 126%;
   position: absolute;
@@ -2368,7 +2368,7 @@ Service Css Style
 
 .service-item.style-4 .thumb .service-link-box a:hover {
   background-color: rgba(252, 171, 3, 0.6);
-  border-color: #ed1616;
+  border-color: #fcab03;
   color: #fff;
 }
 
@@ -2388,7 +2388,7 @@ Service Css Style
 }
 
 .service-item.style-4 .content h3 {
-  color: #ed1616;
+  color: #fcab03;
   font-size: 22px;
   letter-spacing: 1.2px;
   margin-bottom: 5px;
@@ -2411,7 +2411,7 @@ Service Css Style
 }
 
 .service-item.style-4 .content h4:before {
-  background-color: #ed1616;
+  background-color: #fcab03;
   bottom: 3px;
   content: "";
   height: 1px;
@@ -2425,7 +2425,7 @@ Service Css Style
 }
 
 .service-item.style-4 .content .btn-theme {
-  background-color: #ed1616;
+  background-color: #fcab03;
   border-radius: 50px;
   font-size: 13px;
   font-weight: 600;
@@ -2494,7 +2494,7 @@ Service Css Style
 }
 
 .service-item.style-2 .content h5 {
-  color: #ed1616;
+  color: #fcab03;
   font-size: 22px;
   letter-spacing: 0.7px;
   margin-bottom: 22px;
@@ -2524,7 +2524,7 @@ Service Css Style
 }
 
 .service-item.style-2 .content h5:after {
-  background-color: #ed1616;
+  background-color: #fcab03;
   bottom: 0;
   content: "";
   height: 1px;
@@ -2556,7 +2556,7 @@ Service Css Style
 }
 
 .service-item.style-2:hover .content h5 .icon {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .service-item.style-2 .content p {
@@ -2564,8 +2564,8 @@ Service Css Style
 }
 
 .service-item.style-2 .content .btn-link {
-  background-color: #ed1616;
-  border: 1px solid #ed1616;
+  background-color: #fcab03;
+  border: 1px solid #fcab03;
   border-radius: 50px;
   color: #fff;
   font-size: 12px;
@@ -2577,7 +2577,7 @@ Service Css Style
 
 .service-item.style-2 .content .btn-link:hover {
   background-color: #fff;
-  color: #ed1616;
+  color: #fcab03;
 }
 
 /****-------Service Details-------*****/
@@ -2616,12 +2616,12 @@ Service Css Style
 }
 
 .service-details-sidebar .service-list ul li a:hover {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #fff;
 }
 
 .service-details-sidebar .service-list ul li a.active {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #fff;
 }
 
@@ -2657,11 +2657,11 @@ Service Css Style
 }
 
 .service-details-sidebar .download-box .download-item:hover a {
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .service-details-sidebar .download-box .download-item a i {
-  color: #ed1616;
+  color: #fcab03;
   margin-right: 16px;
 }
 
@@ -2704,7 +2704,7 @@ Service Css Style
 }
 
 .service-details-sidebar .contact-box .contact-item h4:before {
-  background-color: #ed1616;
+  background-color: #fcab03;
   bottom: 0;
   content: "";
   height: 2px;
@@ -2733,7 +2733,7 @@ Service Css Style
 }
 
 .service-details-sidebar .contact-box .contact-item a {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -2780,8 +2780,8 @@ Service Css Style
 
 .service-tab .nav-tabs .nav-item.show .nav-link,
 .service-tab .nav-tabs .nav-link.active {
-  background-color: #ed1616;
-  border-color: #ed1616;
+  background-color: #fcab03;
+  border-color: #fcab03;
   color: #fff;
   font-family: "Oswald", sans-serif;
 }
@@ -2820,7 +2820,7 @@ About Features Css Style
 }
 
 .about-features .content h5:after {
-  background-color: #ed1616;
+  background-color: #fcab03;
   content: "";
   height: 1px;
   left: -24px;
@@ -2831,7 +2831,7 @@ About Features Css Style
 }
 
 .about-features .content h1 span {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .about-features .content .p-text {
@@ -2886,7 +2886,7 @@ About Features Css Style
 }
 
 .about-features .content .company-funfact h2 {
-  color: #ed1616;
+  color: #fcab03;
   font-size: 42px;
   font-weight: 600;
   margin-bottom: 6px;
@@ -2904,7 +2904,7 @@ About Features Css Style
 }
 
 .about-features .thumb .about-video {
-  background-color: #ed1616;
+  background-color: #fcab03;
   overflow: hidden;
   text-align: center;
   padding: 14px 20px;
@@ -2958,7 +2958,7 @@ About Features Css Style
 }
 
 .about-features.style-2 .content .company-list li:hover i {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #fff;
 }
 
@@ -3018,7 +3018,7 @@ Projects Css Style
 }
 
 .projects-item .content h1:after {
-  background-color: #ed1616;
+  background-color: #fcab03;
   bottom: 0;
   content: "";
   height: 2px;
@@ -3028,7 +3028,7 @@ Projects Css Style
 }
 
 .projects-item .content h3 {
-  color: #ed1616;
+  color: #fcab03;
   font-size: 22px;
   letter-spacing: 1.2px;
   margin-bottom: 12px;
@@ -3040,7 +3040,7 @@ Projects Css Style
 }
 
 .projects-item .content .project-btn {
-  background-color: #ed1616;
+  background-color: #fcab03;
   border-radius: 50px;
   color: #fff;
   display: inline-block;
@@ -3079,7 +3079,7 @@ Projects Css Style
 }
 
 .projects-item.style-2 .content h3 {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #fff;
   padding: 8px 0 8px 82px;
   position: relative;
@@ -3135,7 +3135,7 @@ Projects Css Style
 }
 
 .projects-item .text-bottom .project-btn {
-  background-color: #ed1616;
+  background-color: #fcab03;
   border-radius: 50px;
   color: #fff;
   display: inline-block;
@@ -3177,7 +3177,7 @@ Projects Css Style
 }
 
 .project-details .project-title h3 span {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .project-details .project-title h3:after {
@@ -3191,7 +3191,7 @@ Projects Css Style
 }
 
 .project-details .project-title h3:before {
-  background-color: #ed1616;
+  background-color: #fcab03;
   bottom: 0;
   content: "";
   height: 2px;
@@ -3275,7 +3275,7 @@ Projects Css Style
 }
 
 .project-details .challenge-tag li:after {
-  background-color: #ed1616;
+  background-color: #fcab03;
   content: "";
   height: 50px;
   left: -8px;
@@ -3307,7 +3307,7 @@ Projects Css Style
 
 #projects_carousel.owl-carousel .owl-nav .owl-prev,
 #projects_carousel.owl-carousel .owl-nav .owl-next {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #fff;
   display: inline-block;
   height: 38px;
@@ -3356,7 +3356,7 @@ Content Divider Css Style
 }
 
 .contact-divider .contact-item h5 {
-  color: #ed1616;
+  color: #fcab03;
   letter-spacing: 0.9px;
   margin-bottom: 14px;
   text-transform: uppercase;
@@ -3381,7 +3381,7 @@ Content Divider Css Style
 }
 
 .contact-divider .contact-btn-item .contact-btn.style-1 {
-  background-color: #ed1616;
+  background-color: #fcab03;
   border-radius: 50px;
   color: #fff;
   margin-bottom: 18px;
@@ -3397,7 +3397,7 @@ Content Divider Css Style
 
 .contact-divider .contact-btn-item .contact-btn.style-1:hover {
   background-color: #fff;
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .particles-contact {
@@ -3451,7 +3451,7 @@ Testimonials Css Style
 }
 
 .testimonials-post .testimonials-item .thumb img {
-  border: 2px solid #ed1616;
+  border: 2px solid #fcab03;
   border-radius: 50%;
   width: 90px;
 }
@@ -3466,7 +3466,7 @@ Testimonials Css Style
 }
 
 .testimonials-post .testimonials-item .content small strong {
-  background-color: #ed1616;
+  background-color: #fcab03;
   border-radius: 50px;
   color: #fff;
   font-size: 15px;
@@ -3488,7 +3488,7 @@ Testimonials Css Style
 }
 
 .testimonials-post .testimonials-item .content i {
-  color: #ed1616;
+  color: #fcab03;
   font-size: 28px;
   margin-left: 8px;
   margin-right: 8px;
@@ -3504,7 +3504,7 @@ Testimonials Css Style
 
 #testimonials_carousel.owl-carousel .owl-nav .owl-next,
 #testimonials_carousel.owl-carousel .owl-nav .owl-prev {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #fff;
   display: inline-block;
   font-size: 18px;
@@ -3552,7 +3552,7 @@ Testimonials Css Style
 .testimonials-col .content {}
 
 .testimonials-col .content h4 {
-  color: #ed1616;
+  color: #fcab03;
   font-size: 18px;
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -3578,7 +3578,7 @@ Testimonials Css Style
 }
 
 .testimonials-col .content ul li a:hover {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 /*testimonials carousel 4*/
@@ -3611,7 +3611,7 @@ Testimonials Css Style
 }
 
 #testimonials-carousel-4 .owl-dots .owl-dot.active span {
-  background-color: #ed1616;
+  background-color: #fcab03;
   height: 12px;
 }
 
@@ -3645,7 +3645,7 @@ Blog Css Style
 
 .blog-post .date-box .inner .date {
   background: #091426 none repeat scroll 0 0;
-  color: #ed1616;
+  color: #fcab03;
   font-size: 16px;
   font-weight: bold;
   line-height: 20px;
@@ -3684,7 +3684,7 @@ Blog Css Style
 }
 
 .blog-post .read-btn {
-  background-color: #ed1616;
+  background-color: #fcab03;
   border-top: 1px solid #eee;
   bottom: 0;
   color: #fff;
@@ -3770,11 +3770,11 @@ Blog Css Style
 }
 
 .blog-details .details-content .details-tag li a:hover {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .blog-details .details-content .details-tag li a i {
-  color: #ed1616;
+  color: #fcab03;
   font-size: 18px;
   margin-right: 8px;
   position: relative;
@@ -3792,7 +3792,7 @@ Blog Css Style
 }
 
 .blog-details .details-content blockquote p i {
-  color: #ed1616;
+  color: #fcab03;
   font-size: 28px;
   margin-right: 8px;
 }
@@ -3826,7 +3826,7 @@ Blog Css Style
 }
 
 .blog-details .details-content .btn-box a {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #fff;
   font-family: "Oswald", sans-serif;
   padding: 8px 18px;
@@ -3866,7 +3866,7 @@ Blog Css Style
 .blog-details .blog-admin-desc ul li a {
   border: 1px solid #eee;
   border-radius: 50%;
-  color: #ed1616;
+  color: #fcab03;
   display: inline-block;
   height: 30px;
   line-height: 30px;
@@ -3956,7 +3956,7 @@ Contact Css Style
 }
 
 .contact-text h2 span {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .contact-text p {
@@ -4092,7 +4092,7 @@ Process Css Style
 }
 
 .process-item .icon-box:after {
-  background-color: #ed1616;
+  background-color: #fcab03;
   bottom: 0;
   content: "";
   height: 2px;
@@ -4111,7 +4111,7 @@ Process Css Style
 }
 
 .process-item:hover .content {
-  background-color: #ed1616;
+  background-color: #fcab03;
 }
 
 .process-item .content h3 {
@@ -4161,7 +4161,7 @@ Client Css Style
 
 #client_carousel.owl-carousel .owl-nav .owl-prev {
   font-size: 42px;
-  color: #ed1616;
+  color: #fcab03;
   left: -50px;
   position: absolute;
   top: -12px;
@@ -4175,7 +4175,7 @@ Client Css Style
 
 #client_carousel.owl-carousel .owl-nav .owl-next {
   font-size: 42px;
-  color: #ed1616;
+  color: #fcab03;
   right: -50px;
   position: absolute;
   top: -12px;
@@ -4228,7 +4228,7 @@ Inner Css Style
 }
 
 .inner-area p a {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .inner-area p a:before {
@@ -4287,7 +4287,7 @@ Shop Css Style
 }
 
 .shop-section .shopping-col .product-info h4:after {
-  background-color: #ed1616;
+  background-color: #fcab03;
   bottom: 0;
   content: "";
   height: 2px;
@@ -4307,7 +4307,7 @@ Shop Css Style
 }
 
 .shop-section .shopping-col .product-info h5 {
-  color: #ed1616;
+  color: #fcab03;
   font-weight: 600;
 }
 
@@ -4321,7 +4321,7 @@ Shop Css Style
 .shop-section .shopping-col .product-over-box a {
   background-color: #091426;
   border-radius: 50%;
-  color: #ed1616;
+  color: #fcab03;
   display: inline-block;
   font-size: 26px;
   height: 48px;
@@ -4374,7 +4374,7 @@ Shop Css Style
 }
 
 .theme-sidebar .title-box h3:before {
-  background-color: #ed1616;
+  background-color: #fcab03;
   bottom: 0;
   content: "";
   height: 2px;
@@ -4395,7 +4395,7 @@ Shop Css Style
 }
 
 .theme-sidebar .theme-sidebar .title-box h3 span {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .theme-sidebar .widget {
@@ -4443,7 +4443,7 @@ input::-moz-placeholder {
 }
 
 .theme-sidebar .search-sidebar i {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #fff;
   cursor: pointer;
   font-size: 18px;
@@ -4459,7 +4459,7 @@ input::-moz-placeholder {
 
 .theme-sidebar .search-sidebar i:hover {
   background-color: #091426;
-  color: #ed1616;
+  color: #fcab03;
 }
 
 /***Cat Item***/
@@ -4479,7 +4479,7 @@ input::-moz-placeholder {
 }
 
 .cat-item ul li a:hover {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .cat-item ul li span {
@@ -4521,7 +4521,7 @@ input::-moz-placeholder {
 }
 
 .products-item .tex h6 {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 /***Tags Item***/
@@ -4531,7 +4531,7 @@ input::-moz-placeholder {
 .tags-item a {
   border: 1px solid #eee;
   border-radius: 50px;
-  color: #ed1616;
+  color: #fcab03;
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
@@ -4603,7 +4603,7 @@ Team Css Style
 }
 
 .team-section .team-col .content h4:after {
-  background-color: #ed1616;
+  background-color: #fcab03;
   bottom: 0;
   content: "";
   height: 2px;
@@ -4623,7 +4623,7 @@ Team Css Style
 }
 
 .team-section .team-col .content h5 {
-  color: #ed1616;
+  color: #fcab03;
   font-weight: 600;
 }
 
@@ -4651,7 +4651,7 @@ Page Link Css Style
 
 .page-link-item ul li .active {
   background-color: #f8f8f8;
-  color: #ed1616;
+  color: #fcab03;
 }
 
 
@@ -4673,7 +4673,7 @@ Page Link Css Style
 }
 
 .shop-single .content h4 {
-  color: #ed1616;
+  color: #fcab03;
   font-size: 28px;
   margin-bottom: 18px;
   font-weight: 600;
@@ -4719,7 +4719,7 @@ Page Link Css Style
   border: 1px solid #eee;
   background: #fbfbfb;
   border-radius: 50px;
-  color: #ed1616;
+  color: #fcab03;
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
@@ -4744,7 +4744,7 @@ Page Link Css Style
 .shop-product-row {}
 
 .shop-product-row h6 {
-  color: #ed1616;
+  color: #fcab03;
   letter-spacing: 0.6px;
   margin-bottom: 12px;
   text-transform: uppercase;
@@ -4761,7 +4761,7 @@ Page Link Css Style
 }
 
 .shop-tab-content strong {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 /*--------------------------------
@@ -4775,7 +4775,7 @@ FAQ CSS Start
 .faq-col .panel-group {}
 
 .faq-col .panel-group .panel-title {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
@@ -4848,11 +4848,11 @@ Contact Details Css Style
 }
 
 .contact-details .title span {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .contact-details .title:after {
-  background-color: #ed1616;
+  background-color: #fcab03;
   bottom: 0;
   content: "";
   height: 2px;
@@ -4927,7 +4927,7 @@ Contact Details Css Style
 }
 
 .contact-details .service-item.style-1 i {
-  background-color: #ed1616;
+  background-color: #fcab03;
   color: #fff;
   border: 1px solid #eee;
   border-radius: 50%;
@@ -4957,7 +4957,7 @@ Footer Css Style
 
 
 .footer-item h6 span {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .footer-item .subscribe-style-two .form-control.input-subscribe {
@@ -5007,7 +5007,7 @@ Footer Copy Right  Css Style
 }
 
 .footer-copy-right a {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 /* footer style responsive */
@@ -5150,13 +5150,13 @@ Footer Copy Right  Css Style
 }
 
 .blog-admin-desc ul li a:hover {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 /* Blog Admin Style Css */
 
 .comment h5 span a {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .comment h5 span a:hover {
@@ -5196,7 +5196,7 @@ Footer Copy Right  Css Style
   margin-bottom: 10px;
   background: #F3f3f3;
   padding: 20px 0 10px 10px;
-  border-left: 2px solid #ed1616;
+  border-left: 2px solid #fcab03;
 }
 
 .sideber-title h4 {
@@ -5233,12 +5233,12 @@ Footer Copy Right  Css Style
 }
 
 .sideber-content ul li a i {
-  color: #ed1616;
+  color: #fcab03;
   margin-right: 5px;
 }
 
 .sideber-content ul li:hover a {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .blog-sideber .widget {
@@ -5265,7 +5265,7 @@ Footer Copy Right  Css Style
 }
 
 .widget .news-area .news-content a:hover {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .widget .gallery h6 {
@@ -5277,7 +5277,7 @@ Footer Copy Right  Css Style
 }
 
 .widget .gallery h6:hover a {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 /* Sideber page Post Style css */
@@ -5302,7 +5302,7 @@ Footer Copy Right  Css Style
 }
 
 .post-blog-item .post-blog-content .post-blog-date i {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .post-blog-item .post-blog-time {
@@ -5338,7 +5338,7 @@ Footer Copy Right  Css Style
 }
 
 .tags li:hover {
-  background: #ed1616;
+  background: #fcab03;
   color: #fff;
   border-bottom: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -5366,20 +5366,20 @@ Footer Copy Right  Css Style
 .blog-search input {
   padding-left: 25px;
   font-size: 15px;
-  color: #ed1616;
+  color: #fcab03;
   width: calc(100% - 65px);
   border: 1px solid #eaeaea !important;
   border-right: none !important;
 }
 
 .blog-search input:focus {
-  border: 1px solid #ed1616 !important;
+  border: 1px solid #fcab03 !important;
   border-right: none !important;
 }
 
 .blog-search button {
   width: 65px;
-  background: #ed1616 !important;
+  background: #fcab03 !important;
   line-height: 65px;
   text-align: center;
   color: #fff;
@@ -5501,7 +5501,7 @@ Footer Copy Right  Css Style
   position: absolute;
   right: 0;
   bottom: 8%;
-  background: #ed1616;
+  background: #fcab03;
   color: #fff;
   padding: 10px;
   line-height: 1;
@@ -5580,7 +5580,7 @@ Footer Copy Right  Css Style
   padding: 10px 0 10px;
   margin: 0 auto;
   bottom: -22%;
-  background: #ed1616;
+  background: #fcab03;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -5632,7 +5632,7 @@ Footer Copy Right  Css Style
 }
 
 .widget-categories-list .categories-active {
-  border-top: 1px dashed #ed1616;
+  border-top: 1px dashed #fcab03;
   display: none;
   padding-left: 20px
 }
@@ -5651,7 +5651,7 @@ Footer Copy Right  Css Style
 }
 
 .widget-categories-list ul li a:hover {
-  color: #ed1616
+  color: #fcab03
 }
 
 .widget-categories-list ul>li,
@@ -5846,7 +5846,7 @@ footer {
 .footer-widget-one .address li i {
   margin-right: 8px;
   font-size: 18px;
-  color: #ed1616;
+  color: #fcab03;
 }
 
 footer ul.social-icon {
@@ -5884,11 +5884,11 @@ footer ul.social-icon {
 }
 
 .social-icon.bg-f2 li a {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .social-icon.bg-f2 li:hover {
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .social-icon.bg-f2 li:hover a {
@@ -5896,7 +5896,7 @@ footer ul.social-icon {
 }
 
 .social-icon.bg-theme li {
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .social-icon.bg-theme li a {
@@ -5920,7 +5920,7 @@ footer ul.social-icon {
 }
 
 .social-icon.bg-black li:hover {
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .social-icon.bg-black li:hover a {
@@ -5940,7 +5940,7 @@ footer ul.social-icon {
 }
 
 .social-icon.bg-transparent li:hover a {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .social-icon.rounded li {
@@ -5956,8 +5956,8 @@ footer ul.social-icon {
 }
 
 .social-icon.bordered li:hover {
-  background: #ed1616;
-  border-color: #ed1616;
+  background: #fcab03;
+  border-color: #fcab03;
 }
 
 .social-icon.bordered li:hover a {
@@ -5969,12 +5969,12 @@ footer ul.social-icon {
 }
 
 .social-icon.bordered-theme li a {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .social-icon.bordered-theme li:hover {
-  background: #ed1616;
-  border-color: #ed1616;
+  background: #fcab03;
+  border-color: #fcab03;
 }
 
 .social-icon.bordered-theme li:hover a {
@@ -6021,7 +6021,7 @@ footer ul.social-icon {
   content: '';
   width: 100%;
   height: 100%;
-  background: #ed1616;
+  background: #fcab03;
   visibility: hidden;
   top: 0;
   left: 0;
@@ -6053,7 +6053,7 @@ footer ul.social-icon {
 }
 
 .news-area .news-content span {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .footer-list li {
@@ -6089,11 +6089,11 @@ footer ul.social-icon {
 }
 
 .footer-list.border-deshed li {
-  border-bottom: 1px dashed #ed1616;
+  border-bottom: 1px dashed #fcab03;
 }
 
 .footer-list.color-icon li i {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .footer-list li:hover {
@@ -6119,7 +6119,7 @@ footer ul.social-icon {
 }
 
 .footer-title h4 span {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .border-style-1,
@@ -6136,7 +6136,7 @@ footer ul.social-icon {
   margin: auto;
   position: absolute;
   width: 40px;
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .border-style-2:after {
@@ -6147,11 +6147,11 @@ footer ul.social-icon {
   margin: auto;
   position: absolute;
   width: 50px;
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .border-style-3:after {
-  background: #ed1616 none repeat scroll 0 0;
+  background: #fcab03 none repeat scroll 0 0;
   border-radius: 0 50px 0 0;
   content: "";
   height: 3px;
@@ -6192,15 +6192,15 @@ footer ul.social-icon {
 }
 
 .btn-subscribe:hover {
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .subscribe-style-two .btn-subscribe {
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .subscribe-style-two .form-control:focus {
-  border-color: #ed1616;
+  border-color: #fcab03;
 }
 
 .subscribe-style-two .btn-subscribe:hover {
@@ -6220,7 +6220,7 @@ footer ul.social-icon {
   margin: auto;
   position: absolute;
   width: 40px;
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .flicker-feed>a {
@@ -6304,13 +6304,13 @@ footer ul.social-icon {
 
 .footer-btn:hover {
   color: #fff;
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .footer-btn-1 {
   font-size: 13px;
   color: #fff;
-  background: #ed1616;
+  background: #fcab03;
 }
 
 .footer-btn-1:hover {
@@ -6333,7 +6333,7 @@ footer ul.social-icon {
 }
 
 .bg-footer-1 a:hover {
-  color: #ed1616;
+  color: #fcab03;
 }
 
 .bg-footer-1,
@@ -6359,7 +6359,7 @@ footer ul.social-icon {
 }
 
 .bg-footer-1 .footer-item form .form-control:focus {
-  border-color: #ed1616;
+  border-color: #fcab03;
 }
 
 
