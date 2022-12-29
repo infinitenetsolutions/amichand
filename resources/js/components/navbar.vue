@@ -6,7 +6,7 @@
         <div class="page-wrapper">
 
             <!-- Header Section Start -->
-            <header class="header header-style-1 clearfix">
+            <header class="header header-style-2 clearfix">
 
                 <div class="top-bar">
                     <div class="container">
@@ -36,10 +36,10 @@
                     </div>
                 </div>
 
-                <div class="menu-style menu-style-1 bg-transparent clearfix">
+                <div class="menu-style menu-style-2 bg-transparent clearfix">
                     <!-- main-navigation start -->
                     <div class="main-navigation main-mega-menu animated">
-                        <nav class="navbar navbar-expand-lg navbar-dark">
+                        <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="container">
                                 <!-- header dropdown buttons end-->
                                 <router-link class="navbar-brand" :to="{name:'home'}">

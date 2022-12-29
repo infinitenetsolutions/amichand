@@ -2,6 +2,7 @@
 
     <!-- slider start -->
     <sliderVue />
+    <certificateVue/>
     <!-- slider end -->
     <!-- Features Section Start -->
     <section class="welcome-feature-section pb-40">
@@ -208,6 +209,7 @@ import contactVue from '../components/contact.vue';
 import sliderVue from '../components/slider.vue';
 import testimonialVue from '../components/testimonial.vue';
 import aboutVue from '../components/about.vue';
+import certificateVue from '../components/certificate.vue';
 export default {
     name: 'home',
     components: {
@@ -215,7 +217,8 @@ export default {
         contactVue,
         sliderVue,
         testimonialVue,
-        aboutVue
+        aboutVue,
+        certificateVue,
 
     },
     data() {
